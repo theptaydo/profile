@@ -68,10 +68,48 @@
     </div>
   </section>
 
-  <script src="js/jquery.min.js"></script>
-  <script src="js/popper.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/main.js"></script>
+  <script src="./assets/js/jquery.min.js"></script>
+  <!-- <script src="./assets/js/popper.js"></script>
+  <script src="./assets/js/bootstrap.min.js"></script> -->
+  <script>
+    // Đoạn mã này điều chỉnh chiều cao của các phần tử có class 'js-fullheight' theo chiều cao của cửa sổ trình duyệt.
+    var fullHeight = function () {
+      var elements = document.querySelectorAll('.js-fullheight');
+      var setHeight = function () {
+        elements.forEach(function (element) {
+          element.style.height = window.innerHeight + 'px';
+        });
+      };
+
+      // Đặt chiều cao ban đầu
+      setHeight();
+
+      // Điều chỉnh chiều cao khi thay đổi kích thước cửa sổ
+      window.addEventListener('resize', setHeight);
+    };
+    fullHeight();
+
+    // Đoạn mã này xử lý chức năng ẩn/hiện mật khẩu khi nhấn vào biểu tượng 'toggle-password'.
+    document.querySelectorAll('.toggle-password').forEach(function (toggle) {
+      toggle.addEventListener('click', function () {
+        // Thay đổi biểu tượng từ 'fa-eye' sang 'fa-eye-slash' và ngược lại
+        this.classList.toggle('fa-eye');
+        this.classList.toggle('fa-eye-slash');
+
+        // Tìm trường input dựa trên thuộc tính 'toggle' của phần tử hiện tại
+        var input = document.querySelector(this.getAttribute('toggle'));
+
+        if (input) {
+          // Thay đổi thuộc tính 'type' giữa 'password' và 'text'
+          if (input.type === 'password') {
+            input.type = 'text';
+          } else {
+            input.type = 'password';
+          }
+        }
+      });
+    });
+  </script>
 
 </body>
 
