@@ -9,8 +9,8 @@
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="./assets/img/favicon.png" rel="icon">
-  <link href="./assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -20,30 +20,17 @@
     rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="./assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="./assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="./assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="./assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="./assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-
-  <link rel="stylesheet" href="http://shenglivn.com/themes/template/assets/css/libs.css" />
-  <link rel="stylesheet" href="http://shenglivn.com/themes/template/assets/vendor/fontawesome-pro/css/all.min.css" />
-  <link rel="stylesheet" href="http://shenglivn.com/themes/template/assets/css/app.css" />
-  <link rel="stylesheet" href="http://shenglivn.com/themes/template/assets/css/custom.css" />
-
-  <script src="http://shenglivn.com/themes/template/assets/js/libs.js" defer></script>
-  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js" defer></script>
-  <script src="http://shenglivn.com/themes/template/assets/js/app.js" defer></script>
-  <script src="http://shenglivn.com/themes/template/assets/js/custom.js" defer></script>
-
-  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
   <!-- Main CSS File -->
-  <link href="./assets/css/main.css" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/css/product.css">
+
   <!-- =======================================================
   * Template Name: BizLand
   * Template URL: https://bootstrapmade.com/bizland-bootstrap-business-template/
@@ -64,187 +51,6 @@
 
     .header .logo img {
       max-height: 70px;
-    }
-
-    .contact {
-      position: relative;
-      z-index: 1;
-      /* background-color: #404096; */
-      border: 5px solid #ffffff;
-      color: #262020;
-    }
-
-    .modal_tab {
-      margin-bottom: 20px;
-    }
-
-    *,
-    ::after,
-    ::before {
-      box-sizing: border-box;
-    }
-
-    user agent stylesheet div {
-      display: block;
-      unicode-bidi: isolate;
-    }
-
-    .modal_tab_img {
-      text-align: center;
-      margin-bottom: 20px;
-      padding: 15px;
-
-    }
-
-    *,
-    ::after,
-    ::before {
-      box-sizing: border-box;
-    }
-
-    user agent stylesheet div {
-      display: block;
-      unicode-bidi: isolate;
-    }
-
-    .nav {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-      padding-left: 0;
-      margin-bottom: 0;
-      list-style: none;
-    }
-
-    ul {
-      margin: 0px;
-      padding: 0px;
-    }
-
-    dl,
-    ol,
-    ul {
-      margin-top: 0;
-      margin-bottom: 1rem;
-    }
-
-    *,
-    ::after,
-    ::before {
-      box-sizing: border-box;
-    }
-
-    ul {
-      display: block;
-      list-style-type: disc;
-      margin-block-start: 1em;
-      margin-block-end: 1em;
-      margin-inline-start: 0px;
-      margin-inline-end: 0px;
-      padding-inline-start: 40px;
-      unicode-bidi: isolate;
-    }
-
-    /* CSS cho phần portfolio */
-
-    /* Định dạng cho phần Portfolio */
-    #portfolio {
-      padding: 60px 0;
-      background-color: #f8f9fa;
-    }
-
-
-
-    #portfolio .description-title {
-      color: #007bff;
-      font-weight: bold;
-    }
-
-    /* Bố cục cho các mục dự án */
-    #portfolio .retro-layout {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-
-    #portfolio .col-md-4 {
-      flex: 1 1 30%;
-      display: flex;
-      flex-direction: column;
-    }
-
-    #portfolio .h-entry {
-      position: relative;
-      overflow: hidden;
-      border-radius: 8px;
-      transition: transform 0.3s ease;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-    }
-
-    #portfolio .h-entry:hover {
-      transform: scale(1.05);
-    }
-
-    #portfolio .h-entry .featured-img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-size: cover;
-      background-position: center;
-      filter: brightness(0.8);
-      transition: filter 0.3s ease;
-    }
-
-    #portfolio .h-entry:hover .featured-img {
-      filter: brightness(0.6);
-    }
-
-    /* Gradient overlay */
-    #portfolio .h-entry.gradient::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-
-      transition: background 0.3s ease;
-      z-index: 1;
-    }
-
-    /* Text styling */
-    #portfolio .h-entry .text {
-      position: relative;
-      z-index: 2;
-      color: #fff;
-      padding: 50px;
-    }
-
-    #portfolio .h-entry .date {
-      font-size: 0.9rem;
-      color: #ccc;
-      margin-bottom: 5px;
-    }
-
-    #portfolio .h-entry h2 {
-      font-size: 1.5rem;
-      color: #fff;
-      line-height: 1.2;
-      font-weight: bold;
-      margin: 0;
-    }
-
-    /* Responsive adjustments */
-    @media (max-width: 768px) {
-      #portfolio .col-md-4 {
-        flex: 1 1 100%;
-        margin-bottom: 20px;
-      }
     }
   </style>
 </head>
@@ -274,7 +80,7 @@
       <div class="container position-relative d-flex align-items-center justify-content-between">
         <a href="index.html" class="logo d-flex align-items-center">
           <!-- Uncomment the line below if you also wish to use an image logo -->
-          <!-- <img src="./assets/img/logo.png" alt=""> -->
+          <!-- <img src="assets/img/logo.png" alt=""> -->
           <h1 class="sitename"><img src="./assets/img/LOGO-slogan-xich-ma.png" alt="" srcset=""></h1>
         </a>
 
@@ -552,15 +358,14 @@
             }
           </script>
           <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="./assets/img/clients/Chip_Mong_Group.png" class="img-fluid" alt="">
-            </div>
-            <div class="swiper-slide"><img src="./assets/img/clients/VGS.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="./assets/img/clients/itouchu.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="./assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="./assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="./assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="./assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="./assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/Chip_Mong_Group.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/VGS.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/itouchu.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
           </div>
         </div>
 
@@ -672,7 +477,7 @@
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials section dark-background">
 
-      <img src="./assets/img/testimonials-bg.jpg" class="testimonials-bg" alt="">
+      <img src="assets/img/testimonials-bg.jpg" class="testimonials-bg" alt="">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -696,7 +501,7 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="./assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
                 <h3>Saul Goodman</h3>
                 <h4>Ceo &amp; Founder</h4>
                 <div class="stars">
@@ -714,7 +519,7 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="./assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
                 <h3>Sara Wilsson</h3>
                 <h4>Designer</h4>
                 <div class="stars">
@@ -732,7 +537,7 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="./assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
                 <h3>Jena Karlis</h3>
                 <h4>Store Owner</h4>
                 <div class="stars">
@@ -750,7 +555,7 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="./assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
                 <h3>Matt Brandon</h3>
                 <h4>Freelancer</h4>
                 <div class="stars">
@@ -769,7 +574,7 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="./assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
                 <h3>John Larson</h3>
                 <h4>Entrepreneur</h4>
                 <div class="stars">
@@ -796,64 +601,141 @@
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Dự Án</h2>
-        <p><span>Khám Phá Các</span> <span class="description-title">Dự án của Chúng Tôi</span></p>
+        <h2>Portfolio</h2>
+        <p><span>Check Our&nbsp;</span> <span class="description-title">Portfolio</span></p>
       </div><!-- End Section Title -->
 
-
       <div class="container">
-        <div class="row align-items-stretch retro-layout">
-          <div class="col-md-4">
-            <a href="" class="h-entry mb-30 v-height gradient">
 
-              <div class="featured-img"
-                style="background-image: url('assets/img/portfolio/cau-can-tho-su-dung-thep-tay-do.png');"></div>
-
-              <div class="text">
-                <span class="date">Apr. 14th, 2022</span>
-                <h2>AI can now kill those annoying cookie pop-ups</h2>
+        <div class="section__content" bis_skin_checked="1">
+          <div class="product-2" bis_skin_checked="1">
+            <div class="row align-items-center">
+              <!-- Left Column: Image -->
+              <div class="col-md-6">
+                <div id="productCarousel0" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="http://shenglivn.com/uploads/san-pham/thep-cuon-tron-tron-5.jpg" class="d-block w-100"
+                        alt="Steel Coil Image 1">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="http://shenglivn.com/uploads/san-pham/thep-cuon-tron-tron-3.jpg" class="d-block w-100"
+                        alt="Steel Coil Image 2">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="http://shenglivn.com/uploads/san-pham/thep-cuon-tron-tron-6.jpg" class="d-block w-100"
+                        alt="Steel Coil Image 3">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel0"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#productCarousel0"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
               </div>
-            </a>
-            <a href="single.html" class="h-entry v-height gradient">
 
-              <div class="featured-img"
-                style="background-image: url('assets/img/portfolio/da-khoa-tpct-su-dung-thep-tay-do.png');"></div>
+              <!-- Right Column: Details -->
+              <div class="col-md-6">
+                <div class="product-details">
+                  <h2>THÉP CUỘN TRÒN TRƠN</h2>
 
-              <div class="text">
-                <span class="date">Apr. 14th, 2022</span>
-                <h2>Don’t assume your user data in the cloud is safe</h2>
+                  <p>Chủng loại: <span>CB240T, HPB300, SAE 1018</span></p>
+                  <p>Đặc điểm: <span>Bề mặt bóng, không trầy xước, không khuyết tật, không bavia, không nứt,...</span>
+                  </p>
+                  <p>Tiêu chuẩn: <span>TCVN (Việt Nam), GB (Trung Quốc), ASTM (Mỹ)</span></p>
+                  <p>Đường kính: <span>6mm, 6.5mm, 8 mm, 10mm, 12mm, 14mm</span></p>
+
+                  <p>Trọng lượng 1m:</p>
+                  <ul class="feature-list">
+                    <li>Ф6 = 0.222 kg</li>
+                    <li>Ф6.5 = 0.260 kg</li>
+                    <li>Ф8 = 0.395 kg</li>
+                    <li>Ф10 = 0.617 kg</li>
+                    <li>Ф12 = 0.888 kg</li>
+                    <li>Ф14 = 1.21 kg</li>
+                  </ul>
+
+                  <a href="#" class="btn-contact mt-3">Liên hệ</a>
+                </div>
               </div>
-            </a>
+            </div>
+
+            <div class="row align-items-center">
+
+
+              <!-- Right Column: Details -->
+              <div class="col-md-6">
+                <div class="product-details">
+                  <h2>THÉP CUỘN TRÒN TRƠN</h2>
+
+                  <p>Chủng loại: <span>CB240T, HPB300, SAE 1018</span></p>
+                  <p>Đặc điểm: <span>Bề mặt bóng, không trầy xước, không khuyết tật, không bavia, không nứt,...</span>
+                  </p>
+                  <p>Tiêu chuẩn: <span>TCVN (Việt Nam), GB (Trung Quốc), ASTM (Mỹ)</span></p>
+                  <p>Đường kính: <span>6mm, 6.5mm, 8 mm, 10mm, 12mm, 14mm</span></p>
+
+                  <p>Trọng lượng 1m:</p>
+                  <ul class="feature-list">
+                    <li>Ф6 = 0.222 kg</li>
+                    <li>Ф6.5 = 0.260 kg</li>
+                    <li>Ф8 = 0.395 kg</li>
+                    <li>Ф10 = 0.617 kg</li>
+                    <li>Ф12 = 0.888 kg</li>
+                    <li>Ф14 = 1.21 kg</li>
+                  </ul>
+
+                  <a href="#" class="btn-contact mt-3">Liên hệ</a>
+                </div>
+              </div>
+
+
+              <!-- Left Column: Image -->
+              <div class="col-md-6">
+                <div id="productCarousel1" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="http://shenglivn.com/uploads/san-pham/thep-cuon-van-8.jpg" class="d-block w-100"
+                        alt="Steel Coil Image 1">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="http://shenglivn.com/uploads/san-pham/thep-cuon-van-9.jpg" class="d-block w-100"
+                        alt="Steel Coil Image 2">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="http://shenglivn.com/uploads/san-pham/thep-cuon-van-8.jpg" class="d-block w-100"
+                        alt="Steel Coil Image 3">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel1"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#productCarousel1"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
           </div>
-          <div class="col-md-4">
-            <a href="single.html" class="h-entry img-5 h-100 gradient">
 
-              <div class="featured-img"
-                style="background-image: url('assets/img/portfolio/da-khoa-trung-uong-ct-su-dung-thep-tay-do.png');">
-              </div>
-
-              <div class="text">
-                <span class="date">Apr. 14th, 2022</span>
-                <h2>Why is my internet so slow?</h2>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="single.html" class="h-entry mb-30 v-height gradient">
-
-              <div class="featured-img"
-                style="background-image: url('assets/img/portfolio/dai-hoc-can-tho-su-dung-thep-tay-do.png');"></div>
-
-              <div class="text">
-                <span class="date">Apr. 14th, 2022</span>
-                <h2>Startup vs corporate: What job suits you best?</h2>
-              </div>
-
-          </div>
         </div>
-      </div>
+
     </section><!-- /Portfolio Section -->
+
 
     <!-- Team Section -->
     <section id="team" class="team section light-background">
@@ -872,7 +754,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
             <div class="team-member">
               <div class="member-img">
-                <img src="./assets/img/team/hungddt.png" class="img-fluid" alt="Giám đốc điều hành Thép Tây Đô">
+                <img src="assets/img/team/hungddt.png" class="img-fluid" alt="Giám đốc điều hành Thép Tây Đô">
                 <div class="social">
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-linkedin"></i></a>
@@ -889,7 +771,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
             <div class="team-member">
               <div class="member-img">
-                <img src="./assets/img/team/quanght.png" class="img-fluid" alt="Trưởng phòng sản xuất Thép Tây Đô">
+                <img src="assets/img/team/quanght.png" class="img-fluid" alt="Trưởng phòng sản xuất Thép Tây Đô">
                 <div class="social">
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-linkedin"></i></a>
@@ -906,7 +788,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
             <div class="team-member">
               <div class="member-img">
-                <img src="./assets/img/team/khaivv.png" class="img-fluid" alt="Giám đốc công nghệ Thép Tây Đô">
+                <img src="assets/img/team/khaivv.png" class="img-fluid" alt="Giám đốc công nghệ Thép Tây Đô">
                 <div class="social">
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-linkedin"></i></a>
@@ -923,7 +805,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
             <div class="team-member">
               <div class="member-img">
-                <img src="./assets/img/team/team-4.jpg" class="img-fluid" alt="Kế toán trưởng Thép Tây Đô">
+                <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="Kế toán trưởng Thép Tây Đô">
                 <div class="social">
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-linkedin"></i></a>
@@ -940,273 +822,6 @@
 
       </div>
 
-    </section>
-    <section class="section pt-0">
-      <div class="container">
-        <h2 class="section__title"><span>Sản phẩm</span></h2>
-        <div class="section__content">
-          <div class="product-2">
-            <div class="row g-3 g-lg-30">
-              <div class="col-lg-6">
-                <div class="img-slider">
-                  <div class="img-slider__prev"><i class="fal fa-angle-left"></i></div>
-                  <div class="img-slider__next"><i class="fal fa-angle-right"></i></div>
-                  <div class="img-slider__container swiper-container">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide bg-white">
-                        <div class="ratio ratio-16x9"><img
-                            src="http://shenglivn.com/uploads/san-pham/thep-cuon-tron-tron-7.jpg" alt="" /></div>
-                      </div>
-                      <div class="swiper-slide bg-white">
-                        <div class="ratio ratio-16x9"><img
-                            src="http://shenglivn.com/uploads/san-pham/thep-cuon-tron-tron-5.jpg" alt="" /></div>
-                      </div>
-                      <div class="swiper-slide bg-white">
-                        <div class="ratio ratio-16x9"><img
-                            src="http://shenglivn.com/uploads/san-pham/thep-cuon-tron-tron-3.jpg" alt="" /></div>
-                      </div>
-                      <div class="swiper-slide bg-white">
-                        <div class="ratio ratio-16x9"><img
-                            src="http://shenglivn.com/uploads/san-pham/thep-cuon-tron-tron-6.jpg" alt="" /></div>
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <h2 class="fs-20 fw-700 text-uppercase mb-3"><a
-                    href="http://shenglivn.com/thep-cuon-tron-tron-pr33430">THÉP CUỘN TRÒN TRƠN</a></h2>
-                <div class="product-2__info">
-                  <p style="text-align: justify;"><strong>Chủng loại</strong>:&nbsp;CB240T , HPB300, SAE 1018</p>
-
-                  <p style="text-align: justify;"><strong>Đặc điểm:</strong>&nbsp;Bề mặt b&oacute;ng, kh&ocirc;ng trầy
-                    xước , kh&ocirc;ng khuyết tật, kh&ocirc;ng bavia , kh&ocirc;ng nứt,...</p>
-
-                  <p style="text-align: justify;"><strong>Ti&ecirc;u chuẩn:</strong>&nbsp;TCVN (Việt nam), GB ( Trung
-                    quốc), ASTM (Mỹ)</p>
-
-                  <p style="text-align: justify;"><strong>Đường k&iacute;nh:</strong>&nbsp;6mm, 6.5mm, 8 mm, 10mm,
-                    12mm, 14mm</p>
-
-                  <div>
-                    <div style="text-align: justify;"><strong>Trọng lượng 1m:</strong></div>
-
-                    <div>
-                      <div style="text-align: justify; margin-left: 120px;">Ф6=0.222 kg</div>
-
-                      <div style="text-align: justify; margin-left: 120px;"><span
-                          style="text-align: justify;">Ф6.5=0.260kg</span></div>
-
-                      <div style="text-align: justify; margin-left: 120px;">Ф8=0.395 kg</div>
-
-                      <div style="text-align: justify; margin-left: 120px;">Ф10=0.617 kg</div>
-
-                      <div style="text-align: justify; margin-left: 120px;">Ф12=0.888 kg</div>
-
-                      <div style="text-align: justify; margin-left: 120px;"><span
-                          style="text-align: justify;">Ф14=1.21kg</span></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="d-flex flex-wrap mt-3">
-                  <a class="btn btn-primary fw-700 px-40 me-20" href="/contact" style="border-radius: 23px;">Liên
-                    hệ</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="product-2">
-            <div class="row g-3 g-lg-30">
-              <div class="col-lg-6">
-                <div class="img-slider">
-                  <div class="img-slider__prev"><i class="fal fa-angle-left"></i></div>
-                  <div class="img-slider__next"><i class="fal fa-angle-right"></i></div>
-                  <div class="img-slider__container swiper-container">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide bg-white">
-                        <div class="ratio ratio-16x9"><img
-                            src="http://shenglivn.com/uploads/san-pham/thep-cuon-van-8.jpg" alt="" /></div>
-                      </div>
-                      <div class="swiper-slide bg-white">
-                        <div class="ratio ratio-16x9"><img
-                            src="http://shenglivn.com/uploads/san-pham/thep-cuon-van-9.jpg" alt="" /></div>
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <h2 class="fs-20 fw-700 text-uppercase mb-3"><a href="http://shenglivn.com/thep-cuon-van-pr33429">THÉP
-                    CUỘN VẰN</a></h2>
-                <div class="product-2__info">
-                  <p style="text-align: justify;"><strong>Chủng loại:</strong>&nbsp;CB300V, HRB400</p>
-
-                  <p style="text-align: justify;"><strong>Đặc điểm:</strong>&nbsp;Bề mặt b&oacute;ng c&oacute; vằn ,
-                    kh&ocirc;ng trầy xước , kh&ocirc;ng khuyết tật, kh&ocirc;ng bavia , kh&ocirc;ng nứt, ...</p>
-
-                  <p style="text-align: justify;"><strong>Ti&ecirc;u chuẩn:&nbsp;</strong>TCVN (Việt nam), GB ( Trung
-                    quốc)</p>
-
-                  <p style="text-align: justify;"><strong>Đường k&iacute;nh:</strong>&nbsp;6mm, 8 mm, 10mm, 12mm, 14mm
-                  </p>
-
-                  <div>
-                    <div style="text-align: justify;"><strong>Trọng lượng 1m:</strong></div>
-
-                    <div>
-                      <div style="text-align: justify; margin-left: 120px;">Ф6=0.222 kg</div>
-
-                      <div style="text-align: justify; margin-left: 120px;">Ф8=0.395 kg</div>
-
-                      <div style="text-align: justify; margin-left: 120px;">Ф10=0.617 kg</div>
-
-                      <div style="text-align: justify; margin-left: 120px;">Ф12=0.888 kg</div>
-
-                      <div style="text-align: justify; margin-left: 120px;"><span
-                          style="text-align: justify;">Ф14=1.210kg</span></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="d-flex flex-wrap mt-3">
-                  <a class="btn btn-primary fw-700 px-40 me-20" href="/contact" style="border-radius: 23px;">Liên
-                    hệ</a>
-                  <a class="btn btn-outline-primary fw-700 px-40"
-                    href="http://shenglivn.com/uploads/demo/documents/sample-2.pdf" style="border-radius: 23px;"
-                    download>Tải tài liệu</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="product-2">
-            <div class="row g-3 g-lg-30">
-              <div class="col-lg-6">
-                <div class="img-slider">
-                  <div class="img-slider__prev"><i class="fal fa-angle-left"></i></div>
-                  <div class="img-slider__next"><i class="fal fa-angle-right"></i></div>
-                  <div class="img-slider__container swiper-container">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide bg-white">
-                        <div class="ratio ratio-16x9"><img src="http://shenglivn.com/uploads/san-pham/phoi-thep-4.jpg"
-                            alt="" /></div>
-                      </div>
-                      <div class="swiper-slide bg-white">
-                        <div class="ratio ratio-16x9"><img src="http://shenglivn.com/uploads/san-pham/phoi-thep-2.jpg"
-                            alt="" /></div>
-                      </div>
-                      <div class="swiper-slide bg-white">
-                        <div class="ratio ratio-16x9"><img src="http://shenglivn.com/uploads/san-pham/phoi-thep-1.jpg"
-                            alt="" /></div>
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <h2 class="fs-20 fw-700 text-uppercase mb-3"><a href="http://shenglivn.com/phoi-thep-pr33434">PHÔI
-                    THÉP</a></h2>
-                <div class="product-2__info">
-                  <p style="text-align: justify;"><strong>K&iacute;ch cỡ:&nbsp;</strong>130x130x6m, 130x130x12m,
-                    150x150x6m, 150x150x12m, 150x150x9m</p>
-
-                  <p style="text-align: justify;"><strong>Bề mặt:</strong>&nbsp;B&oacute;ng, kh&ocirc;ng rạn nứt,
-                    kh&ocirc;ng c&oacute; lỗ kh&iacute;</p>
-
-                  <p style="text-align: justify;"><strong>Ti&ecirc;u chuẩn:&nbsp;</strong>TCVN (Việt nam), GB ( Trung
-                    quốc), ASTM (Mỹ), BS ( Anh)</p>
-
-                  <p style="text-align: justify;"><strong>Tiết diện:</strong>&nbsp;Vu&ocirc;ng đều</p>
-
-                  <div>
-                    <div style="text-align: justify;"><strong>Ứng dụng:</strong>&nbsp;D&ugrave;ng để sản xuất
-                      c&aacute;c loại th&eacute;p c&aacute;n n&oacute;ng th&ocirc;ng dụng</div>
-                  </div>
-                </div>
-                <div class="d-flex flex-wrap mt-3">
-                  <a class="btn btn-primary fw-700 px-40 me-20" href="/contact" style="border-radius: 23px;">Liên
-                    hệ</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="product-2">
-            <div class="row g-3 g-lg-30">
-              <div class="col-lg-6">
-                <div class="img-slider">
-                  <div class="img-slider__prev"><i class="fal fa-angle-left"></i></div>
-                  <div class="img-slider__next"><i class="fal fa-angle-right"></i></div>
-                  <div class="img-slider__container swiper-container">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide bg-white">
-                        <div class="ratio ratio-16x9"><img
-                            src="http://shenglivn.com/uploads/san-pham/thep-thanh-van-7.jpg" alt="" /></div>
-                      </div>
-                      <div class="swiper-slide bg-white">
-                        <div class="ratio ratio-16x9"><img
-                            src="http://shenglivn.com/uploads/san-pham/thep-thanh-van-9.jpg" alt="" /></div>
-                      </div>
-                      <div class="swiper-slide bg-white">
-                        <div class="ratio ratio-16x9"><img
-                            src="http://shenglivn.com/uploads/san-pham/thep-thanh-van-8.jpg" alt="" /></div>
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <h2 class="fs-20 fw-700 text-uppercase mb-3"><a href="http://shenglivn.com/thep-thanh-van-pr33428">THÉP
-                    THANH VẰN</a></h2>
-                <div class="product-2__info">
-                  <p style="text-align: justify;"><strong>Chủng loại:</strong>&nbsp;CB300 ,CB400V, CB300V, Gr40,
-                    HRB400, 500B</p>
-
-                  <p style="text-align: justify;"><strong>Đặc điểm:&nbsp;</strong>Bề mặt b&oacute;ng c&oacute; vằn,
-                    kh&ocirc;ng trầy xước, kh&ocirc;ng khuyết tật, kh&ocirc;ng bavia , kh&ocirc;ng nứt, ...</p>
-
-                  <p style="text-align: justify;"><strong>Ti&ecirc;u chuẩn:</strong>&nbsp;TCVN (Việt nam), GB ( Trung
-                    quốc), ASTM (Mỹ), BS ( Anh)</p>
-
-                  <p style="text-align: justify;"><strong>Đường k&iacute;nh:</strong>&nbsp;10mm, 12mm, 14mm, 16mm,
-                    18mm, 20mm, 22mm, 25mm, 28mm, 32mm</p>
-
-                  <div>
-                    <div style="text-align: justify;"><strong>Trọng lượng 1m:</strong></div>
-
-                    <div>
-                      <div style="text-align: justify;">
-                        <div style="text-align: justify; margin-left: 80px;">D10 = 0.617kg&nbsp; &nbsp; &nbsp;<span
-                            style="text-align: justify;">D20 = 2.47kg</span></div>
-
-                        <div style="text-align: justify; margin-left: 80px;">D12 = 0.888kg&nbsp; &nbsp; &nbsp;<span
-                            style="text-align: justify;">D22 = 2.98kg</span></div>
-
-                        <div style="text-align: justify; margin-left: 80px;">D14 = 1.21kg&nbsp; &nbsp; &nbsp;
-                          &nbsp;<span style="text-align: justify;">D25 = 3.85kg</span></div>
-
-                        <div style="text-align: justify; margin-left: 80px;">D16 = 1.58kg&nbsp; &nbsp; &nbsp;
-                          &nbsp;<span style="text-align: justify;">D28 = 4.84kg</span></div>
-
-                        <div style="text-align: justify; margin-left: 80px;">D18 = 2.00kg&nbsp; &nbsp; &nbsp;
-                          &nbsp;<span style="text-align: justify;">D32 = 6.31kg</span></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="d-flex flex-wrap mt-3">
-                  <a class="btn btn-primary fw-700 px-40 me-20" href="/contact" style="border-radius: 23px;">Liên
-                    hệ</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <nav class="d-flex justify-content-center mt-30">
-          <ul class="pagination"></ul>
-        </nav>
-      </div>
     </section>
     <!-- /Team Section -->
 
@@ -1319,8 +934,7 @@
               <div class="faq-item faq-active">
                 <h3>Các sản phẩm thép của Thép Tây Đô có đạt tiêu chuẩn chất lượng quốc tế không?</h3>
                 <div class="faq-content">
-                  <p>Tất cả các sản phẩm thép của chúng tôi đều đạt tiêu chuẩn chất lượng quốc tế như ASTM, JIS, và
-                    EN,
+                  <p>Tất cả các sản phẩm thép của chúng tôi đều đạt tiêu chuẩn chất lượng quốc tế như ASTM, JIS, và EN,
                     đảm bảo độ bền và an toàn cho mọi công trình xây dựng.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
@@ -1330,8 +944,7 @@
               <div class="faq-item">
                 <h3>Thép Tây Đô có cung cấp dịch vụ gia công thép theo yêu cầu không?</h3>
                 <div class="faq-content">
-                  <p>Chúng tôi cung cấp dịch vụ gia công thép theo yêu cầu kỹ thuật của khách hàng, bao gồm cắt, uốn,
-                    và
+                  <p>Chúng tôi cung cấp dịch vụ gia công thép theo yêu cầu kỹ thuật của khách hàng, bao gồm cắt, uốn, và
                     mạ kẽm, đảm bảo đáp ứng đầy đủ các tiêu chuẩn và yêu cầu của từng dự án.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
@@ -1351,8 +964,7 @@
               <div class="faq-item">
                 <h3>Thép Tây Đô có hỗ trợ tư vấn cho các dự án lớn không?</h3>
                 <div class="faq-content">
-                  <p>Chúng tôi có đội ngũ kỹ thuật chuyên môn cao, sẵn sàng hỗ trợ tư vấn về sản phẩm thép và giải
-                    pháp
+                  <p>Chúng tôi có đội ngũ kỹ thuật chuyên môn cao, sẵn sàng hỗ trợ tư vấn về sản phẩm thép và giải pháp
                     phù hợp cho các dự án xây dựng lớn nhỏ trên toàn quốc.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
@@ -1362,8 +974,7 @@
               <div class="faq-item">
                 <h3>Thép Tây Đô có cung cấp dịch vụ bảo trì thép không?</h3>
                 <div class="faq-content">
-                  <p>Chúng tôi cung cấp dịch vụ bảo trì và kiểm định thép định kỳ, giúp khách hàng đảm bảo chất lượng
-                    và
+                  <p>Chúng tôi cung cấp dịch vụ bảo trì và kiểm định thép định kỳ, giúp khách hàng đảm bảo chất lượng và
                     tuổi thọ của các sản phẩm thép sau khi sử dụng.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
@@ -1505,13 +1116,9 @@
 
     <div class="container footer-top">
       <div class="row gy-4">
-        <div class="col-lg-3 col-md-6 footer-about">
+        <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="d-flex align-items-center">
-            <span class="sitename" style="font-weight: bold;
-            
-            margin-bottom: 15px;
-            
-        ">Thép Tây Đô</span>
+            <span class="sitename">Thép Tây Đô</span>
           </a>
           <div class="footer-contact pt-3">
             <p>123 Đường Công Nghiệp</p>
@@ -1521,46 +1128,26 @@
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-6 footer-about">
-          <a href="index.html" class="d-flex align-items-center">
-            <span class="sitename">VP Xưởng Liệu </span>
-          </a>
-          <div class="footer-contact pt-3">
-            <p> 27 Lê Hồng Phong, P. Trà An,</p>
-            <p>Quận Bình Thủy, TP. Cần Thơ</p>
-            <p class="mt-3"><strong>Điện thoại:</strong> <span>+84.796 65 65 65</span></p>
-            <p><strong>Email:</strong> <span>info@theptaydo.com</span></p>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 footer-about">
-          <a href="index.html" class="d-flex align-items-center">
-            <span class="sitename">VP đại diện tại Cần Thơ </span>
-          </a>
-          <div class="footer-contact pt-3">
-            <p> Số 44, CMT8, Phường Cái Khế,</p>
-            <p>Quận Ninh Kiều, TP. Cần Thơ</p>
-            <p class="mt-3"><strong>Điện thoại:</strong> <span>+84.796 65 65 65</span></p>
-            <p><strong>Email:</strong> <span>info@theptaydo.com</span></p>
-          </div>
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Liên kết hữu ích</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Trang Chủ</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Giới Thiệu</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Sản Phẩm</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Chính Sách</a></li>
+          </ul>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <strong>
-            <h4>Chính Sách Khách Hàng</h4>
-          </strong>
+          <h4>Dịch Vụ Của Chúng Tôi</h4>
           <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Hệ Thống Phân Phối</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Chính Sách Chung</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Chính Sách Chất Lượng</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Chính Sách Bán Hàng</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Cung Cấp Thép</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Gia Công Thép</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Tư Vấn Kỹ Thuật</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Vận Chuyển Thép</a></li>
           </ul>
         </div>
-        <div class="col-lg-4 col-md-12">
-          <p><b></b> Giấy chứng nhận đăng ký kinh doanh số: 1800156657</p>
-          <p><b>Ngày cấp:</b> 27/06/2008 - Nơi cấp: Sở KH & ĐT TP Cần Thơ</p>
-          <p><b>Tổng Giám Đốc:</b> Huỳnh Trung Quang</p>
-        </div>
+
         <div class="col-lg-4 col-md-12">
           <h4>Theo Dõi Chúng Tôi</h4>
           <p>Hãy kết nối với chúng tôi trên các kênh truyền thông xã hội để cập nhật thông tin mới nhất về thị trường
@@ -1600,18 +1187,22 @@
   </div>
 
   <!-- Vendor JS Files -->
-  <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="./assets/vendor/php-email-form/validate.js"></script>
-  <script src="./assets/vendor/aos/aos.js"></script>
-  <script src="./assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="./assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="./assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="./assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="./assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="./assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
   <!-- Main JS File -->
-  <script src="./assets/js/main.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+
 
 </body>
 
