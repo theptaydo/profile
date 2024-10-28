@@ -26,9 +26,24 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+
+  <link rel="stylesheet" href="http://shenglivn.com/themes/template/assets/css/libs.css" />
+  <link rel="stylesheet" href="http://shenglivn.com/themes/template/assets/vendor/fontawesome-pro/css/all.min.css" />
+  <link rel="stylesheet" href="http://shenglivn.com/themes/template/assets/css/app.css" />
+  <link rel="stylesheet" href="http://shenglivn.com/themes/template/assets/css/custom.css" />
+
+  <script src="http://shenglivn.com/themes/template/assets/js/libs.js" defer></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js" defer></script>
+  <script src="http://shenglivn.com/themes/template/assets/js/app.js" defer></script>
+  <script src="http://shenglivn.com/themes/template/assets/js/custom.js" defer></script>
+
+<link rel="stylesheet" href="assets\css\bootstrap.min.css">
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <!-- =======================================================
   * Template Name: BizLand
   * Template URL: https://bootstrapmade.com/bizland-bootstrap-business-template/
@@ -50,6 +65,173 @@
     .header .logo img {
       max-height: 70px;
     }
+
+    .contact {
+      position: relative;
+      z-index: 1;
+      /* background-color: #404096; */
+      border: 5px solid #ffffff;
+      color: #262020;
+    }
+    .modal_tab {
+        margin-bottom: 20px;
+    }
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+.modal_tab_img {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+.nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+}
+/* CSS cho phần portfolio */
+ 
+/* Định dạng cho phần Portfolio */
+#portfolio {
+  padding: 60px 0;
+  background-color: #f8f9fa;
+}
+
+ 
+
+#portfolio .description-title {
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* Bố cục cho các mục dự án */
+#portfolio .retro-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#portfolio .col-md-4 {
+  flex: 1 1 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+#portfolio .h-entry {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+#portfolio .h-entry:hover {
+  transform: scale(1.05);
+}
+
+#portfolio .h-entry .featured-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.8);
+  transition: filter 0.3s ease;
+}
+
+#portfolio .h-entry:hover .featured-img {
+  filter: brightness(0.6);
+}
+
+/* Gradient overlay */
+#portfolio .h-entry.gradient::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+ 
+  transition: background 0.3s ease;
+  z-index: 1;
+}
+
+/* Text styling */
+#portfolio .h-entry .text {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  padding: 50px;
+}
+
+#portfolio .h-entry .date {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 5px;
+}
+
+#portfolio .h-entry h2 {
+  font-size: 1.5rem;
+  color: #fff;
+  line-height: 1.2;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #portfolio .col-md-4 {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
+}
+
+
   </style>
 </head>
 
@@ -599,238 +781,417 @@
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">
-
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p><span>Check Our&nbsp;</span> <span class="description-title">Portfolio</span></p>
+        <h2>Dự Án</h2>
+        <p><span>Khám Phá Các</span> <span class="description-title">Dự án của Chúng Tôi</span></p>
       </div><!-- End Section Title -->
 
-      <div class="container">
+      
+        <div class="container">
+          <div class="row align-items-stretch retro-layout">
+            <div class="col-md-4">
+              <a href="" class="h-entry mb-30 v-height gradient">
+    
+                <div class="featured-img" style="background-image: url('assets/img/portfolio/cau-can-tho-su-dung-thep-tay-do.png');"></div>
+    
+                <div class="text">
+                  <span class="date">Apr. 14th, 2022</span>
+                  <h2>AI can now kill those annoying cookie pop-ups</h2>
+                </div>
+              </a>
+              <a href="single.html" class="h-entry v-height gradient">
+    
+                <div class="featured-img" style="background-image: url('assets/img/portfolio/da-khoa-tpct-su-dung-thep-tay-do.png');"></div>
+    
+                <div class="text">
+                  <span class="date">Apr. 14th, 2022</span>
+                  <h2>Don’t assume your user data in the cloud is safe</h2>
+                </div>
+              </a>    
+            </div>
+            <div class="col-md-4">
+              <a href="single.html" class="h-entry img-5 h-100 gradient">
+    
+                <div class="featured-img" style="background-image: url('assets/img/portfolio/da-khoa-trung-uong-ct-su-dung-thep-tay-do.png');"></div>
+    
+                <div class="text">
+                  <span class="date">Apr. 14th, 2022</span>
+                  <h2>Why is my internet so slow?</h2>
+                </div>
+              </a>
+            </div>  
+            <div class="col-md-4">
+              <a href="single.html" class="h-entry mb-30 v-height gradient">
+    
+                <div class="featured-img" style="background-image: url('assets/img/portfolio/dai-hoc-can-tho-su-dung-thep-tay-do.png');"></div>
+    
+                <div class="text">
+                  <span class="date">Apr. 14th, 2022</span>
+                  <h2>Startup vs corporate: What job suits you best?</h2>
+                </div>
+             
+            </div>
+          </div>
+        </div>
+      </section><!-- /Portfolio Section -->
 
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+      <!-- Team Section -->
+      <section id="team" class="team section light-background">
 
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-product">Card</li>
-            <li data-filter=".filter-branding">Web</li>
-          </ul><!-- End Portfolio Filters -->
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Đội Ngũ</h2>
+          <p><span>Những thành viên</span> <span class="description-title">chủ chốt của chúng tôi</span></p>
+        </div><!-- End Section Title -->
 
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+        <div class="container">
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="App 1"
-                  data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
+          <div class="row gy-4">
+
+            <!-- Thành viên 1 -->
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+              <div class="team-member">
+                <div class="member-img">
+                  <img src="assets/img/team/hungddt.png" class="img-fluid" alt="Giám đốc điều hành Thép Tây Đô">
+                  <div class="social">
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>Ông Đào Duy Tuấn Hùng</h4>
+                  <span>Phó Tổng Giám Đốc Quản lí chất lượng</span>
+                </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div><!-- End Team Member -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" title="Product 1"
-                  data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
-                    class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
+            <!-- Thành viên 2 -->
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+              <div class="team-member">
+                <div class="member-img">
+                  <img src="assets/img/team/quanght.png" class="img-fluid" alt="Trưởng phòng sản xuất Thép Tây Đô">
+                  <div class="social">
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>Ông Huỳnh Trung Quang</h4>
+                  <span>Tổng Giám Đốc kiêm CT.HĐTV</span>
+                </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div><!-- End Team Member -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="Branding 1"
-                  data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
-                    class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
+            <!-- Thành viên 3 -->
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+              <div class="team-member">
+                <div class="member-img">
+                  <img src="assets/img/team/khaivv.png" class="img-fluid" alt="Giám đốc công nghệ Thép Tây Đô">
+                  <div class="social">
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>Ông Võ Văn Khải</h4>
+                  <span>Phó Tổng Giám Đốc Kinh doanh</span>
+                </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div><!-- End Team Member -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" title="App 2"
-                  data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
+            <!-- Thành viên 4 -->
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+              <div class="team-member">
+                <div class="member-img">
+                  <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="Kế toán trưởng Thép Tây Đô">
+                  <div class="social">
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>Phạm Thị D</h4>
+                  <span>Kế toán trưởng</span>
+                </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div><!-- End Team Member -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" title="Product 2"
-                  data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
-                    class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" title="Branding 2"
-                  data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
-                    class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" title="App 3"
-                  data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" title="Product 3"
-                  data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
-                    class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" title="Branding 2"
-                  data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
-                    class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
+          </div>
 
         </div>
 
-      </div>
+      </section>
+      <section class="section pt-0">
+        <div class="container">
+          <h2 class="section__title"><span>Sản phẩm</span></h2>
+          <div class="section__content">
+            <div class="product-2">
+              <div class="row g-3 g-lg-30">
+                <div class="col-lg-6">
+                  <div class="img-slider">
+                    <div class="img-slider__prev"><i class="fal fa-angle-left"></i></div>
+                    <div class="img-slider__next"><i class="fal fa-angle-right"></i></div>
+                    <div class="img-slider__container swiper-container">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide bg-white">
+                          <div class="ratio ratio-16x9"><img
+                              src="http://shenglivn.com/uploads/san-pham/thep-cuon-tron-tron-7.jpg" alt="" /></div>
+                        </div>
+                        <div class="swiper-slide bg-white">
+                          <div class="ratio ratio-16x9"><img
+                              src="http://shenglivn.com/uploads/san-pham/thep-cuon-tron-tron-5.jpg" alt="" /></div>
+                        </div>
+                        <div class="swiper-slide bg-white">
+                          <div class="ratio ratio-16x9"><img
+                              src="http://shenglivn.com/uploads/san-pham/thep-cuon-tron-tron-3.jpg" alt="" /></div>
+                        </div>
+                        <div class="swiper-slide bg-white">
+                          <div class="ratio ratio-16x9"><img
+                              src="http://shenglivn.com/uploads/san-pham/thep-cuon-tron-tron-6.jpg" alt="" /></div>
+                        </div>
 
-    </section><!-- /Portfolio Section -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <h2 class="fs-20 fw-700 text-uppercase mb-3"><a
+                      href="http://shenglivn.com/thep-cuon-tron-tron-pr33430">THÉP CUỘN TRÒN TRƠN</a></h2>
+                  <div class="product-2__info">
+                    <p style="text-align: justify;"><strong>Chủng loại</strong>:&nbsp;CB240T , HPB300, SAE 1018</p>
 
-    <!-- Team Section -->
-    <section id="team" class="team section light-background">
+                    <p style="text-align: justify;"><strong>Đặc điểm:</strong>&nbsp;Bề mặt b&oacute;ng, kh&ocirc;ng trầy
+                      xước , kh&ocirc;ng khuyết tật, kh&ocirc;ng bavia , kh&ocirc;ng nứt,...</p>
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Đội Ngũ</h2>
-        <p><span>Những thành viên</span> <span class="description-title">chủ chốt của chúng tôi</span></p>
-      </div><!-- End Section Title -->
+                    <p style="text-align: justify;"><strong>Ti&ecirc;u chuẩn:</strong>&nbsp;TCVN (Việt nam), GB ( Trung
+                      quốc), ASTM (Mỹ)</p>
 
-      <div class="container">
+                    <p style="text-align: justify;"><strong>Đường k&iacute;nh:</strong>&nbsp;6mm, 6.5mm, 8 mm, 10mm,
+                      12mm, 14mm</p>
 
-        <div class="row gy-4">
+                    <div>
+                      <div style="text-align: justify;"><strong>Trọng lượng 1m:</strong></div>
 
-          <!-- Thành viên 1 -->
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-            <div class="team-member">
-              <div class="member-img">
-                <img src="assets/img/team/hungddt.png" class="img-fluid" alt="Giám đốc điều hành Thép Tây Đô">
-                <div class="social">
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                      <div>
+                        <div style="text-align: justify; margin-left: 120px;">Ф6=0.222 kg</div>
+
+                        <div style="text-align: justify; margin-left: 120px;"><span
+                            style="text-align: justify;">Ф6.5=0.260kg</span></div>
+
+                        <div style="text-align: justify; margin-left: 120px;">Ф8=0.395 kg</div>
+
+                        <div style="text-align: justify; margin-left: 120px;">Ф10=0.617 kg</div>
+
+                        <div style="text-align: justify; margin-left: 120px;">Ф12=0.888 kg</div>
+
+                        <div style="text-align: justify; margin-left: 120px;"><span
+                            style="text-align: justify;">Ф14=1.21kg</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-wrap mt-3">
+                    <a class="btn btn-primary fw-700 px-40 me-20" href="/contact" style="border-radius: 23px;">Liên
+                      hệ</a>
+                  </div>
                 </div>
               </div>
-              <div class="member-info">
-                <h4>Ông Đào Duy Tuấn Hùng</h4>
-                <span>Phó Tổng Giám Đốc Quản lí chất lượng</span>
-              </div>
             </div>
-          </div><!-- End Team Member -->
+            <div class="product-2">
+              <div class="row g-3 g-lg-30">
+                <div class="col-lg-6">
+                  <div class="img-slider">
+                    <div class="img-slider__prev"><i class="fal fa-angle-left"></i></div>
+                    <div class="img-slider__next"><i class="fal fa-angle-right"></i></div>
+                    <div class="img-slider__container swiper-container">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide bg-white">
+                          <div class="ratio ratio-16x9"><img
+                              src="http://shenglivn.com/uploads/san-pham/thep-cuon-van-8.jpg" alt="" /></div>
+                        </div>
+                        <div class="swiper-slide bg-white">
+                          <div class="ratio ratio-16x9"><img
+                              src="http://shenglivn.com/uploads/san-pham/thep-cuon-van-9.jpg" alt="" /></div>
+                        </div>
 
-          <!-- Thành viên 2 -->
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-            <div class="team-member">
-              <div class="member-img">
-                <img src="assets/img/team/quanght.png" class="img-fluid" alt="Trưởng phòng sản xuất Thép Tây Đô">
-                <div class="social">
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <h2 class="fs-20 fw-700 text-uppercase mb-3"><a href="http://shenglivn.com/thep-cuon-van-pr33429">THÉP
+                      CUỘN VẰN</a></h2>
+                  <div class="product-2__info">
+                    <p style="text-align: justify;"><strong>Chủng loại:</strong>&nbsp;CB300V, HRB400</p>
+
+                    <p style="text-align: justify;"><strong>Đặc điểm:</strong>&nbsp;Bề mặt b&oacute;ng c&oacute; vằn ,
+                      kh&ocirc;ng trầy xước , kh&ocirc;ng khuyết tật, kh&ocirc;ng bavia , kh&ocirc;ng nứt, ...</p>
+
+                    <p style="text-align: justify;"><strong>Ti&ecirc;u chuẩn:&nbsp;</strong>TCVN (Việt nam), GB ( Trung
+                      quốc)</p>
+
+                    <p style="text-align: justify;"><strong>Đường k&iacute;nh:</strong>&nbsp;6mm, 8 mm, 10mm, 12mm, 14mm
+                    </p>
+
+                    <div>
+                      <div style="text-align: justify;"><strong>Trọng lượng 1m:</strong></div>
+
+                      <div>
+                        <div style="text-align: justify; margin-left: 120px;">Ф6=0.222 kg</div>
+
+                        <div style="text-align: justify; margin-left: 120px;">Ф8=0.395 kg</div>
+
+                        <div style="text-align: justify; margin-left: 120px;">Ф10=0.617 kg</div>
+
+                        <div style="text-align: justify; margin-left: 120px;">Ф12=0.888 kg</div>
+
+                        <div style="text-align: justify; margin-left: 120px;"><span
+                            style="text-align: justify;">Ф14=1.210kg</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-wrap mt-3">
+                    <a class="btn btn-primary fw-700 px-40 me-20" href="/contact" style="border-radius: 23px;">Liên
+                      hệ</a>
+                    <a class="btn btn-outline-primary fw-700 px-40"
+                      href="http://shenglivn.com/uploads/demo/documents/sample-2.pdf" style="border-radius: 23px;"
+                      download>Tải tài liệu</a>
+                  </div>
                 </div>
               </div>
-              <div class="member-info">
-                <h4>Ông Huỳnh Trung Quang</h4>
-                <span>Tổng Giám Đốc kiêm CT.HĐTV</span>
-              </div>
             </div>
-          </div><!-- End Team Member -->
+            <div class="product-2">
+              <div class="row g-3 g-lg-30">
+                <div class="col-lg-6">
+                  <div class="img-slider">
+                    <div class="img-slider__prev"><i class="fal fa-angle-left"></i></div>
+                    <div class="img-slider__next"><i class="fal fa-angle-right"></i></div>
+                    <div class="img-slider__container swiper-container">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide bg-white">
+                          <div class="ratio ratio-16x9"><img src="http://shenglivn.com/uploads/san-pham/phoi-thep-4.jpg"
+                              alt="" /></div>
+                        </div>
+                        <div class="swiper-slide bg-white">
+                          <div class="ratio ratio-16x9"><img src="http://shenglivn.com/uploads/san-pham/phoi-thep-2.jpg"
+                              alt="" /></div>
+                        </div>
+                        <div class="swiper-slide bg-white">
+                          <div class="ratio ratio-16x9"><img src="http://shenglivn.com/uploads/san-pham/phoi-thep-1.jpg"
+                              alt="" /></div>
+                        </div>
 
-          <!-- Thành viên 3 -->
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
-            <div class="team-member">
-              <div class="member-img">
-                <img src="assets/img/team/khaivv.png" class="img-fluid" alt="Giám đốc công nghệ Thép Tây Đô">
-                <div class="social">
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <h2 class="fs-20 fw-700 text-uppercase mb-3"><a href="http://shenglivn.com/phoi-thep-pr33434">PHÔI
+                      THÉP</a></h2>
+                  <div class="product-2__info">
+                    <p style="text-align: justify;"><strong>K&iacute;ch cỡ:&nbsp;</strong>130x130x6m, 130x130x12m,
+                      150x150x6m, 150x150x12m, 150x150x9m</p>
+
+                    <p style="text-align: justify;"><strong>Bề mặt:</strong>&nbsp;B&oacute;ng, kh&ocirc;ng rạn nứt,
+                      kh&ocirc;ng c&oacute; lỗ kh&iacute;</p>
+
+                    <p style="text-align: justify;"><strong>Ti&ecirc;u chuẩn:&nbsp;</strong>TCVN (Việt nam), GB ( Trung
+                      quốc), ASTM (Mỹ), BS ( Anh)</p>
+
+                    <p style="text-align: justify;"><strong>Tiết diện:</strong>&nbsp;Vu&ocirc;ng đều</p>
+
+                    <div>
+                      <div style="text-align: justify;"><strong>Ứng dụng:</strong>&nbsp;D&ugrave;ng để sản xuất
+                        c&aacute;c loại th&eacute;p c&aacute;n n&oacute;ng th&ocirc;ng dụng</div>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-wrap mt-3">
+                    <a class="btn btn-primary fw-700 px-40 me-20" href="/contact" style="border-radius: 23px;">Liên
+                      hệ</a>
+                  </div>
                 </div>
               </div>
-              <div class="member-info">
-                <h4>Ông Võ Văn Khải</h4>
-                <span>Phó Tổng Giám Đốc Kinh doanh</span>
-              </div>
             </div>
-          </div><!-- End Team Member -->
+            <div class="product-2">
+              <div class="row g-3 g-lg-30">
+                <div class="col-lg-6">
+                  <div class="img-slider">
+                    <div class="img-slider__prev"><i class="fal fa-angle-left"></i></div>
+                    <div class="img-slider__next"><i class="fal fa-angle-right"></i></div>
+                    <div class="img-slider__container swiper-container">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide bg-white">
+                          <div class="ratio ratio-16x9"><img
+                              src="http://shenglivn.com/uploads/san-pham/thep-thanh-van-7.jpg" alt="" /></div>
+                        </div>
+                        <div class="swiper-slide bg-white">
+                          <div class="ratio ratio-16x9"><img
+                              src="http://shenglivn.com/uploads/san-pham/thep-thanh-van-9.jpg" alt="" /></div>
+                        </div>
+                        <div class="swiper-slide bg-white">
+                          <div class="ratio ratio-16x9"><img
+                              src="http://shenglivn.com/uploads/san-pham/thep-thanh-van-8.jpg" alt="" /></div>
+                        </div>
 
-          <!-- Thành viên 4 -->
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
-            <div class="team-member">
-              <div class="member-img">
-                <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="Kế toán trưởng Thép Tây Đô">
-                <div class="social">
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <h2 class="fs-20 fw-700 text-uppercase mb-3"><a
+                      href="http://shenglivn.com/thep-thanh-van-pr33428">THÉP THANH VẰN</a></h2>
+                  <div class="product-2__info">
+                    <p style="text-align: justify;"><strong>Chủng loại:</strong>&nbsp;CB300 ,CB400V, CB300V, Gr40,
+                      HRB400, 500B</p>
+
+                    <p style="text-align: justify;"><strong>Đặc điểm:&nbsp;</strong>Bề mặt b&oacute;ng c&oacute; vằn,
+                      kh&ocirc;ng trầy xước, kh&ocirc;ng khuyết tật, kh&ocirc;ng bavia , kh&ocirc;ng nứt, ...</p>
+
+                    <p style="text-align: justify;"><strong>Ti&ecirc;u chuẩn:</strong>&nbsp;TCVN (Việt nam), GB ( Trung
+                      quốc), ASTM (Mỹ), BS ( Anh)</p>
+
+                    <p style="text-align: justify;"><strong>Đường k&iacute;nh:</strong>&nbsp;10mm, 12mm, 14mm, 16mm,
+                      18mm, 20mm, 22mm, 25mm, 28mm, 32mm</p>
+
+                    <div>
+                      <div style="text-align: justify;"><strong>Trọng lượng 1m:</strong></div>
+
+                      <div>
+                        <div style="text-align: justify;">
+                          <div style="text-align: justify; margin-left: 80px;">D10 = 0.617kg&nbsp; &nbsp; &nbsp;<span
+                              style="text-align: justify;">D20 = 2.47kg</span></div>
+
+                          <div style="text-align: justify; margin-left: 80px;">D12 = 0.888kg&nbsp; &nbsp; &nbsp;<span
+                              style="text-align: justify;">D22 = 2.98kg</span></div>
+
+                          <div style="text-align: justify; margin-left: 80px;">D14 = 1.21kg&nbsp; &nbsp; &nbsp;
+                            &nbsp;<span style="text-align: justify;">D25 = 3.85kg</span></div>
+
+                          <div style="text-align: justify; margin-left: 80px;">D16 = 1.58kg&nbsp; &nbsp; &nbsp;
+                            &nbsp;<span style="text-align: justify;">D28 = 4.84kg</span></div>
+
+                          <div style="text-align: justify; margin-left: 80px;">D18 = 2.00kg&nbsp; &nbsp; &nbsp;
+                            &nbsp;<span style="text-align: justify;">D32 = 6.31kg</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-wrap mt-3">
+                    <a class="btn btn-primary fw-700 px-40 me-20" href="/contact" style="border-radius: 23px;">Liên
+                      hệ</a>
+                  </div>
                 </div>
               </div>
-              <div class="member-info">
-                <h4>Phạm Thị D</h4>
-                <span>Kế toán trưởng</span>
-              </div>
             </div>
-          </div><!-- End Team Member -->
-
+          </div>
+          <nav class="d-flex justify-content-center mt-30">
+            <ul class="pagination"></ul>
+          </nav>
         </div>
+      </section>
+      <!-- /Team Section -->
 
-      </div>
-
-    </section>
-    <!-- /Team Section -->
-
-    <!-- Pricing Section -->
-    <!-- <section id="pricing" class="pricing section">
+      <!-- Pricing Section -->
+      <!-- <section id="pricing" class="pricing section">
 
       <div class="container section-title" data-aos="fade-up">
         <h2>Pricing</h2>
@@ -915,185 +1276,189 @@
       </div>
 
     </section> -->
-    <!-- /Pricing Section -->
+      <!-- /Pricing Section -->
 
-    <!-- Faq Section -->
-    <section id="faq" class="faq section light-background">
+      <!-- Faq Section -->
+      <section id="faq" class="faq section light-background">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Câu hỏi thường gặp</h2>
-        <p><span>Những câu hỏi thường gặp về</span> <span class="description-title">Thép Tây Đô</span></p>
-      </div><!-- End Section Title -->
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Câu hỏi thường gặp</h2>
+          <p><span>Những câu hỏi thường gặp về</span> <span class="description-title">Thép Tây Đô</span></p>
+        </div><!-- End Section Title -->
 
-      <div class="container">
+        <div class="container">
 
-        <div class="row justify-content-center">
+          <div class="row justify-content-center">
 
-          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
 
-            <div class="faq-container">
+              <div class="faq-container">
 
-              <!-- Câu hỏi 1 -->
-              <div class="faq-item faq-active">
-                <h3>Các sản phẩm thép của Thép Tây Đô có đạt tiêu chuẩn chất lượng quốc tế không?</h3>
-                <div class="faq-content">
-                  <p>Tất cả các sản phẩm thép của chúng tôi đều đạt tiêu chuẩn chất lượng quốc tế như ASTM, JIS, và EN,
-                    đảm bảo độ bền và an toàn cho mọi công trình xây dựng.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
+                <!-- Câu hỏi 1 -->
+                <div class="faq-item faq-active">
+                  <h3>Các sản phẩm thép của Thép Tây Đô có đạt tiêu chuẩn chất lượng quốc tế không?</h3>
+                  <div class="faq-content">
+                    <p>Tất cả các sản phẩm thép của chúng tôi đều đạt tiêu chuẩn chất lượng quốc tế như ASTM, JIS, và
+                      EN,
+                      đảm bảo độ bền và an toàn cho mọi công trình xây dựng.</p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div><!-- End Faq item-->
 
-              <!-- Câu hỏi 2 -->
-              <div class="faq-item">
-                <h3>Thép Tây Đô có cung cấp dịch vụ gia công thép theo yêu cầu không?</h3>
-                <div class="faq-content">
-                  <p>Chúng tôi cung cấp dịch vụ gia công thép theo yêu cầu kỹ thuật của khách hàng, bao gồm cắt, uốn, và
-                    mạ kẽm, đảm bảo đáp ứng đầy đủ các tiêu chuẩn và yêu cầu của từng dự án.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
+                <!-- Câu hỏi 2 -->
+                <div class="faq-item">
+                  <h3>Thép Tây Đô có cung cấp dịch vụ gia công thép theo yêu cầu không?</h3>
+                  <div class="faq-content">
+                    <p>Chúng tôi cung cấp dịch vụ gia công thép theo yêu cầu kỹ thuật của khách hàng, bao gồm cắt, uốn,
+                      và
+                      mạ kẽm, đảm bảo đáp ứng đầy đủ các tiêu chuẩn và yêu cầu của từng dự án.</p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div><!-- End Faq item-->
 
-              <!-- Câu hỏi 3 -->
-              <div class="faq-item">
-                <h3>Thời gian giao hàng của Thép Tây Đô là bao lâu?</h3>
-                <div class="faq-content">
-                  <p>Thời gian giao hàng thông thường là từ 3-5 ngày làm việc tùy thuộc vào địa điểm và khối lượng đặt
-                    hàng. Chúng tôi cũng cung cấp dịch vụ vận chuyển nhanh theo yêu cầu của khách hàng.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
+                <!-- Câu hỏi 3 -->
+                <div class="faq-item">
+                  <h3>Thời gian giao hàng của Thép Tây Đô là bao lâu?</h3>
+                  <div class="faq-content">
+                    <p>Thời gian giao hàng thông thường là từ 3-5 ngày làm việc tùy thuộc vào địa điểm và khối lượng đặt
+                      hàng. Chúng tôi cũng cung cấp dịch vụ vận chuyển nhanh theo yêu cầu của khách hàng.</p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div><!-- End Faq item-->
 
-              <!-- Câu hỏi 4 -->
-              <div class="faq-item">
-                <h3>Thép Tây Đô có hỗ trợ tư vấn cho các dự án lớn không?</h3>
-                <div class="faq-content">
-                  <p>Chúng tôi có đội ngũ kỹ thuật chuyên môn cao, sẵn sàng hỗ trợ tư vấn về sản phẩm thép và giải pháp
-                    phù hợp cho các dự án xây dựng lớn nhỏ trên toàn quốc.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
+                <!-- Câu hỏi 4 -->
+                <div class="faq-item">
+                  <h3>Thép Tây Đô có hỗ trợ tư vấn cho các dự án lớn không?</h3>
+                  <div class="faq-content">
+                    <p>Chúng tôi có đội ngũ kỹ thuật chuyên môn cao, sẵn sàng hỗ trợ tư vấn về sản phẩm thép và giải
+                      pháp
+                      phù hợp cho các dự án xây dựng lớn nhỏ trên toàn quốc.</p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div><!-- End Faq item-->
 
-              <!-- Câu hỏi 5 -->
-              <div class="faq-item">
-                <h3>Thép Tây Đô có cung cấp dịch vụ bảo trì thép không?</h3>
-                <div class="faq-content">
-                  <p>Chúng tôi cung cấp dịch vụ bảo trì và kiểm định thép định kỳ, giúp khách hàng đảm bảo chất lượng và
-                    tuổi thọ của các sản phẩm thép sau khi sử dụng.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
+                <!-- Câu hỏi 5 -->
+                <div class="faq-item">
+                  <h3>Thép Tây Đô có cung cấp dịch vụ bảo trì thép không?</h3>
+                  <div class="faq-content">
+                    <p>Chúng tôi cung cấp dịch vụ bảo trì và kiểm định thép định kỳ, giúp khách hàng đảm bảo chất lượng
+                      và
+                      tuổi thọ của các sản phẩm thép sau khi sử dụng.</p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div><!-- End Faq item-->
 
-              <!-- Câu hỏi 6 -->
-              <div class="faq-item">
-                <h3>Thép Tây Đô có cung cấp thép cho các công trình quốc tế không?</h3>
-                <div class="faq-content">
-                  <p>Chúng tôi không chỉ cung cấp thép cho thị trường trong nước mà còn xuất khẩu sang các quốc gia
-                    khác, đảm bảo đáp ứng các tiêu chuẩn quốc tế khắt khe nhất.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-            </div>
-
-          </div><!-- End Faq Column-->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Faq Section -->
-
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Liên hệ</h2>
-        <p><span>Liên hệ với</span> <span class="description-title">Chúng tôi</span></p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-5">
-
-            <div class="info-wrap">
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-                <i class="bi bi-geo-alt flex-shrink-0"></i>
-                <div>
-                  <h3>Địa chỉ</h3>
-                  <p>Lô đất số 45, đường số 2, KCN Trà Nóc 1, P. Trà Nóc, Q. Bình Thủy, TP Cần Thơ Hotline: (+84)
-                    2923.841822</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-                <i class="bi bi-telephone flex-shrink-0"></i>
-                <div>
-                  <h3>Điện thoại</h3>
-                  <p>+1 5589 55488 55</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-                <i class="bi bi-envelope flex-shrink-0"></i>
-                <div>
-                  <h3>Email</h3>
-                  <p>info@example.com</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus"
-                frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-          </div>
-
-          <div class="col-lg-7">
-            <form action="" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-              <div class="row gy-4">
-
-                <div class="col-md-6">
-                  <label for="name-field" class="pb-2">Tên của bạn</label>
-                  <input type="text" name="name" id="name-field" class="form-control" required="">
-                </div>
-
-                <div class="col-md-6">
-                  <label for="email-field" class="pb-2">Email</label>
-                  <input type="email" class="form-control" name="email" id="email-field" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <label for="subject-field" class="pb-2">Tiêu đề</label>
-                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <label for="message-field" class="pb-2">Tin nhắn</label>
-                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Đang tải</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Đã gửi tin nhắn của bạn. Thank you!</div>
-
-                  <button type="submit">Gửi tin nhắn</button>
-                </div>
+                <!-- Câu hỏi 6 -->
+                <div class="faq-item">
+                  <h3>Thép Tây Đô có cung cấp thép cho các công trình quốc tế không?</h3>
+                  <div class="faq-content">
+                    <p>Chúng tôi không chỉ cung cấp thép cho thị trường trong nước mà còn xuất khẩu sang các quốc gia
+                      khác, đảm bảo đáp ứng các tiêu chuẩn quốc tế khắt khe nhất.</p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div><!-- End Faq item-->
 
               </div>
-            </form>
-          </div><!-- End Contact Form -->
+
+            </div><!-- End Faq Column-->
+
+          </div>
 
         </div>
 
-      </div>
+      </section><!-- /Faq Section -->
 
-    </section><!-- /Contact Section -->
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact section">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Liên hệ</h2>
+          <p><span>Liên hệ với</span> <span class="description-title">Chúng tôi</span></p>
+        </div><!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="row gy-4">
+
+            <div class="col-lg-5">
+
+              <div class="info-wrap">
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                  <i class="bi bi-geo-alt flex-shrink-0"></i>
+                  <div>
+                    <h3>Địa chỉ</h3>
+                    <p>Lô đất số 45, đường số 2, KCN Trà Nóc 1, P. Trà Nóc, Q. Bình Thủy, TP Cần Thơ Hotline: (+84)
+                      2923.841822</p>
+                  </div>
+                </div><!-- End Info Item -->
+
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                  <i class="bi bi-telephone flex-shrink-0"></i>
+                  <div>
+                    <h3>Điện thoại</h3>
+                    <p>+1 5589 55488 55</p>
+                  </div>
+                </div><!-- End Info Item -->
+
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                  <i class="bi bi-envelope flex-shrink-0"></i>
+                  <div>
+                    <h3>Email</h3>
+                    <p>info@example.com</p>
+                  </div>
+                </div><!-- End Info Item -->
+
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus"
+                  frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+
+            <div class="col-lg-7">
+              <form action="" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+                <div class="row gy-4">
+
+                  <div class="col-md-6">
+                    <label for="name-field" class="pb-2">Tên của bạn</label>
+                    <input type="text" name="name" id="name-field" class="form-control" required="">
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="email-field" class="pb-2">Email</label>
+                    <input type="email" class="form-control" name="email" id="email-field" required="">
+                  </div>
+
+                  <div class="col-md-12">
+                    <label for="subject-field" class="pb-2">Tiêu đề</label>
+                    <input type="text" class="form-control" name="subject" id="subject-field" required="">
+                  </div>
+
+                  <div class="col-md-12">
+                    <label for="message-field" class="pb-2">Tin nhắn</label>
+                    <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+                  </div>
+
+                  <div class="col-md-12 text-center">
+                    <div class="loading">Đang tải</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Đã gửi tin nhắn của bạn. Thank you!</div>
+
+                    <button type="submit">Gửi tin nhắn</button>
+                  </div>
+
+                </div>
+              </form>
+            </div><!-- End Contact Form -->
+
+          </div>
+
+        </div>
+
+      </section><!-- /Contact Section -->
 
   </main>
 
@@ -1120,9 +1485,13 @@
 
     <div class="container footer-top">
       <div class="row gy-4">
-        <div class="col-lg-4 col-md-6 footer-about">
+        <div class="col-lg-3 col-md-6 footer-about">
           <a href="index.html" class="d-flex align-items-center">
-            <span class="sitename">Thép Tây Đô</span>
+            <span class="sitename" style="font-weight: bold;
+            
+            margin-bottom: 15px;
+            
+        ">Thép Tây Đô</span>
           </a>
           <div class="footer-contact pt-3">
             <p>123 Đường Công Nghiệp</p>
@@ -1132,26 +1501,44 @@
           </div>
         </div>
 
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Liên kết hữu ích</h4>
-          <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Trang Chủ</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Giới Thiệu</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Sản Phẩm</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Chính Sách</a></li>
-          </ul>
+        <div class="col-lg-3 col-md-6 footer-about">
+          <a href="index.html" class="d-flex align-items-center">
+            <span class="sitename">VP Xưởng Liệu  </span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p> 27 Lê Hồng Phong, P. Trà An,</p>
+            <p>Quận Bình Thủy, TP. Cần Thơ</p>
+            <p class="mt-3"><strong>Điện thoại:</strong> <span>+84.796 65 65 65</span></p>
+            <p><strong>Email:</strong> <span>info@theptaydo.com</span></p>
+          </div>
         </div>
 
+        <div class="col-lg-3 col-md-6 footer-about">
+          <a href="index.html" class="d-flex align-items-center">
+            <span class="sitename">VP đại diện tại Cần Thơ </span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p> Số 44, CMT8, Phường Cái Khế,</p>
+            <p>Quận Ninh Kiều, TP. Cần Thơ</p>
+            <p class="mt-3"><strong>Điện thoại:</strong> <span>+84.796 65 65 65</span></p>
+            <p><strong>Email:</strong> <span>info@theptaydo.com</span></p>
+          </div>
+        </div>
+        
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Dịch Vụ Của Chúng Tôi</h4>
+         <strong> <h4>Chính Sách Khách Hàng</h4></strong>
           <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Cung Cấp Thép</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Gia Công Thép</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Tư Vấn Kỹ Thuật</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Vận Chuyển Thép</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Hệ Thống Phân Phối</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Chính Sách Chung</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Chính Sách Chất Lượng</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Chính Sách Bán Hàng</a></li>
           </ul>
         </div>
-
+        <div class="col-lg-4 col-md-12">
+          <p><b></b> Giấy chứng nhận đăng ký kinh doanh số: 1800156657</p>
+          <p><b>Ngày cấp:</b> 27/06/2008 - Nơi cấp: Sở KH & ĐT TP Cần Thơ</p>
+          <p><b>Tổng Giám Đốc:</b> Huỳnh Trung Quang</p>
+      </div>
         <div class="col-lg-4 col-md-12">
           <h4>Theo Dõi Chúng Tôi</h4>
           <p>Hãy kết nối với chúng tôi trên các kênh truyền thông xã hội để cập nhật thông tin mới nhất về thị trường
