@@ -51,22 +51,4 @@
   font-weight: 400;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-family: Arial, sans-serif;
-  font-size: 12px; /* Smaller font size */
-}
-th, td {
-  border: 1px solid #ccc;
-  padding: 4px; /* Reduced padding */
-  text-align: center;
-}
-th {
-  background-color: #d5e8d4;
-  font-weight: bold;
-}
-.section-header {
-  background-color: #f9f9f9;
-  font-weight: bold;
-}
+ 
