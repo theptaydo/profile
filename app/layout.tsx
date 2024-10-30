@@ -1,6 +1,7 @@
 'use client'
 
-import { useEffect } from 'react';
+import { usePathname } from 'next/navigation';
+import { useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
@@ -9,17 +10,30 @@ import Head from 'next/head';
 import Header from '@/app/header/page';
 import Footer from '@/app/footer/page';
 import '@/styles/main.css';
+// import { useLocale } from 'next-intl';
+// import useTrans from './pages/useTrans';
 
 import Script from 'next/script';
+import { useSearchParams } from 'next/navigation';
 
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  // const pathname = usePathname();
+  // const locale = pathname?.split('/')[1] || 'vi';
+
+  // const searchParams = useSearchParams();
+  // const lang = searchParams.get('lang') || 'vi';
+  const [lang, setLang] = useState('vi'); // Mặc định là 'vi'
   useEffect(() => {
     // Import JavaScript của Bootstrap
     require('bootstrap/dist/js/bootstrap.bundle.min.js');
+    const storedLang = localStorage.getItem('lang');
+    if (storedLang) {
+      setLang(storedLang);
+    }
   }, []);
   return (
-    <html lang="en">
+    <html lang={lang}>
       <Head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -47,9 +61,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </Head>
       <body>
         <Header />
+
         <main className="main">
           {children}
         </main>
+
         <Footer />
       </body>
 

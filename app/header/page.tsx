@@ -3,14 +3,18 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import '@/styles/main.css';
+import useTrans from '../pages/useTrans';
+import { usePathname } from 'next/navigation';
 
 export default function Header() {
-  const [searchValue, setSearchValue] = useState<string>('');
+  const pathname = usePathname();
+  const newLocale = pathname.startsWith('/en') ? '/vi' : '/en';
 
-  const searchAllPage = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setSearchValue(e.target.value); // Cập nhật state khi input thay đổi
+  const trans = useTrans();
+  const setLanguage = (lang: string) => {
+    localStorage.setItem('lang', lang);
+    window.location.reload();
   };
-
   return (
     <div>
       <header id="header" className="header sticky-top">
@@ -45,7 +49,7 @@ export default function Header() {
 
             <nav id="navmenu" className="navmenu">
               <ul>
-                <li><a href="#hero" className="active">Trang chủ</a></li>
+                <li><a href="#hero" className="active">{trans.HomePage.home}</a></li>
                 <li><a href="#about">Giới thiệu</a></li>
                 <li><a href="#services">Dịch vụ</a></li>
                 <li><a href="#portfolio">Hồ sơ</a></li>
@@ -71,8 +75,15 @@ export default function Header() {
                 </li>
                 <li><a href="#contact">Liên hệ</a></li>
                 <li className="dropdown">
+                  {/* <Link href="/">
+                    TV
+                  </Link> */}
+
+
                   <a href="#">
-                    <span><img className="flag" src="/img/langs/Flag_of_Vietnam.svg.png" alt="Vietnam Flag" />Tiếng Việt</span>
+                    <span>
+                      <img className="flag" src="/img/langs/Flag_of_Vietnam.svg.png" alt="Vietnam Flag" />Tiếng Việt
+                    </span>
                     <i className="bi bi-chevron-down toggle-dropdown"></i>
                   </a>
                   <ul>
@@ -80,7 +91,7 @@ export default function Header() {
                       <img className="flag" src="/img/langs/Flag_of_Cambodia.svg.png" alt="Cambodia Flag" />
                       Cambodia
                     </a></li>
-                    <li><a href="#" className="langs">
+                    <li><a onClick={() => setLanguage('en')} className="langs">
                       <img className="flag" src="/img/langs/Flag_of_the_United_Kingdom.png" alt="UK Flag" />
                       English
                     </a></li>

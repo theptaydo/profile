@@ -1,9 +1,11 @@
+const { i18n } = require('./i18n');
+
 const nextConfig = {
-  // reactStrictMode: true, // Cấu hình này nên nằm ở cấp cao nhất, ngoài hàm webpack
   webpack: (config) => {
-    // config.cache = false; // Tắt cache của Webpack
+    // config.cache = false; // Tắt cache của Webpack nếu cần
     return config;
   },
+  // i18n
 };
 
-module.exports = nextConfig;
+module.exports = (nextConfig);
