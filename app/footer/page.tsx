@@ -2,6 +2,8 @@
 
 import '@/styles/main.css';
 import Head from 'next/head';
+import Script from 'next/script';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 // import 'bootstrap/dist/css/bootstrap.min.css';
@@ -150,6 +152,9 @@ export default function Footer() {
         <div></div>
         <div></div>
       </div> */}
+
+
+      <Script src="/js/main.js" />
     </div>
   );
 }

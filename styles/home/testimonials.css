@@ -1,0 +1,37 @@
+.testimonials {
+  position: relative;
+  background-image: url('/img/testimonials-bg.jpg');
+  /* Replace with your background image path */
+  background-size: cover;
+  background-position: center;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+#testimonials {
+  padding: 0;
+}
+
+.stars {
+  color: yellow;
+}
+
+.stars i {
+  margin: 0px 5px;
+}
+
+.carousel-inner {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #00000061;
+}
+
+.bg-dark {
+  --bs-bg-opacity: 1;
+  background-color: rgb(33 37 41 / 0%) !important;
+}
+
+.testimonial-text {
+  padding: 0px 200px;
+}

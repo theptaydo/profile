@@ -1,14 +1,11 @@
 'use client';
 
 import Head from 'next/head';
+import Script from 'next/script';
 
 export default function Stats() {
   return (
     <>
-      <Head>
-        {/* Import thư viện PureCounter nếu sử dụng tính năng đếm số */}
-        <script src="/vendor/purecounter/purecounter_vanilla.js" defer></script>
-      </Head>
 
       <section id="stats" className="stats section">
         <div className="container" data-aos="fade-up" data-aos-delay="100">
@@ -22,7 +19,7 @@ export default function Stats() {
                   data-purecounter-end="500"
                   data-purecounter-duration="1"
                   className="purecounter"
-                ></span>
+                >234</span>
                 <p>Khách hàng hài lòng</p>
               </div>
             </div>
@@ -36,7 +33,7 @@ export default function Stats() {
                   data-purecounter-end="150"
                   data-purecounter-duration="1"
                   className="purecounter"
-                ></span>
+                >23</span>
                 <p>Dự án đã hoàn thành</p>
               </div>
             </div>
@@ -50,7 +47,7 @@ export default function Stats() {
                   data-purecounter-end="2000"
                   data-purecounter-duration="1"
                   className="purecounter"
-                ></span>
+                >100</span>
                 <p>Giờ hỗ trợ khách hàng</p>
               </div>
             </div>
@@ -64,13 +61,18 @@ export default function Stats() {
                   data-purecounter-end="100"
                   data-purecounter-duration="1"
                   className="purecounter"
-                ></span>
+                >200</span>
                 <p>Nhân viên tài năng</p>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      <Script
+        src="/vendor/purecounter/purecounter_vanilla.js"
+        strategy="afterInteractive"
+      />
     </>
   );
 }

@@ -10,6 +10,7 @@ import Header from '@/app/header/page';
 import Footer from '@/app/footer/page';
 import '@/styles/main.css';
 
+import Script from 'next/script';
 
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -36,18 +37,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link href="/css/main.css" rel="stylesheet" />
         <link href="/css/product.css" rel="stylesheet" />
 
-        {/* Vendor JS Files */}
-        <script src="/vendor/php-email-form/validate.js" defer></script>
-        <script src="/vendor/aos/aos.js" defer></script>
-        <script src="/vendor/glightbox/js/glightbox.min.js" defer></script>
-        <script src="/vendor/waypoints/noframework.waypoints.js" defer></script>
-        <script src="/vendor/purecounter/purecounter_vanilla.js" defer></script>
-        <script src="/vendor/swiper/swiper-bundle.min.js" defer></script>
-        <script src="/vendor/imagesloaded/imagesloaded.pkgd.min.js" defer></script>
-        <script src="/vendor/isotope-layout/isotope.pkgd.min.js" defer></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
 
-        {/* Main JS File */}
-        <script src="/js/main.js" defer></script>
+        {/* Vendor JS Files */}
+        {/* <script src="/vendor/php-email-form/validate.js" defer></script>
+        <script src="/vendor/waypoints/noframework.waypoints.js" defer></script>
+        <script src="/vendor/imagesloaded/imagesloaded.pkgd.min.js" defer></script> */}
+
       </Head>
       <body>
         <Header />
@@ -56,6 +52,20 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </main>
         <Footer />
       </body>
+
+      <Script
+        src="/js/main.js"
+        strategy="afterInteractive"
+      />
+
+
+      {/* <Script src="/vendor/aos/aos.js" /> */}
+
+
+      {/* <Script src="/vendor/glightbox/js/glightbox.min.js" />
+      <Script src="/vendor/isotope-layout/isotope.pkgd.min.js" />
+      <Script src="/vendor/swiper/swiper-bundle.min.js" /> */}
+      <Script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" />
     </html>
   );
 }
