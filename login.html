@@ -36,14 +36,14 @@
             <!-- <h3 class="mb-4 text-center">Have an account?</h3> -->
             <form action="#" class="signin-form">
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Tên đăng nhập hoặc email" required>
+                <input id="username" type="text" class="form-control" placeholder="Tên đăng nhập hoặc email" required>
               </div>
               <div class="form-group">
-                <input id="password-field" type="password" class="form-control" placeholder="Mật khẩu" required>
+                <input id="password" type="password" class="form-control" placeholder="Mật khẩu" required>
                 <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
               </div>
               <div class="form-group">
-                <button type="submit" class="form-control btn btn-primary submit px-3">ĐĂNG NHẬP</button>
+                <button onclick="login()" type="button" class="form-control btn btn-primary submit px-3">ĐĂNG NHẬP</button>
               </div>
               <div class="form-group d-md-flex">
                 <div class="w-50">
@@ -109,6 +109,59 @@
         }
       });
     });
+  
+    function login() {
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+        alert(username + ": " + password)
+
+        const user = {
+          username: username,
+          password: password
+        }
+
+         
+       // Gửi yêu cầu đăng nhập tới API
+    fetch("https://tsc-eshop.vercel.app/api/v1/auth/signin", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(user)
+    })
+    .then(response => {
+        console.log("Trạng thái phản hồi:", response.status); // Kiểm tra trạng thái phản hồi
+        
+        if (!response.ok) {
+            throw new Error("Lỗi mạng hoặc API không phản hồi thành công");
+        }
+        
+        return response.text(); // Lấy dữ liệu trả về dưới dạng chuỗi
+    })
+    .then(text => {
+        console.log("Nội dung phản hồi từ server:", text); // Kiểm tra nội dung text nhận được từ server
+
+        // Nếu không có nội dung, trả về một đối tượng rỗng, tránh lỗi khi parse JSON
+        if (!text) {
+            throw new Error("Server trả về nội dung trống.");
+        }
+        
+        const data = JSON.parse(text); // Chuyển text sang JSON
+        
+        console.log("Dữ liệu JSON đã parse:", data); // Log dữ liệu đã parse
+        
+        // Kiểm tra thành công đăng nhập
+        if (data.success) {
+            localStorage.setItem("user", JSON.stringify(data.user));
+            window.location.href = "profile.html";
+        } else {
+            alert("Đăng nhập thất bại. Vui lòng kiểm tra tên đăng nhập và mật khẩu.");
+        }
+    })
+    .catch(error => {
+        console.error("Lỗi:", error);
+        alert("Có lỗi xảy ra trong quá trình đăng nhập: " + error.message);
+    });
+}
+
   </script>
 
 </body>
