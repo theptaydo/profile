@@ -1,0 +1,256 @@
+.product-tabs {
+  font-family: Arial, sans-serif;
+  background-color: #fffbfb;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+/* Styling for the tab headers */
+.t-tabs {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+}
+
+.t-tabs .item {
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.t-tabs .item.active {
+  color: #007bff; /* Active tab color */
+  border-bottom: 2px solid #007bff; /* Bottom border for active tab */
+}
+
+/* Content area styling */
+.t-content {
+  padding: 20px;
+}
+
+.t-content .item {
+  display: none;
+}
+
+.t-content .item.active {
+  display: block;
+}
+
+/* Product information styling */
+.t-content .item-overview h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.t-content .item-overview p {
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Categories tab layout */
+.item-categories .d-grid {
+  display: flex;
+  gap: 20px;
+}
+
+.item-categories .img {
+  position: relative;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.item-categories .img img {
+  width: 48%; /* Adjust to fit two images in a row */
+  height: auto;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+/* See More toggle button */
+.product-seemore {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.product-seemore .img-toggle {
+  display: none; /* Initially hidden */
+}
+
+.product-seemore .seemore-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #007bff;
+}
+
+.product-seemore .seemore-button i {
+  font-size: 18px;
+}
+
+/* Text section styling in Categories tab */
+.item-categories .text {
+  width: 50%;
+}
+
+.item-categories .text h3 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.download-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.download-item {
+  display: flex;
+  align-items: center;
+}
+
+.download-item .d-item {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.download-item .d-item i {
+  margin-right: 8px;
+}
+
+/* Additional styling for interactive states */
+.t-tabs .item:hover,
+.download-item .d-item:hover {
+  color: #0056b3;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  .item-categories .d-grid {
+    flex-direction: column;
+  }
+
+  .item-categories .img,
+  .item-categories .text {
+    width: 100%;
+  }
+}
+.chemical-composition-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+.chemical-composition-table th,
+.chemical-composition-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.chemical-composition-table th {
+  background-color: #66b3ff;
+  color: #333;
+  font-weight: bold;
+}
+
+.chemical-composition-table td {
+  color: #333;
+}
+
+.chemical-composition-table th[rowspan] {
+  background-color: #4da3ff;
+}
+
+.chemical-composition-table th[colspan] {
+  background-color: #66b3ff;
+}
+
+.chemical-composition-table tbody td {
+  background-color: #fff;
+}
+
+.chemical-composition-table thead tr th {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.chemical-composition-table tbody tr td {
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.chemical-composition-table td[colspan="5"] {
+  background-color: #ffffff;
+}
+
+.chemical-composition-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.chemical-composition-table tbody tr:hover {
+  background-color: #e0f7ff;
+}
+.specifications-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  margin-top: 20px;
+}
+
+.specifications-table th,
+.specifications-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.specifications-table thead th {
+  background-color: #3a8fd6;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.specifications-table tbody tr:nth-child(even) td {
+  background-color: #f9f9f9;
+}
+
+.specifications-table tbody tr:nth-child(odd) td {
+  background-color: #ffffff;
+}
+
+.specifications-table tbody td {
+  color: #333;
+  line-height: 1.5;
+}
+
+.specifications-table tbody td:first-child {
+  font-weight: bold;
+  width: 20%; /* Adjusts the width of the first column */
+}
+
+.specifications-table tbody td:last-child {
+  width: 80%; /* Adjusts the width of the second column */
+}
+
+.specifications-table tbody tr td {
+  padding: 10px;
+}
+
+.specifications-table tbody tr td:last-child {
+  line-height: 1.6;
+}
+
