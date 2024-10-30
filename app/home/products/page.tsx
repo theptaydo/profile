@@ -1,6 +1,7 @@
 'use client';
 
 import Head from 'next/head';
+import '@/styles/home/products.css';
 
 export default function Products() {
   return (
