@@ -7,6 +7,10 @@ export default function Products() {
   return (
     <>
       <section id="products" className="section pt-0">
+        <div className="container section-title" data-aos="fade-up">
+          <h2>SẢN PHẨM</h2>
+          <p><span>Những sản phẩm tiêu biếu</span> <span className="description-title">của chúng tôi</span></p>
+        </div>
         <div className="container">
           <h2 className="section__title"><span>Sản phẩm</span></h2>
           <div className="section__content">
