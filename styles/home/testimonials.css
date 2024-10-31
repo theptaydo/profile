@@ -35,3 +35,10 @@
 .testimonial-text {
   padding: 0px 200px;
 }
+
+
+@media (max-width: 640px) {
+  .testimonial-text {
+    padding: 0;
+  }
+}
