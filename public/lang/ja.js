@@ -45,7 +45,7 @@ export default {
     switchLanguage: "ベトナム",
     hero: {
       welcome: "ようこそ ",
-      brand: "タイドースチール",
+      brand: "Tay Do Steel", //タイドースチール
       description: "メコンデルタ地域の建設用鋼材製品のリーディングカンパニー。",
       buy: "今すぐ購入",
       more: "もっと見る",

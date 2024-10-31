@@ -45,7 +45,7 @@ export default {
     switchLanguage: "越南",
     hero: {
       welcome: "欢迎来到 ",
-      brand: "西都钢铁",
+      brand: "Tay Do Steel", //西都钢铁
       description: "湄公河三角洲地区领先的建筑钢铁生产和销售企业。",
       buy: "立即购买",
       more: "了解更多",
