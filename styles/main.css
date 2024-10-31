@@ -1978,6 +1978,7 @@ section,
 /* NGOC */
 .langs {
   width: 100px;
+  cursor: pointer;
 }
 
 .flag {
