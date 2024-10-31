@@ -984,19 +984,31 @@ section,
   .hero h1 {
     font-size: 28px;
     line-height: 36px;
+    width: 350px;
+    margin-bottom: 15px;
   }
 
   .hero p {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
+    width: 350px;
   }
 
   .hero .btn-get-started,
   .hero .btn-watch-video {
     font-size: 13px;
   }
+
+  .hero .container {
+    padding-left: 50px;
+  }
+
+  .carousel button {
+    display: none;
+  }
 }
+
 
 @keyframes up-down {
   0% {
