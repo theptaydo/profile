@@ -3,6 +3,7 @@ export default {
     home: "Home",
     about: "About",
     service: "Services",
+    profile: "Profile",
     team: "Team",
     products: {
       main: "Products",
@@ -48,6 +49,44 @@ export default {
       description: "A leading company in the field of manufacturing and trading construction steel products in the Mekong Delta.",
       buy: "Buy now",
       more: "See more",
+    },
+    featuredServices: {
+      one: {
+        title: "Supply of Construction Steel",
+        description: "Specializing in providing various types of construction steel such as rebar, profile steel, and steel coils for both large and small projects.",
+      },
+      two: {
+        title: "Custom Steel Fabrication",
+        description: "We offer steel fabrication services tailored to customer specifications, meeting precise technical standards.",
+      },
+      three: {
+        title: "Steel Solutions Consulting",
+        description: "We provide in-depth consulting on suitable types of steel for each type of project.",
+      },
+      four: {
+        title: "Steel Transportation and Installation",
+        description: "Fast transportation and on-site steel installation services with a professional team.",
+      },
+    },
+    about: {
+      badge: "INTRODUCTION",
+      title: "About ",
+      subTitle: "Us",
+      hightlight: "A Leader in the Steel Industry",
+      description: "With over 20 years of experience, Tay Do Steel specializes in providing high-quality steel products for construction and industry.",
+      attributes: {
+        one: {
+          title: "Top Quality",
+          description: "Steel products are tested according to international standards, ensuring durability and safety.",
+        },
+        two: {
+          title: "Competitive Pricing",
+          description: "We commit to providing products at the most competitive prices in the market.",
+        }
+      },
+      message: "Tay Do Steel always ensures high quality, guarantees customer satisfaction, and builds sustainable and safe projects.",
     }
+
+
   }
 }

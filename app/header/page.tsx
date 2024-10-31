@@ -8,8 +8,6 @@ import { usePathname } from 'next/navigation';
 
 
 export default function Header() {
-  const pathname = usePathname();
-  const newLocale = pathname.startsWith('/en') ? '/vi' : '/en';
 
   const trans = useTrans();
   const setLanguage = (lang: string) => {
@@ -41,7 +39,7 @@ export default function Header() {
 
         <div className="branding d-flex align-items-center">
           <div className="container position-relative d-flex align-items-center justify-content-between">
-            <a href="index.html" className="logo d-flex align-items-center">
+            <a href="/" className="logo d-flex align-items-center">
               {/* Uncomment the line below if you also wish to use an image logo */}
               {/* <img src="./assets/img/logo.png" alt="Logo" /> */}
               <h1 className="sitename">
@@ -54,7 +52,7 @@ export default function Header() {
                 <li><a href="#hero" className="active">{trans.header.home}</a></li>
                 <li><a href="#about">{trans.header.about}</a></li>
                 <li><a href="#services">{trans.header.service}</a></li>
-                <li><a href="#portfolio">Hồ sơ</a></li>
+                <li><a href="#portfolio">{trans.header.profile}</a></li>
                 <li><a href="#team">{trans.header.team}</a></li>
                 <li className="dropdown">
                   <a href="#"><span>{trans.header.products.main}</span> <i className="bi bi-chevron-down toggle-dropdown"></i></a>

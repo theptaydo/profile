@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up Form</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    .signup-container {
+      display: flex;
+      width: 900px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .form-container {
+      flex: 1;
+      padding: 40px;
+    }
+
+    .form-container h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      font-size: 14px;
+    }
+
+    .form-group input[type="checkbox"] {
+      margin-right: 10px;
+    }
+
+    .form-group a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .form-group a:hover {
+      text-decoration: underline;
+    }
+
+    .btn-signin {
+      display: inline-block;
+      width: 105%;
+      padding: 10px;
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .btn-signin:hover {
+      background-color: #2980b9;
+    }
+
+    .login-link {
+      display: block;
+      text-align: center;
+      margin-top: 15px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .login-link a {
+      color: #007bff;
+    }
+
+    .image-container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .image-container img {
+      width: 80%;
+      border-radius: 10px;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0px);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
+
+      100% {
+        transform: translateY(0px);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="signup-container">
+    <!-- Left side: Form -->
+    <div class="form-container">
+      <h2>Đăng nhập</h2>
+
+      <div class="form-group">
+        <input type="text" placeholder="Email hoặc Username">
+      </div>
+
+      <div class="form-group">
+        <input type="password" placeholder="Mật khẩu">
+      </div>
+
+      <div class="form-group">
+        <button class="btn-signin">Đăng nhập</button>
+      </div>
+    </div>
+
+    <!-- Right side: Image -->
+    <div class="image-container">
+      <img src="./public/img/working.png" alt="Sign up illustration">
+    </div>
+  </div>
+
+</body>
+
+</html>
