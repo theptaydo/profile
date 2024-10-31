@@ -1,19 +1,19 @@
 export default {
   header: {
-    home: "Trang chủ",
-    about: "Giới thiệu",
-    service: "Dịch vụ",
-    team: "Đội ngũ",
+    home: "ホーム",
+    about: "紹介",
+    service: "サービス",
+    team: "チーム",
     products: {
-      main: "Sản phẩm",
+      main: "製品",
     },
-    contact: "Liên hệ",
-    switchLanguage: "Việt Nam",
-    contact: "Liên hệ",
+    contact: "お問い合わせ",
+    switchLanguage: "ベトナム",
+    contact: "お問い合わせ",
     switchLanguage: {
-      lang: {
+      lang4: {
         id: "vi",
-        name: "Tiếng Việt",
+        name: "Việt Nam",
         src: "/img/langs/Flag_of_Vietnam.svg.png"
       },
       lang1: {
@@ -31,7 +31,7 @@ export default {
         name: "中国",
         src: "/img/langs/china.png"
       },  //china
-      lang4: {
+      lang: {
         id: "ja",
         name: "日本",
         src: "/img/langs/Flag_of_Japan_(bordered).svg.png"
@@ -39,15 +39,15 @@ export default {
     },
   },
   HomePage: {
-    home: "Trang chủ",
-    contact: "Liên hệ",
-    switchLanguage: "Việt Nam",
+    home: "ホーム",
+    contact: "お問い合わせ",
+    switchLanguage: "ベトナム",
     hero: {
-      welcome: "Chào mừng đến với ",
-      brand: "Thép Tây Đô",
-      description: "Doanh nghiệp hàng đầu về lĩnh vực sản xuất và kinh doanh các sản phẩm về Thép xây dựng tại ĐBSCL.",
-      buy: "Mua ngay",
-      more: "Xem thêm",
+      welcome: "ようこそ ",
+      brand: "タイドースチール",
+      description: "メコンデルタ地域の建設用鋼材製品のリーディングカンパニー。",
+      buy: "今すぐ購入",
+      more: "もっと見る",
     }
   }
 }

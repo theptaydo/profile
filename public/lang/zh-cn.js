@@ -1,19 +1,19 @@
 export default {
   header: {
-    home: "Trang chủ",
-    about: "Giới thiệu",
-    service: "Dịch vụ",
-    team: "Đội ngũ",
+    home: "首页",
+    about: "关于我们",
+    service: "服务",
+    team: "团队",
     products: {
-      main: "Sản phẩm",
+      main: "产品",
     },
-    contact: "Liên hệ",
-    switchLanguage: "Việt Nam",
-    contact: "Liên hệ",
+    contact: "联系我们",
+    switchLanguage: "越南",
+    contact: "联系我们",
     switchLanguage: {
-      lang: {
+      lang3: {
         id: "vi",
-        name: "Tiếng Việt",
+        name: "Việt Nam",
         src: "/img/langs/Flag_of_Vietnam.svg.png"
       },
       lang1: {
@@ -26,7 +26,7 @@ export default {
         name: "កម្ពុជា",
         src: "/img/langs/Flag_of_Cambodia.svg.png"
       },  //khmer
-      lang3: {
+      lang: {
         id: "zh-cn",
         name: "中国",
         src: "/img/langs/china.png"
@@ -39,15 +39,15 @@ export default {
     },
   },
   HomePage: {
-    home: "Trang chủ",
-    contact: "Liên hệ",
-    switchLanguage: "Việt Nam",
+    home: "首页",
+    contact: "联系我们",
+    switchLanguage: "越南",
     hero: {
-      welcome: "Chào mừng đến với ",
-      brand: "Thép Tây Đô",
-      description: "Doanh nghiệp hàng đầu về lĩnh vực sản xuất và kinh doanh các sản phẩm về Thép xây dựng tại ĐBSCL.",
-      buy: "Mua ngay",
-      more: "Xem thêm",
+      welcome: "欢迎来到 ",
+      brand: "西都钢铁",
+      description: "湄公河三角洲地区领先的建筑钢铁生产和销售企业。",
+      buy: "立即购买",
+      more: "了解更多",
     }
   }
 }

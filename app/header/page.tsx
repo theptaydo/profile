@@ -1,10 +1,11 @@
 'use client'; // Thêm dòng này để báo rằng đây là một Client Component
 
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import '@/styles/main.css';
 import useTrans from '../pages/useTrans';
 import { usePathname } from 'next/navigation';
+
 
 export default function Header() {
   const pathname = usePathname();
@@ -15,6 +16,7 @@ export default function Header() {
     localStorage.setItem('lang', lang);
     window.location.reload();
   };
+
   return (
     <div>
       <header id="header" className="header sticky-top">
@@ -49,13 +51,13 @@ export default function Header() {
 
             <nav id="navmenu" className="navmenu">
               <ul>
-                <li><a href="#hero" className="active">{trans.HomePage.home}</a></li>
-                <li><a href="#about">Giới thiệu</a></li>
-                <li><a href="#services">Dịch vụ</a></li>
+                <li><a href="#hero" className="active">{trans.header.home}</a></li>
+                <li><a href="#about">{trans.header.about}</a></li>
+                <li><a href="#services">{trans.header.service}</a></li>
                 <li><a href="#portfolio">Hồ sơ</a></li>
-                <li><a href="#team">Đội ngũ</a></li>
+                <li><a href="#team">{trans.header.team}</a></li>
                 <li className="dropdown">
-                  <a href="#"><span>Sản phẩm</span> <i className="bi bi-chevron-down toggle-dropdown"></i></a>
+                  <a href="#"><span>{trans.header.products.main}</span> <i className="bi bi-chevron-down toggle-dropdown"></i></a>
                   <ul>
                     <li><a href="#">Phôi thép</a></li>
                     <li className="dropdown">
@@ -73,7 +75,7 @@ export default function Header() {
                     <li><a href="#">Thép</a></li>
                   </ul>
                 </li>
-                <li><a href="#contact">Liên hệ</a></li>
+                <li><a href="#contact">{trans.header.contact}</a></li>
                 <li className="dropdown">
                   {/* <Link href="/">
                     TV
@@ -82,26 +84,28 @@ export default function Header() {
 
                   <a href="#">
                     <span>
-                      <img className="flag" src="/img/langs/Flag_of_Vietnam.svg.png" alt="Vietnam Flag" />Tiếng Việt
+                      {/* {renderFlag()} */}
+                      <img className="flag" src={trans.header.switchLanguage.lang.src} alt="Vietnam Flag" />
+                      {trans.header.switchLanguage.lang.name}
                     </span>
                     <i className="bi bi-chevron-down toggle-dropdown"></i>
                   </a>
                   <ul>
-                    <li><a href="#" className="langs">
-                      <img className="flag" src="/img/langs/Flag_of_Cambodia.svg.png" alt="Cambodia Flag" />
-                      Cambodia
+                    <li><a onClick={() => setLanguage(trans.header.switchLanguage.lang1.id)} className="langs">
+                      <img className="flag" src={trans.header.switchLanguage.lang1.src} alt="UK Flag" />
+                      {trans.header.switchLanguage.lang1.name}
                     </a></li>
-                    <li><a onClick={() => setLanguage('en')} className="langs">
-                      <img className="flag" src="/img/langs/Flag_of_the_United_Kingdom.png" alt="UK Flag" />
-                      English
+                    <li><a onClick={() => setLanguage(trans.header.switchLanguage.lang2.id)} className="langs">
+                      <img className="flag" src={trans.header.switchLanguage.lang2.src} alt="Cambodia Flag" />
+                      {trans.header.switchLanguage.lang2.name}
                     </a></li>
-                    <li><a href="#" className="langs">
-                      <img className="flag" src="/img/langs/china.png" alt="China Flag" />
-                      中国
+                    <li><a onClick={() => setLanguage(trans.header.switchLanguage.lang3.id)} className="langs">
+                      <img className="flag" src={trans.header.switchLanguage.lang3.src} alt="China Flag" />
+                      {trans.header.switchLanguage.lang3.name}
                     </a></li>
-                    <li><a href="#" className="langs">
-                      <img className="flag" src="/img/langs/Flag_of_Japan_(bordered).svg.png" alt="Japan Flag" />
-                      日本
+                    <li><a onClick={() => setLanguage(trans.header.switchLanguage.lang4.id)} className="langs">
+                      <img className="flag" src={trans.header.switchLanguage.lang4.src} alt="Japan Flag" />
+                      {trans.header.switchLanguage.lang4.name}
                     </a></li>
                   </ul>
                 </li>

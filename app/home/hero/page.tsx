@@ -13,7 +13,7 @@ export default function Hero() {
       <div className="container">
         <div className="row gy-4">
           <div className="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
-            <h1>{trans.HomePage.hero.welcome} <span>{trans.HomePage.hero.brand}</span></h1>
+            <h1>{trans.HomePage.hero.welcome} <span> {trans.HomePage.hero.brand}</span></h1>
             <p>{trans.HomePage.hero.description}</p>
             <div className="d-flex">
               <a href="#about" className="btn-get-started">{trans.HomePage.hero.buy}</a>
