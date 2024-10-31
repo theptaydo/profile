@@ -854,7 +854,7 @@ section,
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-.hero {
+/* .hero {
   width: 100%;
   min-height: 75vh;
   position: relative;
@@ -877,13 +877,45 @@ section,
 
 .hero .container {
   position: relative;
+} */
+
+.hero {
+  overflow: hidden;
+  margin-top: 0px;
+  padding-top: 0px;
+  height: 550px;
+  margin-top: 80px;
 }
+
+.hero .container {
+  padding-left: 100px;
+}
+
+#backgroundCarousel {
+  height: 550px;
+}
+
+/* .hero .carousel-inner {
+
+  padding: 100px;
+  height: 550px;
+}
+
+.hero .carosel-item {
+
+  padding: 50px;
+}
+
+.carousel-inner {
+  height: 350px;
+} */
 
 .hero h1 {
   margin: 0;
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
+  color: #ffffff;
 }
 
 .hero h1 span {
@@ -891,14 +923,16 @@ section,
 }
 
 .hero p {
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  color: #c9c9c9;
+  /* color: color-mix(in srgb, var(--default-color), transparent 30%); */
   margin: 5px 0 30px 0;
   font-size: 20px;
   font-weight: 400;
 }
 
 .hero .btn-get-started {
-  color: var(--contrast-color);
+  /* color: var(--contrast-color); */
+  color: #cdcdcd;
   background: var(--accent-color);
   font-family: var(--heading-font);
   font-weight: 400;
@@ -921,7 +955,8 @@ section,
   font-size: 16px;
   transition: 0.5s;
   margin-left: 25px;
-  color: var(--default-color);
+  color: #c9c9c9;
+  /* color: var(--default-color); */
   font-weight: 600;
 }
 
