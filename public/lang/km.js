@@ -3,6 +3,7 @@ export default {
     home: "ទំព័រដើម",
     about: "អំពីយើង",
     service: "សេវាកម្ម",
+    profile: "ប្រវត្តិ",
     team: "ក្រុមការងារ",
     products: {
       main: "ផលិតផល",
