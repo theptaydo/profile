@@ -92,25 +92,25 @@ export default {
       subTitle: "我们",
       attributes: [
         {
-          name: "陶维全雄",
+          name: "Dao Duy Tuan Hung",
           role: "副总经理 - 质量管理",
           images: "/img/team/hungddt.png",
           titles: "先生 "
         },
         {
-          name: "黄忠光",
+          name: "Huynh Trung Quang",
           role: "总经理兼董事会主席",
           images: "/img/team/quanght.png",
           titles: "先生 "
         },
         {
-          name: "武文凯",
+          name: "Vo Van Khai",
           role: "副总经理 - 销售",
           images: "/img/team/khaivv.png",
           titles: "先生 "
         },
         {
-          name: "达登",
+          name: "Anh Da Den",
           role: "Op moe moe moe osha",
           images: "https://th.bing.com/th/id/OIP.ueglsKxAkWD-4Bb_nc46IgHaHa?rs=1&pid=ImgDetMain",
           titles: "先生 "
