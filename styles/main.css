@@ -1999,6 +1999,8 @@ section,
   width: 12px;
   height: 12px;
   background-color: color-mix(in srgb, var(--default-color), transparent 85%);
+  /* Fallback for unsupported browsers */
+  background-color: rgba(0, 0, 0, 0.15);
   opacity: 1;
 }
 
@@ -2018,6 +2020,8 @@ section,
   margin-bottom: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  /* Fallback */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
 
 .portfolio-details .portfolio-info ul {
@@ -2043,7 +2047,99 @@ section,
 .portfolio-details .portfolio-description p {
   padding: 0;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
+  /* Fallback */
+  color: rgba(0, 0, 0, 0.3);
 }
+
+/* Keyframes for slide-in animations */
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Performance optimization for animations */
+.portfolio .h-entry {
+  will-change: transform, opacity;
+  opacity: 0;
+  /* Start fully hidden */
+  transform: translateY(30px);
+  /* Downward translation */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  /* Smooth transition */
+}
+
+.portfolio .h-entry.visible {
+  opacity: 1;
+  /* Fully visible */
+  transform: translateY(0);
+  /* Reset translation */
+}
+
+/* Slide-in animations */
+.portfolio .h-entry.left-slide {
+  animation: slideInLeft 0.8s forwards;
+}
+
+.portfolio .h-entry.right-slide {
+  animation: slideInRight 0.8s forwards;
+}
+
+/* Delay animations for sequential effect */
+.portfolio .h-entry:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.portfolio .h-entry:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.portfolio .h-entry:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.portfolio .h-entry:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+.portfolio .h-entry {
+  opacity: 0;
+  /* Start fully hidden */
+  transform: translateY(30px);
+  /* Downward translation */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  /* Smooth transition */
+}
+
+.portfolio .h-entry.visible {
+  opacity: 1;
+  /* Fully visible */
+  transform: translateY(0);
+  /* Reset translation */
+}
+
+
+
+
+
 
 /*--------------------------------------------------------------
 # Starter Section Section
