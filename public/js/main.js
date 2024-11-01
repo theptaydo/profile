@@ -215,3 +215,22 @@
 })();
 
 
+document.addEventListener("DOMContentLoaded", function() {
+  const serviceItems = document.querySelectorAll('.service-item');
+
+  function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return rect.top < window.innerHeight && rect.bottom >= 0;
+  }
+
+  function checkVisibility() {
+    serviceItems.forEach(item => {
+      if (isElementInViewport(item)) {
+        item.classList.add('visible');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', checkVisibility);
+  checkVisibility(); // Kiểm tra ngay khi tải trang
+});

@@ -5,7 +5,6 @@ import HomePage from '@/app/home/page';
 import Link from 'next/link';
 import '@/styles/main.css';
 
-
 export default function Home() {
 
   return (
