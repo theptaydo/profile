@@ -85,7 +85,40 @@ export default {
         }
       },
       message: "タイド鋼業は常に高品質を保証し、顧客満足を確保し、持続可能で安全なプロジェクトを構築します。",
+    },
+    team: {
+      badge: "チーム",
+      title: "主要メンバー ",
+      subTitle: "私たちの",
+      attributes: [
+        {
+          name: "ダオ・ズイ・トアン・フン",
+          role: "品質管理副総支配人",
+          images: "/img/team/hungddt.png",
+          titles: "氏 "
+        },
+        {
+          name: "フイン・チュン・クアン",
+          role: "総支配人兼取締役会議長",
+          images: "/img/team/quanght.png",
+          titles: "氏 "
+        },
+        {
+          name: "ヴォー・ヴァン・カイ",
+          role: "営業副総支配人",
+          images: "/img/team/khaivv.png",
+          titles: "氏 "
+        },
+        {
+          name: "ダ・デン",
+          role: "オプ・モエ・モエ・モエ・オシャ",
+          images: "https://th.bing.com/th/id/OIP.ueglsKxAkWD-4Bb_nc46IgHaHa?rs=1&pid=ImgDetMain",
+          titles: "君 "
+        },
+      ]
     }
+
+
 
 
   }

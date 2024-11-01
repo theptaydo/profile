@@ -85,6 +85,37 @@ export default {
         }
       },
       message: "Thép Tây Đô luôn cam kết chất lượng cao, đảm bảo sự hài lòng của khách hàng và xây dựng những công trình bền vững, an toàn."
+    },
+    team: {
+      badge: "ĐỘI NGŨ",
+      title: "Những thành viên chủ chốt của ",
+      subTitle: "chúng tôi",
+      attributes: [
+        {
+          name: "Đào Duy Tuấn Hùng",
+          role: "Phó Tổng Giám Đốc Quản lý chất lượng",
+          images: "/img/team/hungddt.png",
+          titles: "Ông "
+        },
+        {
+          name: "Huỳnh Trung Quang",
+          role: "Tổng Giám Đốc kiêm CT.HĐTV",
+          images: "/img/team/quanght.png",
+          titles: "Ông "
+        },
+        {
+          name: "Võ Văn Khải",
+          role: "Phó Tổng Giám Đốc Kinh doanh",
+          images: "/img/team/khaivv.png",
+          titles: "Ông "
+        },
+        {
+          name: "Da Den",
+          role: "Op moe moe moe oshat",
+          images: "https://th.bing.com/th/id/OIP.ueglsKxAkWD-4Bb_nc46IgHaHa?rs=1&pid=ImgDetMain",
+          titles: "Anh "
+        },
+      ]
     }
   }
 }

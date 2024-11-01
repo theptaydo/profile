@@ -85,7 +85,40 @@ export default {
         }
       },
       message: "ដែកតែដូតែងតែងធានាគុណភាពខ្ពស់, ធានាការពេញចិត្តរបស់អតិថិជននិងសាងសង់គម្រោងដែលអាចទទួលបាននិងសុវត្ថិភាព។",
+    },
+    team: {
+      badge: "ក្រុម",
+      title: "សមាជិកសំខាន់នៃ ",
+      subTitle: "ក្រុមយើង",
+      attributes: [
+        {
+          name: "ដាវ ឌុយ ទួន ហុង",
+          role: "អនុប្រធាននាយកដ្ឋានគ្រប់គ្រងគុណភាព",
+          images: "/img/team/hungddt.png",
+          titles: "លោក "
+        },
+        {
+          name: "ហ៊្វឹន ចុង គ្វាង",
+          role: "នាយកប្រតិបត្តិ និងប្រធានក្រុមប្រឹក្សាភិបាល",
+          images: "/img/team/quanght.png",
+          titles: "លោក "
+        },
+        {
+          name: "វ៉ូ វ៉ាន់ ខៃ",
+          role: "អនុប្រធាននាយកដ្ឋានលក់",
+          images: "/img/team/khaivv.png",
+          titles: "លោក "
+        },
+        {
+          name: "ដា ដេន",
+          role: "Op moe moe moe osha",
+          images: "https://th.bing.com/th/id/OIP.ueglsKxAkWD-4Bb_nc46IgHaHa?rs=1&pid=ImgDetMain",
+          titles: "បុរស "
+        },
+      ]
     }
+
+
 
 
   }

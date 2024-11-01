@@ -1602,6 +1602,27 @@ section,
   opacity: 1;
 }
 
+.member-img {
+  /* width: 216px;
+  height: 216px; */
+  overflow: hidden;
+  /* Optional: If you want the images to be circular */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.member-img img {
+  width: 100%;
+  height: auto;
+  /* Maintain aspect ratio */
+  /* max-height: 216px; */
+  /* Prevents the image from exceeding the container height */
+  object-fit: contain;
+  /* Ensures the image is fully contained within the container */
+}
+
+
 /*--------------------------------------------------------------
 # Pricing Section
 --------------------------------------------------------------*/

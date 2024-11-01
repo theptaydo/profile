@@ -85,7 +85,40 @@ export default {
         }
       },
       message: "西多钢铁始终承诺高质量，确保客户满意，并建造可持续、安全的工程。",
+    },
+    team: {
+      badge: "团队",
+      title: "我们的主要成员 ",
+      subTitle: "我们",
+      attributes: [
+        {
+          name: "陶维全雄",
+          role: "副总经理 - 质量管理",
+          images: "/img/team/hungddt.png",
+          titles: "先生 "
+        },
+        {
+          name: "黄忠光",
+          role: "总经理兼董事会主席",
+          images: "/img/team/quanght.png",
+          titles: "先生 "
+        },
+        {
+          name: "武文凯",
+          role: "副总经理 - 销售",
+          images: "/img/team/khaivv.png",
+          titles: "先生 "
+        },
+        {
+          name: "达登",
+          role: "Op moe moe moe osha",
+          images: "https://th.bing.com/th/id/OIP.ueglsKxAkWD-4Bb_nc46IgHaHa?rs=1&pid=ImgDetMain",
+          titles: "先生 "
+        },
+      ]
     }
+
+
 
 
   }

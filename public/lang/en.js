@@ -85,7 +85,40 @@ export default {
         }
       },
       message: "Tay Do Steel always ensures high quality, guarantees customer satisfaction, and builds sustainable and safe projects.",
+    },
+    team: {
+      badge: "TEAM",
+      title: "Key members of ",
+      subTitle: "our team",
+      attributes: [
+        {
+          name: "Dao Duy Tuan Hung",
+          role: "Deputy General Director of Quality Management",
+          images: "/img/team/hungddt.png",
+          titles: "Mr "
+        },
+        {
+          name: "Huynh Trung Quang",
+          role: "General Director & Chairman of the Members' Council",
+          images: "/img/team/quanght.png",
+          titles: "Mr "
+        },
+        {
+          name: "Vo Van Khai",
+          role: "Deputy General Director of Sales",
+          images: "/img/team/khaivv.png",
+          titles: "Mr "
+        },
+        {
+          name: "Da Den",
+          role: "Op moe moe moe osha",
+          images: "https://th.bing.com/th/id/OIP.ueglsKxAkWD-4Bb_nc46IgHaHa?rs=1&pid=ImgDetMain",
+          titles: "Mr "
+        },
+      ]
     }
+
+
 
 
   }
