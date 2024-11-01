@@ -1226,6 +1226,7 @@ section,
 # Clients Section
 --------------------------------------------------------------*/
 .clients {
+  margin-top: 20px;
   padding: 25px 0;
 }
 

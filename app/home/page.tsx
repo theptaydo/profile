@@ -20,15 +20,15 @@ export default function HomePage() {
 
     <div className='home-page'>
       <Hero />
+      <Clients />
       <FeaturedServices />
       <About />
       <Stats />
-      <Clients />
-      <Services />
-      <Testimonials />
-      <Portfolio />
       <Team />
       <Products />
+      {/* <Services /> */}
+      <Portfolio />
+      <Testimonials />
       <Faq />
       <Contact />
     </div>
