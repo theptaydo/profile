@@ -883,7 +883,7 @@ section,
   overflow: hidden;
   margin-top: 0px;
   padding-top: 0px;
-  height: 550px;
+  height: 650px;
   margin-top: 80px;
 }
 
@@ -892,7 +892,7 @@ section,
 }
 
 #backgroundCarousel {
-  height: 550px;
+  height: 650px;
 }
 
 /* .hero .carousel-inner {
@@ -992,7 +992,7 @@ section,
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
-    width: 350px;
+    width: 90%;
   }
 
   .hero .btn-get-started,
@@ -1006,6 +1006,16 @@ section,
 
   .carousel button {
     display: none;
+  }
+
+
+  .hero {
+    height: 450px;
+  }
+
+
+  #backgroundCarousel {
+    height: 450px;
   }
 }
 

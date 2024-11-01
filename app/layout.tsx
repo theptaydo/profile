@@ -44,8 +44,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         {/* Vendor CSS Files */}
         {/* <link href="/vendor/aos/aos.css" rel="stylesheet" /> */}
-        <link href="/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
-        <link href="/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+        {/* <link href="/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" /> */}
+        {/* <link href="/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" /> */}
 
         {/* Main CSS File */}
         <link href="/css/main.css" rel="stylesheet" />
@@ -81,7 +81,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       {/* <Script src="/vendor/glightbox/js/glightbox.min.js" />
       <Script src="/vendor/isotope-layout/isotope.pkgd.min.js" />
       <Script src="/vendor/swiper/swiper-bundle.min.js" /> */}
-      <Script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" />
+      {/* <Script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" /> */}
     </html>
   );
 }
