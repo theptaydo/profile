@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Login 10</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="./assets/css/login.css">
+  <style>
+    body {
+      padding-top: 100px;
+      width: 100%;
+      /* display: flex; */
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body class="img js-fullheight" style="background-image: url(./assets/img/bg.jpg);">
+  <section class="ftco-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6 text-center mb-5">
+          <h2 class="heading-section">Đăng nhập</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-4">
+          <div class="login-wrap p-0">
+            <!-- <h3 class="mb-4 text-center">Have an account?</h3> -->
+            <form action="#" class="signin-form">
+              <div class="form-group">
+                <input id="username" type="text" class="form-control" placeholder="Tên đăng nhập hoặc email" required>
+              </div>
+              <div class="form-group">
+                <input id="password" type="password" class="form-control" placeholder="Mật khẩu" required>
+                <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+              </div>
+              <div class="form-group">
+                <button onclick="login()" type="button" class="form-control btn btn-primary submit px-3">ĐĂNG NHẬP</button>
+              </div>
+              <div class="form-group d-md-flex">
+                <div class="w-50">
+                  <!-- <label class="checkbox-wrap checkbox-primary">Remember Me
+                    <input type="checkbox" checked>
+                    <span class="checkmark"></span>
+                  </label> -->
+                </div>
+                <div class="w-50 text-md-right">
+                  <a href="#" style="color: #fff">Quên mật khẩu</a>
+                </div>
+              </div>
+            </form>
+            <p class="w-100 text-center">&mdash; Or Sign In With &mdash;</p>
+            <div class="social d-flex text-center">
+              <a href="#" class="px-2 py-2 mr-md-1 rounded"><span class="ion-logo-facebook mr-2"></span> Facebook</a>
+              <a href="#" class="px-2 py-2 ml-md-1 rounded"><span class="ion-logo-twitter mr-2"></span> Twitter</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="./assets/js/jquery.min.js"></script>
+  <!-- <script src="./assets/js/popper.js"></script>
+  <script src="./assets/js/bootstrap.min.js"></script> -->
+  <script>
+    // Đoạn mã này điều chỉnh chiều cao của các phần tử có class 'js-fullheight' theo chiều cao của cửa sổ trình duyệt.
+    var fullHeight = function () {
+      var elements = document.querySelectorAll('.js-fullheight');
+      var setHeight = function () {
+        elements.forEach(function (element) {
+          element.style.height = window.innerHeight + 'px';
+        });
+      };
+
+      // Đặt chiều cao ban đầu
+      setHeight();
+
+      // Điều chỉnh chiều cao khi thay đổi kích thước cửa sổ
+      window.addEventListener('resize', setHeight);
+    };
+    fullHeight();
+
+    // Đoạn mã này xử lý chức năng ẩn/hiện mật khẩu khi nhấn vào biểu tượng 'toggle-password'.
+    document.querySelectorAll('.toggle-password').forEach(function (toggle) {
+      toggle.addEventListener('click', function () {
+        // Thay đổi biểu tượng từ 'fa-eye' sang 'fa-eye-slash' và ngược lại
+        this.classList.toggle('fa-eye');
+        this.classList.toggle('fa-eye-slash');
+
+        // Tìm trường input dựa trên thuộc tính 'toggle' của phần tử hiện tại
+        var input = document.querySelector(this.getAttribute('toggle'));
+
+        if (input) {
+          // Thay đổi thuộc tính 'type' giữa 'password' và 'text'
+          if (input.type === 'password') {
+            input.type = 'text';
+          } else {
+            input.type = 'password';
+          }
+        }
+      });
+    });
+  
+    function login() {
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+        alert(username + ": " + password)
+
+        const user = {
+          username: username,
+          password: password
+        }
+
+         
+       // Gửi yêu cầu đăng nhập tới API
+    fetch("https://tsc-eshop.vercel.app/api/v1/auth/signin", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(user)
+    })
+    .then(response => {
+        console.log("Trạng thái phản hồi:", response.status); // Kiểm tra trạng thái phản hồi
+        
+        if (!response.ok) {
+            throw new Error("Lỗi mạng hoặc API không phản hồi thành công");
+        }
+        
+        return response.text(); // Lấy dữ liệu trả về dưới dạng chuỗi
+    })
+    .then(text => {
+        console.log("Nội dung phản hồi từ server:", text); // Kiểm tra nội dung text nhận được từ server
+
+        // Nếu không có nội dung, trả về một đối tượng rỗng, tránh lỗi khi parse JSON
+        if (!text) {
+            throw new Error("Server trả về nội dung trống.");
+        }
+        
+        const data = JSON.parse(text); // Chuyển text sang JSON
+        
+        console.log("Dữ liệu JSON đã parse:", data); // Log dữ liệu đã parse
+        
+        // Kiểm tra thành công đăng nhập
+        if (data.success) {
+            localStorage.setItem("user", JSON.stringify(data.user));
+            window.location.href = "profile.html";
+        } else {
+            alert("Đăng nhập thất bại. Vui lòng kiểm tra tên đăng nhập và mật khẩu.");
+        }
+    })
+    .catch(error => {
+        console.error("Lỗi:", error);
+        alert("Có lỗi xảy ra trong quá trình đăng nhập: " + error.message);
+    });
+}
+
+  </script>
+
+</body>
+
+</html>
