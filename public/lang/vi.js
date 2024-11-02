@@ -193,25 +193,56 @@ export default {
           images:"/img/portfolio/cau-can-tho-su-dung-thep-tay-do.png"
         },
         {
-          name: "Cầu Cần Thơ",
+          name: "Bệnh Viện Đa Khoa Thành Phố",
           date:"....",
           images:"/img/portfolio/da-khoa-tpct-su-dung-thep-tay-do.png"
         },
         {
-          name: "Cầu Cần Thơ",
+          name: "Bệnh Viện Đa Khoa Trung Ương",
           date:"....",
           images:"/img/portfolio/da-khoa-trung-uong-ct-su-dung-thep-tay-do.png"
         },
         {
-          name: "Cầu Cần Thơ",
+          name: "Trường Đại Học Cần Thơ",
           date:"....",
           images:"/img/portfolio/dai-hoc-can-tho-su-dung-thep-tay-do.png"
         },
         {
-          name: "Cầu Cần Thơ",
+          name: "Bệnh Viện Đa Khoa Thành Phố",
           date:"....",
           images:"/img/portfolio/cau-can-tho-su-dung-thep-tay-do.png"
         },
+      ]
+    },
+    faq:{
+      badge: "Câu Hỏi Thường Gặp",
+      title: "Những câu hỏi thường gặp về",
+      subTitle: "Thép Tây Đô",
+      attributes:[
+        {
+           title:" Các sản phẩm thép của Thép Tây Đô có đạt tiêu chuẩn chất lượng quốc tế không?",
+          value: "Tất cả các sản phẩm thép của chúng tôi đều đạt tiêu chuẩn chất lượng quốc tế như ASTM, JIS, và EN, đảm bảo độ bền và an toàn cho mọi công trình xây dựng."
+        },
+        {
+          title:"Thép Tây Đô có cung cấp dịch vụ gia công thép theo yêu cầu không?",
+         value: " Chúng tôi cung cấp dịch vụ gia công thép theo yêu cầu kỹ thuật của khách hàng, bao gồm cắt, uốn, và mạ kẽm, đảm bảo đáp ứng đầy đủ các tiêu chuẩn và yêu cầu của từng dự án."
+       },
+       {
+        title:"Thời gian giao hàng của Thép Tây Đô là bao lâu?",
+       value: " Thời gian giao hàng thông thường là từ 3-5 ngày làm việc tùy thuộc vào địa điểm và khối lượng đặt hàng. Chúng tôi cũng cung cấp dịch vụ vận chuyển nhanh theo yêu cầu của khách hàng."
+     },
+     {
+      title:"Thép Tây Đô có hỗ trợ tư vấn cho các dự án lớn không?",
+     value: "Chúng tôi có đội ngũ kỹ thuật chuyên môn cao, sẵn sàng hỗ trợ tư vấn về sản phẩm thép và giải pháp phù hợp cho các dự án xây dựng lớn nhỏ trên toàn quốc."
+     },
+     {
+      title:"Thép Tây Đô có cung cấp dịch vụ bảo trì thép không?",
+     value: " Chúng tôi cung cấp dịch vụ bảo trì và kiểm định thép định kỳ, giúp khách hàng đảm bảo chất lượng và tuổi thọ của các sản phẩm thép sau khi sử dụng."
+     },
+     {
+      title:"Thép Tây Đô có cung cấp thép cho các công trình quốc tế không?",
+     value: "Chúng tôi không chỉ cung cấp thép cho thị trường trong nước mà còn xuất khẩu sang các quốc gia khác, đảm bảo đáp ứng các tiêu chuẩn quốc tế khắt khe nhất."
+     },
       ]
     }
   }

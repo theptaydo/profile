@@ -33,7 +33,7 @@ export default function Portfolio() {
     <>
       <section id="portfolio" className="portfolio section">
         <div className="container section-title" data-aos="fade-up">
-          <h2>{trans.HomePage.portfolio.badge}</h2>
+          <h2>{trans.HomePage.portfolio.title}</h2>
           <p>
             <span>{trans.HomePage.portfolio.title}</span> <span className="description-title">{trans.HomePage.portfolio.subTitle}</span>
           </p>

@@ -209,6 +209,37 @@ export default {
           images: "/img/portfolio/cau-can-tho-su-dung-thep-tay-do.png"
         },
       ]
+    },
+    faq: {
+      badge: "Frequently Asked Questions",
+      title: "Frequently Asked Questions About",
+      subTitle: "Tay Do Steel",
+      attributes: [
+        {
+          title: "Do Tay Do Steel products meet international quality standards?",
+          value: "All our steel products meet international quality standards such as ASTM, JIS, and EN, ensuring durability and safety for all construction projects."
+        },
+        {
+          title: "Does Tay Do Steel offer customized steel processing services?",
+          value: "We offer customized steel processing services according to customer specifications, including cutting, bending, and galvanizing, meeting all standards and requirements for each project."
+        },
+        {
+          title: "What is Tay Do Steel's delivery time?",
+          value: "The standard delivery time is 3-5 working days, depending on location and order volume. We also offer expedited shipping services upon customer request."
+        },
+        {
+          title: "Does Tay Do Steel provide support for large projects?",
+          value: "We have a highly skilled technical team ready to provide product advice and suitable solutions for construction projects of all sizes nationwide."
+        },
+        {
+          title: "Does Tay Do Steel offer steel maintenance services?",
+          value: "We provide regular maintenance and inspection services to help customers ensure the quality and longevity of their steel products after use."
+        },
+        {
+          title: "Does Tay Do Steel supply steel for international projects?",
+          value: "We supply steel not only for the domestic market but also export to other countries, meeting the strictest international standards."
+        },
+      ]
     }
     
 
