@@ -178,7 +178,40 @@ export default {
           titles: "先生 "
         },
       ]
+    },
+    portfolio: {
+      badge: "项目",
+      title: "探索",
+      subTitle: "我们的项目",
+      attributes: [
+        {
+          name: "芹苴大桥",
+          date: "....",
+          images: "/img/portfolio/cau-can-tho-su-dung-thep-tay-do.png"
+        },
+        {
+          name: "芹苴大桥",
+          date: "....",
+          images: "/img/portfolio/da-khoa-tpct-su-dung-thep-tay-do.png"
+        },
+        {
+          name: "芹苴大桥",
+          date: "....",
+          images: "/img/portfolio/da-khoa-trung-uong-ct-su-dung-thep-tay-do.png"
+        },
+        {
+          name: "芹苴大桥",
+          date: "....",
+          images: "/img/portfolio/dai-hoc-can-tho-su-dung-thep-tay-do.png"
+        },
+        {
+          name: "芹苴大桥",
+          date: "....",
+          images: "/img/portfolio/cau-can-tho-su-dung-thep-tay-do.png"
+        },
+      ]
     }
+    
 
 
 

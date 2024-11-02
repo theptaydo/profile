@@ -178,7 +178,40 @@ export default {
           titles: "君 "
         },
       ]
+    },
+    portfolio: {
+      badge: "プロジェクト",
+      title: "探検する",
+      subTitle: "私たちのプロジェクト",
+      attributes: [
+        {
+          name: "カントー橋",
+          date: "....",
+          images: "/img/portfolio/cau-can-tho-su-dung-thep-tay-do.png"
+        },
+        {
+          name: "カントー橋",
+          date: "....",
+          images: "/img/portfolio/da-khoa-tpct-su-dung-thep-tay-do.png"
+        },
+        {
+          name: "カントー橋",
+          date: "....",
+          images: "/img/portfolio/da-khoa-trung-uong-ct-su-dung-thep-tay-do.png"
+        },
+        {
+          name: "カントー橋",
+          date: "....",
+          images: "/img/portfolio/dai-hoc-can-tho-su-dung-thep-tay-do.png"
+        },
+        {
+          name: "カントー橋",
+          date: "....",
+          images: "/img/portfolio/cau-can-tho-su-dung-thep-tay-do.png"
+        },
+      ]
     }
+    
 
 
 

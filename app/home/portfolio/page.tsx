@@ -3,9 +3,10 @@
 import Head from 'next/head';
 import { profile } from 'console';
 import { useEffect } from 'react';
-
+import useTrans from '../../pages/useTrans';
 
 export default function Portfolio() {
+  const trans = useTrans();
   
   // Sử dụng useEffect để thực hiện hiệu ứng khi trang được tải
   useEffect(() => {
@@ -32,9 +33,9 @@ export default function Portfolio() {
     <>
       <section id="portfolio" className="portfolio section">
         <div className="container section-title" data-aos="fade-up">
-          <h2>Dự Án</h2>
+          <h2>{trans.HomePage.portfolio.badge}</h2>
           <p>
-            <span>Khám Phá Các</span> <span className="description-title">Dự án của Chúng Tôi</span>
+            <span>{trans.HomePage.portfolio.title}</span> <span className="description-title">{trans.HomePage.portfolio.subTitle}</span>
           </p>
         </div>
         {/* End Section Title */}
@@ -50,8 +51,8 @@ export default function Portfolio() {
                   }}
                 ></div>
                 <div className="text">
-                  <span className="date">Apr. 14th, 2022</span>
-                  <h2>AI can now kill those annoying cookie pop-ups</h2>
+                  <span className="date">{trans.HomePage.portfolio.attributes[0].date}</span>
+                  <h2>{trans.HomePage.portfolio.attributes[0].name}</h2>
                 </div>
               </a>
               <a href="single.html" className="h-entry v-height gradient left-slide">
@@ -62,8 +63,8 @@ export default function Portfolio() {
                   }}
                 ></div>
                 <div className="text">
-                  <span className="date">Apr. 14th, 2022</span>
-                  <h2>Don’t assume your user data in the cloud is safe</h2>
+                  <span className="date">{trans.HomePage.portfolio.attributes[1].date}</span>
+                  <h2>{trans.HomePage.portfolio.attributes[1].name}</h2>
                 </div>
               </a>
             </div>
@@ -77,8 +78,8 @@ export default function Portfolio() {
                   }}
                 ></div>
                 <div className="text">
-                  <span className="date">Apr. 14th, 2022</span>
-                  <h2>Why is my internet so slow?</h2>
+                  <span className="date">{trans.HomePage.portfolio.attributes[2].date}</span>
+                  <h2>{trans.HomePage.portfolio.attributes[2].name}</h2>
                 </div>
               </a>
             </div>
@@ -92,8 +93,8 @@ export default function Portfolio() {
                   }}
                 ></div>
                 <div className="text">
-                  <span className="date">Apr. 14th, 2022</span>
-                  <h2>Startup vs corporate: What job suits you best?</h2>
+                  <span className="date">{trans.HomePage.portfolio.attributes[3].date}</span>
+                  <h2>{trans.HomePage.portfolio.attributes[3].name}</h2>
                 </div>
               </a>
               <a href="single.html" className="h-entry v-height gradient right-slide ">
@@ -104,8 +105,8 @@ export default function Portfolio() {
                   }}
                 ></div>
                 <div className="text">
-                  <span className="date">Apr. 14th, 2022</span>
-                  <h2>Don’t assume your user data in the cloud is safe</h2>
+                  <span className="date">{trans.HomePage.portfolio.attributes[4].date}</span>
+                  <h2>{trans.HomePage.portfolio.attributes[4].name}</h2>
                 </div>
               </a>
             </div>
