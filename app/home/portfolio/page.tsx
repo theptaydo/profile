@@ -1,74 +1,41 @@
 'use client';
 
+import Head from 'next/head';
+import { profile } from 'console';
 import { useEffect } from 'react';
+import useTrans from '../../pages/useTrans';
 
 export default function Portfolio() {
+  const trans = useTrans();
+  
+  // Sử dụng useEffect để thực hiện hiệu ứng khi trang được tải
   useEffect(() => {
-    // Select all elements you want to animate
-    const elements = document.querySelectorAll('.portfolio .h-entry');
+    const entries = document.querySelectorAll('.portfolio .h-entry');
 
-    // Check if the Intersection Observer API is available
-    if ('IntersectionObserver' in window) {
-      // Create a new Intersection Observer
-      const observer = new IntersectionObserver(
-        (entries, observer) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              // Add the 'visible' class to trigger the animation
-              // entry.target.classList.add('visible');
-
-              // Determine the position of the element relative to the viewport
-              const rect = entry.target.getBoundingClientRect();
-              if (rect.left < window.innerWidth / 2) {
-                // If the element is on the left half of the viewport
-                entry.target.classList.add('left-slide');
-              } else {
-                // If the element is on the right half of the viewport
-                entry.target.classList.add('right-slide');
-              }
-
-              // Stop observing the element once it has been animated
-              observer.unobserve(entry.target);
-            }
-          });
-        },
-        {
-          root: null, // Use the viewport as the root
-          threshold: 0.2, // Trigger when 20% of the element is visible
-        }
-      );
-
-      // Observe each element
-      elements.forEach((element) => observer.observe(element));
-
-      // Cleanup the observer on component unmount
-      return () => observer.disconnect();
-    } else {
-      // Fallback for older browsers: make all elements visible
-      elements.forEach((element) => {
-        // element.classList.add('visible');
-
-        // Determine the position of the element relative to the viewport
-        const rect = element.getBoundingClientRect();
-        if (rect.left < window.innerWidth / 2) {
-          // If the element is on the left half of the viewport
-          element.classList.add('left-slide');
-        } else {
-          // If the element is on the right half of the viewport
-          element.classList.add('right-slide');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target); // Dừng theo dõi sau khi hiệu ứng chạy
         }
       });
-    }
-  }, []);
+    }, { threshold: 0.1 });
 
+    entries.forEach((entry) => observer.observe(entry));
+
+    return () => {
+      // Cleanup observer khi component unmount
+      observer.disconnect();
+    };
+  }, []);
 
   return (
     <>
       <section id="portfolio" className="portfolio section">
         <div className="container section-title" data-aos="fade-up">
-          <h2>Dự Án</h2>
+          <h2>{trans.HomePage.portfolio.badge}</h2>
           <p>
-            <span>Khám Phá Các</span> <span className="description-title">Dự án của Chúng Tôi</span>
+            <span>{trans.HomePage.portfolio.title}</span> <span className="description-title">{trans.HomePage.portfolio.subTitle}</span>
           </p>
         </div>
         {/* End Section Title */}
@@ -76,7 +43,7 @@ export default function Portfolio() {
         <div className="container">
           <div className="row align-items-stretch retro-layout">
             <div className="col-md-4">
-              <a href="" className="h-entry v-height gradient " style={{ marginBottom: '20px' }}>
+              <a href="" className="h-entry v-height gradient left-slide" style={{ marginBottom: '20px' }}>
                 <div
                   className="featured-img"
                   style={{
@@ -84,11 +51,11 @@ export default function Portfolio() {
                   }}
                 ></div>
                 <div className="text">
-                  <span className="date">Apr. 14th, 2022</span>
-                  <h2>AI can now kill those annoying cookie pop-ups</h2>
+                  <span className="date">{trans.HomePage.portfolio.attributes[0].date}</span>
+                  <h2>{trans.HomePage.portfolio.attributes[0].name}</h2>
                 </div>
               </a>
-              <a href="single.html" className="h-entry v-height gradient ">
+              <a href="single.html" className="h-entry v-height gradient left-slide">
                 <div
                   className="featured-img"
                   style={{
@@ -96,8 +63,8 @@ export default function Portfolio() {
                   }}
                 ></div>
                 <div className="text">
-                  <span className="date">Apr. 14th, 2022</span>
-                  <h2>Don’t assume your user data in the cloud is safe</h2>
+                  <span className="date">{trans.HomePage.portfolio.attributes[1].date}</span>
+                  <h2>{trans.HomePage.portfolio.attributes[1].name}</h2>
                 </div>
               </a>
             </div>
@@ -111,14 +78,14 @@ export default function Portfolio() {
                   }}
                 ></div>
                 <div className="text">
-                  <span className="date">Apr. 14th, 2022</span>
-                  <h2>Why is my internet so slow?</h2>
+                  <span className="date">{trans.HomePage.portfolio.attributes[2].date}</span>
+                  <h2>{trans.HomePage.portfolio.attributes[2].name}</h2>
                 </div>
               </a>
             </div>
 
             <div className="col-md-4">
-              <a href="single.html" className="h-entry mb-30 v-height gradient " style={{ marginBottom: '20px' }}>
+              <a href="single.html" className="h-entry mb-30 v-height gradient right-slide" style={{ marginBottom: '20px' }}>
                 <div
                   className="featured-img"
                   style={{
@@ -126,11 +93,11 @@ export default function Portfolio() {
                   }}
                 ></div>
                 <div className="text">
-                  <span className="date">Apr. 14th, 2022</span>
-                  <h2>Startup vs corporate: What job suits you best?</h2>
+                  <span className="date">{trans.HomePage.portfolio.attributes[3].date}</span>
+                  <h2>{trans.HomePage.portfolio.attributes[3].name}</h2>
                 </div>
               </a>
-              <a href="single.html" className="h-entry v-height gradient ">
+              <a href="single.html" className="h-entry v-height gradient right-slide ">
                 <div
                   className="featured-img"
                   style={{
@@ -138,8 +105,8 @@ export default function Portfolio() {
                   }}
                 ></div>
                 <div className="text">
-                  <span className="date">Apr. 14th, 2022</span>
-                  <h2>Don’t assume your user data in the cloud is safe</h2>
+                  <span className="date">{trans.HomePage.portfolio.attributes[4].date}</span>
+                  <h2>{trans.HomePage.portfolio.attributes[4].name}</h2>
                 </div>
               </a>
             </div>
@@ -149,3 +116,6 @@ export default function Portfolio() {
     </>
   );
 }
+
+
+

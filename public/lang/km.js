@@ -184,8 +184,40 @@ export default {
           titles: "បុរស "
         },
       ]
+    },
+    portfolio: {
+      badge: "គម្រោង",
+      title: "រុករក",
+      subTitle: "គម្រោងរបស់យើង",
+      attributes: [
+        {
+          name: "ស្ពាន កានធូ",
+          date: "....",
+          images: "/img/portfolio/cau-can-tho-su-dung-thep-tay-do.png"
+        },
+        {
+          name: "ស្ពាន កានធូ",
+          date: "....",
+          images: "/img/portfolio/da-khoa-tpct-su-dung-thep-tay-do.png"
+        },
+        {
+          name: "ស្ពាន កានធូ",
+          date: "....",
+          images: "/img/portfolio/da-khoa-trung-uong-ct-su-dung-thep-tay-do.png"
+        },
+        {
+          name: "ស្ពាន កានធូ",
+          date: "....",
+          images: "/img/portfolio/dai-hoc-can-tho-su-dung-thep-tay-do.png"
+        },
+        {
+          name: "ស្ពាន កានធូ",
+          date: "....",
+          images: "/img/portfolio/cau-can-tho-su-dung-thep-tay-do.png"
+        },
+      ]
     }
-
+    
 
 
 

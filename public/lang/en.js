@@ -184,7 +184,40 @@ export default {
           titles: "Mr "
         },
       ]
+    },
+    portfolio: {
+      badge: "Projects",
+      title: "Explore",
+      subTitle: "Our Projects",
+      attributes: [
+        {
+          name: "Can Tho Bridge",
+          date: "....",
+          images: "/img/portfolio/cau-can-tho-su-dung-thep-tay-do.png"
+        },
+        {
+          name: "Can Tho Bridge",
+          date: "....",
+          images: "/img/portfolio/da-khoa-tpct-su-dung-thep-tay-do.png"
+        },
+        {
+          name: "Can Tho Bridge",
+          date: "....",
+          images: "/img/portfolio/da-khoa-trung-uong-ct-su-dung-thep-tay-do.png"
+        },
+        {
+          name: "Can Tho Bridge",
+          date: "....",
+          images: "/img/portfolio/dai-hoc-can-tho-su-dung-thep-tay-do.png"
+        },
+        {
+          name: "Can Tho Bridge",
+          date: "....",
+          images: "/img/portfolio/cau-can-tho-su-dung-thep-tay-do.png"
+        },
+      ]
     }
+    
 
 
 
