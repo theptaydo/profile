@@ -97,7 +97,14 @@ export default {
     infor: {
       title: "Follow Us",
       description: "Connect with us on social media for the latest updates on the steel market.",
-    }
+    },
+    coppyright: {
+      brand: "Thep Tay Do",
+      title: "Copyright",
+      subTitle: "Copyright Registered",
+      developer: "Designed by "
+    },
+
   },
 
   HomePage: {

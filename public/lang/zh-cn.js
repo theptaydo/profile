@@ -98,6 +98,12 @@ export default {
     infor: {
       title: "关注我们",
       description: "通过社交媒体与我们联系，获取最新的钢铁市场信息。",
+    },
+    coppyright: {
+      brand: "Thep Tay Do",
+      title: "版权",
+      subTitle: "已注册版权",
+      developer: "设计者："
     }
   },
 

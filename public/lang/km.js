@@ -98,7 +98,13 @@ export default {
     infor: {
       title: "តាមដានយើង",
       description: "ចូលរួមជាមួយយើងនៅលើបណ្តាញសង្គមដើម្បីទទួលបានព័ត៌មានថ្មីៗអំពីទីផ្សារដែក។",
-    }
+    },
+    coppyright: {
+      brand: "Thep Tay Do",
+      title: "រក្សាសិទ្ធិ",
+      subTitle: "បានចុះបញ្ជីរក្សាសិទ្ធិ",
+      developer: "រចនាដោយ "
+    },
   },
 
   HomePage: {

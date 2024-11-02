@@ -41,7 +41,7 @@ export default function Footer() {
             <div className="col-lg-3 col-md-6 footer-about">
               <a href="index.html" className="d-flex align-items-center">
                 <span className="sitename" style={{ fontWeight: 'bold', marginBottom: '15px' }}>
-                {trans.footer.section[0].brand}
+                  {trans.footer.section[0].brand}
                 </span>
               </a>
               <div className="footer-contact pt-3">
@@ -107,13 +107,13 @@ export default function Footer() {
 
             <div className="col-lg-4 col-md-12">
               <p>
-                <b>{trans.footer.cert.title}</b> 
+                <b>{trans.footer.cert.title}</b>
               </p>
               <p>
-                <b>{trans.footer.cert.dateOfPlace}</b>  
+                <b>{trans.footer.cert.dateOfPlace}</b>
               </p>
               <p>
-                <b>{trans.footer.cert.grant}</b>  
+                <b>{trans.footer.cert.grant}</b>
               </p>
             </div>
 
@@ -132,10 +132,10 @@ export default function Footer() {
 
         <div className="container copyright text-center mt-4">
           <p>
-            © <span>Bản quyền</span> <strong className="px-1 sitename">Thép Tây Đô</strong> <span>Đã Đăng Ký Bản Quyền</span>
+            © <span>{trans.footer.coppyright.title}</span> <strong className="px-1 sitename">{trans.footer.coppyright.brand}</strong> <span>{trans.footer.coppyright.subTitle}</span>
           </p>
           <div className="credits">
-            Thiết kế bởi <a href="https://bootstrapmade.com/">Davisoft</a>
+            {trans.footer.coppyright.developer} <a href="https://theanishtar.github.io">Davisoft</a>
           </div>
         </div>
       </footer>

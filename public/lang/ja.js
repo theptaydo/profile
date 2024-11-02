@@ -98,7 +98,13 @@ export default {
     infor: {
       title: "フォローしてください",
       description: "最新の鉄市場情報を得るために、ソーシャルメディアで私たちとつながりましょう。",
-    }
+    },
+    coppyright: {
+      brand: "Thep Tay Do",
+      title: "著作権",
+      subTitle: "著作権登録済み",
+      developer: "デザイン："
+    },
   },
 
   HomePage: {
