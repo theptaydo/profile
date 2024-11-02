@@ -1,3 +1,5 @@
+import Portfolio from "@/app/home/portfolio/page";
+
 export default {
   header: {
     home: "Trang chủ",
@@ -182,6 +184,39 @@ export default {
           role: "Uvuvwevwevwe Onyetenyevwe Ugwemubwem Osas",
           images: "https://th.bing.com/th/id/OIP.ueglsKxAkWD-4Bb_nc46IgHaHa?rs=1&pid=ImgDetMain",
           titles: "Anh "
+        },
+      ]
+    },
+    portfolio:{
+      badge: "Dự Án",
+      title: "Khám Phá Các",
+      subTitle: "Dự Án Của Chúng Tôi",
+      attributes:[
+
+        {
+          name: "Cầu Cần Thơ",
+          date:"....",
+          images:"/img/portfolio/cau-can-tho-su-dung-thep-tay-do.png"
+        },
+        {
+          name: "Cầu Cần Thơ",
+          date:"....",
+          images:"/img/portfolio/da-khoa-tpct-su-dung-thep-tay-do.png"
+        },
+        {
+          name: "Cầu Cần Thơ",
+          date:"....",
+          images:"/img/portfolio/da-khoa-trung-uong-ct-su-dung-thep-tay-do.png"
+        },
+        {
+          name: "Cầu Cần Thơ",
+          date:"....",
+          images:"/img/portfolio/dai-hoc-can-tho-su-dung-thep-tay-do.png"
+        },
+        {
+          name: "Cầu Cần Thơ",
+          date:"....",
+          images:"/img/portfolio/cau-can-tho-su-dung-thep-tay-do.png"
         },
       ]
     }
