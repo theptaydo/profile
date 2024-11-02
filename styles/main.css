@@ -795,7 +795,40 @@ h6 {
   padding-right: 10px;
   color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
+/* Áp dụng animation cho các mục dịch vụ */
+.service-item {
+  opacity: 0;
+  animation: slideDown 0.6s ease-out forwards;
+  animation-delay: var(--animation-delay); /* Tạo độ trễ động */
+}
+
+/* Sử dụng độ trễ khác nhau cho từng mục để tạo hiệu ứng lần lượt */
+.service-item:nth-child(1) {
+  --animation-delay: 0.1s;
+}
+
+.service-item:nth-child(2) {
+  --animation-delay: 0.2s;
+}
+
+.service-item:nth-child(3) {
+  --animation-delay: 0.3s;
+}
+
+.service-item:nth-child(4) {
+  --animation-delay: 0.4s;
+}
 /*--------------------------------------------------------------
 # Global Sections
 --------------------------------------------------------------*/
@@ -1142,6 +1175,7 @@ section,
 .about .about-content p:last-child {
   margin-bottom: 0;
 }
+ 
 
 /*--------------------------------------------------------------
 # Skills Section

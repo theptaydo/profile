@@ -39,6 +39,68 @@ export default {
       },  //japan
     },
   },
+  footer: {
+    section: [
+      {
+        brand: "西都钢铁",
+        address: "123 工业街，槟椥郡，芹苴市",
+        phone: {
+          title: "电话: ",
+          value: "+84 292 123 4567",
+        },
+        email: {
+          title: "邮箱: ",
+          value: "info@theptaydo.com"
+        }
+      },
+      {
+        brand: "材料车间办公室",
+        address: "27 黎鸿峰街，茶安坊，槟椥郡，芹苴市",
+        phone: {
+          title: "电话: ",
+          value: "+84.796 65 65 65",
+        },
+        email: {
+          title: "邮箱: ",
+          value: "info@theptaydo.com"
+        }
+      },
+      {
+        brand: "芹苴代表处",
+        address: "44号，CMT8，蔡溪坊，宁桥郡，芹苴市",
+        phone: {
+          title: "电话: ",
+          value: "+84.796 65 65 65",
+        },
+        email: {
+          title: "邮箱: ",
+          value: "info@theptaydo.com"
+        }
+      },
+      {
+        brand: "胡志明市代表处",
+        address: "...",
+        phone: {
+          title: "电话: ",
+          value: "+84.796 65 65 65",
+        },
+        email: {
+          title: "邮箱: ",
+          value: "info@theptaydo.com"
+        }
+      },
+    ],
+    cert: {
+      title: "营业执照编号: 1800156657",
+      dateOfPlace: "发证日期: 2008年6月27日 - 发证机构: 芹苴市计划与投资局",
+      grant: "总经理: 黄忠光"
+    },
+    infor: {
+      title: "关注我们",
+      description: "通过社交媒体与我们联系，获取最新的钢铁市场信息。",
+    }
+  },
+
   HomePage: {
     home: "首页",
     contact: "联系我们",

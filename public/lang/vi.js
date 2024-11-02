@@ -39,6 +39,68 @@ export default {
       },  //japan
     },
   },
+  footer: {
+    section:[
+      {
+        brand: "Thép Tây Đô",
+        address: "123 Đường Công Nghiệp Quận Bình Thủy, TP. Cần Thơ",
+        phone:{
+          title: "Điện thoại: ",
+          value: "+84 292 123 4567",
+        },
+        email:{
+          title:"Email: ",
+          value: "info@theptaydo.com"
+        }
+      },
+      {
+        brand: "Văn phòng xưởng liệu",
+        address: "27 Lê Hồng Phong, P. Trà An, Quận Bình Thủy, TP. Cần Thơ",
+        phone:{
+          title: "Điện thoại: ",
+          value: "+84.796 65 65 65",
+        },
+        email:{
+          title:"Email: ",
+          value: "info@theptaydo.com"
+        }
+      },
+      {
+        brand: "Văn phòng đại diện tại Cần Thơ",
+        address: "Số 44, CMT8, Phường Cái Khế, Quận Ninh Kiều, TP. Cần Thơ",
+        phone:{
+          title: "Điện thoại: ",
+          value: "+84.796 65 65 65",
+        },
+        email:{
+          title:"Email: ",
+          value: "info@theptaydo.com"
+        }
+      },
+      {
+        brand: "Văn phòng đại diện tại TP HCM",
+        address: "...",
+        phone:{
+          title: "Điện thoại: ",
+          value: "+84.796 65 65 65",
+        },
+        email:{
+          title:"Email: ",
+          value: "info@theptaydo.com"
+        }
+      },
+    ],
+    cert: {
+      title: "Giấy chứng nhận đăng ký kinh doanh số: 1800156657",
+      dateOfPlace: "Ngày cấp: 27/06/2008 - Nơi cấp: Sở KH & ĐT TP Cần Thơ",
+      grant: "Tổng Giám Đốc Huỳnh Trung Quang"
+
+    },
+    infor:{
+      title: "Theo Dõi Chúng Tôi",
+      description: "Hãy kết nối với chúng tôi trên các kênh truyền thông xã hội để cập nhật thông tin mới nhất về thị trường thép.",
+    }
+  },
   HomePage: {
     home: "Trang chủ",
     contact: "Liên hệ",

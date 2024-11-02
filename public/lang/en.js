@@ -38,6 +38,67 @@ export default {
       },  //japan
     },
   },
+  footer: {
+    section: [
+      {
+        brand: "Tay Do Steel",
+        address: "123 Industrial Street, Binh Thuy District, City. Can Tho",
+        phone: {
+          title: "Phone: ",
+          value: "+84 292 123 4567",
+        },
+        email: {
+          title: "Email: ",
+          value: "info@theptaydo.com"
+        }
+      },
+      {
+        brand: "VP of Material Workshop",
+        address: "27 Le Hong Phong, Tra An Ward, Binh Thuy District, City. Can Tho",
+        phone: {
+          title: "Phone: ",
+          value: "+84.796 65 65 65",
+        },
+        email: {
+          title: "Email: ",
+          value: "info@theptaydo.com"
+        }
+      },
+      {
+        brand: "Representative office in Can Tho",
+        address: "No. 44, CMT8, Cai Khe Ward, Ninh Kieu District, City. Can Tho",
+        phone: {
+          title: "Phone: ",
+          value: "+84.796 65 65 65",
+        },
+        email: {
+          title: "Email: ",
+          value: "info@theptaydo.com"
+        }
+      },
+      {
+        brand: "Representative office in HCMC",
+        address: "...",
+        phone: {
+          title: "Phone: ",
+          value: "+84.796 65 65 65",
+        },
+        email: {
+          title: "Email: ",
+          value: "info@theptaydo.com"
+        }
+      },
+    ],
+    cert: {
+      title: "Business Registration Certificate No: 1800156657",
+      dateOfPlace: "Date issued: 27/06/2008 - Issued by: Department of Planning and Investment of Can Tho City",
+      grant: "General Director: Huynh Trung Quang"
+    },
+    infor: {
+      title: "Follow Us",
+      description: "Connect with us on social media for the latest updates on the steel market.",
+    }
+  },
 
   HomePage: {
     home: "Home",

@@ -39,6 +39,68 @@ export default {
       },  //japan
     },
   },
+  footer: {
+    section: [
+      {
+        brand: "テイ ド スチール",
+        address: "123 工業通り、ビン トゥイ地区、カントー市",
+        phone: {
+          title: "電話: ",
+          value: "+84 292 123 4567",
+        },
+        email: {
+          title: "メール: ",
+          value: "info@theptaydo.com"
+        }
+      },
+      {
+        brand: "材料ワークショップオフィス",
+        address: "27 レ ホン フォン、トラ アン区、ビン トゥイ地区、カントー市",
+        phone: {
+          title: "電話: ",
+          value: "+84.796 65 65 65",
+        },
+        email: {
+          title: "メール: ",
+          value: "info@theptaydo.com"
+        }
+      },
+      {
+        brand: "カントー代表オフィス",
+        address: "44番地、CMT8、カイ ケー区、ニン キウ地区、カントー市",
+        phone: {
+          title: "電話: ",
+          value: "+84.796 65 65 65",
+        },
+        email: {
+          title: "メール: ",
+          value: "info@theptaydo.com"
+        }
+      },
+      {
+        brand: "ホーチミン市代表オフィス",
+        address: "...",
+        phone: {
+          title: "電話: ",
+          value: "+84.796 65 65 65",
+        },
+        email: {
+          title: "メール: ",
+          value: "info@theptaydo.com"
+        }
+      },
+    ],
+    cert: {
+      title: "事業登録証明書番号: 1800156657",
+      dateOfPlace: "発行日: 2008年6月27日 - 発行機関: カントー市計画投資局",
+      grant: "代表取締役社長: フイン チュン クアン"
+    },
+    infor: {
+      title: "フォローしてください",
+      description: "最新の鉄市場情報を得るために、ソーシャルメディアで私たちとつながりましょう。",
+    }
+  },
+
   HomePage: {
     home: "ホーム",
     contact: "お問い合わせ",

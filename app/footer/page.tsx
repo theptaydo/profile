@@ -3,12 +3,14 @@
 import '@/styles/main.css';
 import Head from 'next/head';
 import Script from 'next/script';
+import useTrans from '../pages/useTrans';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Footer() {
+  const trans = useTrans();
 
   return (
     <div>
@@ -39,86 +41,85 @@ export default function Footer() {
             <div className="col-lg-3 col-md-6 footer-about">
               <a href="index.html" className="d-flex align-items-center">
                 <span className="sitename" style={{ fontWeight: 'bold', marginBottom: '15px' }}>
-                  Thép Tây Đô
+                {trans.footer.section[0].brand}
                 </span>
               </a>
               <div className="footer-contact pt-3">
-                <p>123 Đường Công Nghiệp</p>
-                <p>Quận Bình Thủy, TP. Cần Thơ</p>
+                <p>{trans.footer.section[0].address}</p>
+                {/* <p>Quận Bình Thủy, TP. Cần Thơ</p> */}
                 <p className="mt-3">
-                  <strong>Điện thoại:</strong> <span>+84 292 123 4567</span>
+                  <strong>{trans.footer.section[0].phone.title}</strong> <span>{trans.footer.section[0].phone.value}</span>
                 </p>
                 <p>
-                  <strong>Email:</strong> <span>info@theptaydo.com</span>
+                  <strong>{trans.footer.section[0].email.title}</strong> <span>{trans.footer.section[0].email.value}</span>
                 </p>
               </div>
             </div>
 
             <div className="col-lg-3 col-md-6 footer-about">
               <a href="index.html" className="d-flex align-items-center">
-                <span className="sitename">VP Xưởng Liệu</span>
+                <span className="sitename">{trans.footer.section[1].brand}</span>
               </a>
               <div className="footer-contact pt-3">
-                <p>27 Lê Hồng Phong, P. Trà An,</p>
-                <p>Quận Bình Thủy, TP. Cần Thơ</p>
+                <p>{trans.footer.section[1].address}</p>
+                {/* <p>Quận Bình Thủy, TP. Cần Thơ</p> */}
                 <p className="mt-3">
-                  <strong>Điện thoại:</strong> <span>+84.796 65 65 65</span>
+                  <strong>{trans.footer.section[1].phone.title}</strong> <span>{trans.footer.section[1].phone.value}</span>
                 </p>
                 <p>
-                  <strong>Email:</strong> <span>info@theptaydo.com</span>
+                  <strong>{trans.footer.section[1].email.title}</strong> <span>{trans.footer.section[1].email.value}</span>
                 </p>
               </div>
             </div>
 
             <div className="col-lg-3 col-md-6 footer-about">
               <a href="index.html" className="d-flex align-items-center">
-                <span className="sitename">VP đại diện tại Cần Thơ</span>
+                <span className="sitename">{trans.footer.section[2].brand}</span>
               </a>
               <div className="footer-contact pt-3">
-                <p>Số 44, CMT8, Phường Cái Khế,</p>
-                <p>Quận Ninh Kiều, TP. Cần Thơ</p>
+                <p>{trans.footer.section[2].address}</p>
+                {/* <p>Quận Ninh Kiều, TP. Cần Thơ</p> */}
                 <p className="mt-3">
-                  <strong>Điện thoại:</strong> <span>+84.796 65 65 65</span>
+                  <strong>{trans.footer.section[2].phone.title}</strong> <span>{trans.footer.section[2].phone.value}</span>
                 </p>
                 <p>
-                  <strong>Email:</strong> <span>info@theptaydo.com</span>
+                  <strong>{trans.footer.section[2].email.title}</strong> <span>{trans.footer.section[2].email.value}</span>
                 </p>
               </div>
             </div>
 
-            <div className="col-lg-2 col-md-3 footer-links">
-              <h4>Chính Sách Khách Hàng</h4>
-              <ul>
-                <li>
-                  <i className="bi bi-chevron-right"></i> <a href="#">Hệ Thống Phân Phối</a>
-                </li>
-                <li>
-                  <i className="bi bi-chevron-right"></i> <a href="#">Chính Sách Chung</a>
-                </li>
-                <li>
-                  <i className="bi bi-chevron-right"></i> <a href="#">Chính Sách Chất Lượng</a>
-                </li>
-                <li>
-                  <i className="bi bi-chevron-right"></i> <a href="#">Chính Sách Bán Hàng</a>
-                </li>
-              </ul>
+            <div className="col-lg-3 col-md-6 footer-about">
+              <a href="index.html" className="d-flex align-items-center">
+                <span className="sitename">{trans.footer.section[3].brand}</span>
+              </a>
+              <div className="footer-contact pt-3">
+                <p>{trans.footer.section[3].address}</p>
+                {/* <p>Quận Bình Thủy, TP. Cần Thơ</p> */}
+                <p className="mt-3">
+                  <strong>{trans.footer.section[3].phone.title}</strong> <span>{trans.footer.section[1].phone.value}</span>
+                </p>
+                <p>
+                  <strong>{trans.footer.section[3].email.title}</strong> <span>{trans.footer.section[1].email.value}</span>
+                </p>
+              </div>
             </div>
+
 
             <div className="col-lg-4 col-md-12">
               <p>
-                <b>Giấy chứng nhận đăng ký kinh doanh số:</b> 1800156657
+                <b>{trans.footer.cert.title}</b> 
               </p>
               <p>
-                <b>Ngày cấp:</b> 27/06/2008 - Nơi cấp: Sở KH & ĐT TP Cần Thơ
+                <b>{trans.footer.cert.dateOfPlace}</b>  
               </p>
               <p>
-                <b>Tổng Giám Đốc:</b> Huỳnh Trung Quang
+                <b>{trans.footer.cert.grant}</b>  
               </p>
             </div>
 
             <div className="col-lg-4 col-md-12">
-              <h4>Theo Dõi Chúng Tôi</h4>
-              <p>Hãy kết nối với chúng tôi trên các kênh truyền thông xã hội để cập nhật thông tin mới nhất về thị trường thép.</p>
+              <h4>{trans.footer.infor.title}</h4>
+              <p>{trans.footer.infor.description}</p>
               <div className="social-links d-flex">
                 <a href="#"><i className="bi bi-twitter"></i></a>
                 <a href="#"><i className="bi bi-facebook"></i></a>
