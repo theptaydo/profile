@@ -22,13 +22,13 @@ export default function Products() {
                   <div id="productCarousel0" className="carousel slide" data-bs-ride="carousel">
                     <div className="carousel-inner">
                       <div className="carousel-item active">
-                        <img src="http://shenglivn.com/uploads/san-pham/thep-cuon-tron-tron-5.jpg" className="d-block w-100" alt="Steel Coil Image 1" />
+                        <img src="/img/products/thep-cuon-tron-tron-5.jpg" className="d-block w-100" alt="Steel Coil Image 1" />
                       </div>
                       <div className="carousel-item">
-                        <img src="http://shenglivn.com/uploads/san-pham/thep-cuon-tron-tron-3.jpg" className="d-block w-100" alt="Steel Coil Image 2" />
+                        <img src="/img/products/thep-cuon-tron-tron-3.jpg" className="d-block w-100" alt="Steel Coil Image 2" />
                       </div>
                       <div className="carousel-item">
-                        <img src="http://shenglivn.com/uploads/san-pham/thep-cuon-tron-tron-6.jpg" className="d-block w-100" alt="Steel Coil Image 3" />
+                        <img src="/img/products/thep-cuon-tron-tron-7.jpg" className="d-block w-100" alt="Steel Coil Image 3" />
                       </div>
                     </div>
                     <button className="carousel-control-prev" type="button" data-bs-target="#productCarousel0" data-bs-slide="prev">
@@ -97,13 +97,13 @@ export default function Products() {
                   <div id="productCarousel1" className="carousel slide" data-bs-ride="carousel">
                     <div className="carousel-inner">
                       <div className="carousel-item active">
-                        <img src="http://shenglivn.com/uploads/san-pham/thep-cuon-van-8.jpg" className="d-block w-100" alt="Steel Coil Image 1" />
+                        <img src="/img/products/thep-cuon-van-8.jpg" className="d-block w-100" alt="Steel Coil Image 1" />
                       </div>
                       <div className="carousel-item">
-                        <img src="http://shenglivn.com/uploads/san-pham/thep-cuon-van-9.jpg" className="d-block w-100" alt="Steel Coil Image 2" />
+                        <img src="/img/products/thep-cuon-van-9.jpg" className="d-block w-100" alt="Steel Coil Image 2" />
                       </div>
                       <div className="carousel-item">
-                        <img src="http://shenglivn.com/uploads/san-pham/thep-cuon-van-8.jpg" className="d-block w-100" alt="Steel Coil Image 3" />
+                        <img src="/img/products/thep-cuon-van-8.jpg" className="d-block w-100" alt="Steel Coil Image 3" />
                       </div>
                     </div>
                     <button className="carousel-control-prev" type="button" data-bs-target="#productCarousel1" data-bs-slide="prev">
