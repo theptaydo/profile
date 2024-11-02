@@ -178,8 +178,8 @@ export default {
           titles: "Mr "
         },
         {
-          name: "Da Den",
-          role: "Op moe moe moe osha",
+          name: "Anh Da Den",
+          role: "Uvuvwevwevwe Onyetenyevwe Ugwemubwem Osas",
           images: "https://th.bing.com/th/id/OIP.ueglsKxAkWD-4Bb_nc46IgHaHa?rs=1&pid=ImgDetMain",
           titles: "Mr "
         },

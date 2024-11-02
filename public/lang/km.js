@@ -179,7 +179,7 @@ export default {
         },
         {
           name: "Anh Da Den",
-          role: "Op moe moe moe osha",
+          role: "Uvuvwevwevwe Onyetenyevwe Ugwemubwem Osas",
           images: "https://th.bing.com/th/id/OIP.ueglsKxAkWD-4Bb_nc46IgHaHa?rs=1&pid=ImgDetMain",
           titles: "បុរស "
         },
