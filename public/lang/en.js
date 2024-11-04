@@ -53,7 +53,7 @@ export default {
         }
       },
       {
-        brand: "VP of Material Workshop",
+        brand: "Scrap Processing Workshop",
         address: "27 Le Hong Phong, Tra An Ward, Binh Thuy District, City. Can Tho",
         phone: {
           title: "Phone: ",
@@ -99,7 +99,7 @@ export default {
       description: "Connect with us on social media for the latest updates on the steel market.",
     },
     coppyright: {
-      brand: "Thep Tay Do",
+      brand: "Tay Do Steel",
       title: "Copyright",
       subTitle: "Copyright Registered",
       developer: "Designed by "
@@ -217,7 +217,7 @@ export default {
         },
       ]
     }
-    
+
 
 
 

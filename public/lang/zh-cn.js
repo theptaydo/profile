@@ -42,50 +42,50 @@ export default {
   footer: {
     section: [
       {
-        brand: "西都钢铁",
-        address: "123 工业街，槟椥郡，芹苴市",
+        brand: "Tay Do Steel",
+        address: "123 Industrial Street, Binh Thuy District, City. Can Tho",
         phone: {
-          title: "电话: ",
+          title: "Phone: ",
           value: "+84 292 123 4567",
         },
         email: {
-          title: "邮箱: ",
+          title: "Email: ",
           value: "info@theptaydo.com"
         }
       },
       {
-        brand: "材料车间办公室",
-        address: "27 黎鸿峰街，茶安坊，槟椥郡，芹苴市",
+        brand: "Scrap Processing Workshop",
+        address: "27 Le Hong Phong, Tra An Ward, Binh Thuy District, City. Can Tho",
         phone: {
-          title: "电话: ",
+          title: "Phone: ",
           value: "+84.796 65 65 65",
         },
         email: {
-          title: "邮箱: ",
+          title: "Email: ",
           value: "info@theptaydo.com"
         }
       },
       {
-        brand: "芹苴代表处",
-        address: "44号，CMT8，蔡溪坊，宁桥郡，芹苴市",
+        brand: "Representative office in Can Tho",
+        address: "No. 44, CMT8, Cai Khe Ward, Ninh Kieu District, City. Can Tho",
         phone: {
-          title: "电话: ",
+          title: "Phone: ",
           value: "+84.796 65 65 65",
         },
         email: {
-          title: "邮箱: ",
+          title: "Email: ",
           value: "info@theptaydo.com"
         }
       },
       {
-        brand: "胡志明市代表处",
+        brand: "Representative office in HCMC",
         address: "...",
         phone: {
-          title: "电话: ",
+          title: "Phone: ",
           value: "+84.796 65 65 65",
         },
         email: {
-          title: "邮箱: ",
+          title: "Email: ",
           value: "info@theptaydo.com"
         }
       },
@@ -100,7 +100,7 @@ export default {
       description: "通过社交媒体与我们联系，获取最新的钢铁市场信息。",
     },
     coppyright: {
-      brand: "Thep Tay Do",
+      brand: "Tay Do Steel",
       title: "版权",
       subTitle: "已注册版权",
       developer: "设计者："
@@ -217,7 +217,7 @@ export default {
         },
       ]
     }
-    
+
 
 
 

@@ -42,50 +42,50 @@ export default {
   footer: {
     section: [
       {
-        brand: "テイ ド スチール",
-        address: "123 工業通り、ビン トゥイ地区、カントー市",
+        brand: "Tay Do Steel",
+        address: "123 Industrial Street, Binh Thuy District, City. Can Tho",
         phone: {
-          title: "電話: ",
+          title: "Phone: ",
           value: "+84 292 123 4567",
         },
         email: {
-          title: "メール: ",
+          title: "Email: ",
           value: "info@theptaydo.com"
         }
       },
       {
-        brand: "材料ワークショップオフィス",
-        address: "27 レ ホン フォン、トラ アン区、ビン トゥイ地区、カントー市",
+        brand: "Scrap Processing Workshop",
+        address: "27 Le Hong Phong, Tra An Ward, Binh Thuy District, City. Can Tho",
         phone: {
-          title: "電話: ",
+          title: "Phone: ",
           value: "+84.796 65 65 65",
         },
         email: {
-          title: "メール: ",
+          title: "Email: ",
           value: "info@theptaydo.com"
         }
       },
       {
-        brand: "カントー代表オフィス",
-        address: "44番地、CMT8、カイ ケー区、ニン キウ地区、カントー市",
+        brand: "Representative office in Can Tho",
+        address: "No. 44, CMT8, Cai Khe Ward, Ninh Kieu District, City. Can Tho",
         phone: {
-          title: "電話: ",
+          title: "Phone: ",
           value: "+84.796 65 65 65",
         },
         email: {
-          title: "メール: ",
+          title: "Email: ",
           value: "info@theptaydo.com"
         }
       },
       {
-        brand: "ホーチミン市代表オフィス",
+        brand: "Representative office in HCMC",
         address: "...",
         phone: {
-          title: "電話: ",
+          title: "Phone: ",
           value: "+84.796 65 65 65",
         },
         email: {
-          title: "メール: ",
+          title: "Email: ",
           value: "info@theptaydo.com"
         }
       },
@@ -100,7 +100,7 @@ export default {
       description: "最新の鉄市場情報を得るために、ソーシャルメディアで私たちとつながりましょう。",
     },
     coppyright: {
-      brand: "Thep Tay Do",
+      brand: "Tay Do Steel",
       title: "著作権",
       subTitle: "著作権登録済み",
       developer: "デザイン："
@@ -217,7 +217,7 @@ export default {
         },
       ]
     }
-    
+
 
 
 

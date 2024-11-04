@@ -42,50 +42,50 @@ export default {
   footer: {
     section: [
       {
-        brand: "តេប តាយ ដូ",
-        address: "123 ផ្លូវឧស្សាហកម្ម ស្រុកប៊ីនធឿ ក្រុង កានធូ",
+        brand: "Tay Do Steel",
+        address: "123 Industrial Street, Binh Thuy District, City. Can Tho",
         phone: {
-          title: "ទូរស័ព្ទ: ",
+          title: "Phone: ",
           value: "+84 292 123 4567",
         },
         email: {
-          title: "អ៊ីមែល: ",
+          title: "Email: ",
           value: "info@theptaydo.com"
         }
       },
       {
-        brand: "ការិយាល័យរោងចក្រសម្ភារៈ",
-        address: "27 ផ្លូវ លេ ហុង ផុង ភូមិ ត្រា អាន ស្រុកប៊ីនធឿ ក្រុង កានធូ",
+        brand: "Scrap Processing Workshop",
+        address: "27 Le Hong Phong, Tra An Ward, Binh Thuy District, City. Can Tho",
         phone: {
-          title: "ទូរស័ព្ទ: ",
+          title: "Phone: ",
           value: "+84.796 65 65 65",
         },
         email: {
-          title: "អ៊ីមែល: ",
+          title: "Email: ",
           value: "info@theptaydo.com"
         }
       },
       {
-        brand: "ការិយាល័យតំណាងនៅកានធូ",
-        address: "ផ្ទះលេខ 44, CMT8, ភូមិ ខៃ ខេ ស្រុក នីញ គៀវ ក្រុង កានធូ",
+        brand: "Representative office in Can Tho",
+        address: "No. 44, CMT8, Cai Khe Ward, Ninh Kieu District, City. Can Tho",
         phone: {
-          title: "ទូរស័ព្ទ: ",
+          title: "Phone: ",
           value: "+84.796 65 65 65",
         },
         email: {
-          title: "អ៊ីមែល: ",
+          title: "Email: ",
           value: "info@theptaydo.com"
         }
       },
       {
-        brand: "ការិយាល័យតំណាងនៅទីក្រុងហូជីមិញ",
+        brand: "Representative office in HCMC",
         address: "...",
         phone: {
-          title: "ទូរស័ព្ទ: ",
+          title: "Phone: ",
           value: "+84.796 65 65 65",
         },
         email: {
-          title: "អ៊ីមែល: ",
+          title: "Email: ",
           value: "info@theptaydo.com"
         }
       },
@@ -100,7 +100,7 @@ export default {
       description: "ចូលរួមជាមួយយើងនៅលើបណ្តាញសង្គមដើម្បីទទួលបានព័ត៌មានថ្មីៗអំពីទីផ្សារដែក។",
     },
     coppyright: {
-      brand: "Thep Tay Do",
+      brand: "Tay Do Steel",
       title: "រក្សាសិទ្ធិ",
       subTitle: "បានចុះបញ្ជីរក្សាសិទ្ធិ",
       developer: "រចនាដោយ "
@@ -217,7 +217,7 @@ export default {
         },
       ]
     }
-    
+
 
 
 
