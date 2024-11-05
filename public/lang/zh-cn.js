@@ -42,50 +42,50 @@ export default {
   footer: {
     section: [
       {
-        brand: "西都钢铁",
-        address: "123 工业街，槟椥郡，芹苴市",
+        brand: "Tay Do Steel",
+        address: "123 Industrial Street, Binh Thuy District, Can Tho City",
         phone: {
-          title: "电话: ",
+          title: "Phone: ",
           value: "+84 292 123 4567",
         },
         email: {
-          title: "邮箱: ",
+          title: "Email: ",
           value: "info@theptaydo.com"
         }
       },
       {
-        brand: "材料车间办公室",
-        address: "27 黎鸿峰街，茶安坊，槟椥郡，芹苴市",
+        brand: "Scrap Processing Workshop",
+        address: "27 Le Hong Phong, Tra An Ward, Binh Thuy District, Can Tho City",
         phone: {
-          title: "电话: ",
+          title: "Phone: ",
           value: "+84.796 65 65 65",
         },
         email: {
-          title: "邮箱: ",
+          title: "Email: ",
           value: "info@theptaydo.com"
         }
       },
       {
-        brand: "芹苴代表处",
-        address: "44号，CMT8，蔡溪坊，宁桥郡，芹苴市",
+        brand: "Representative office in Can Tho",
+        address: "No. 44, CMT8, Cai Khe Ward, Ninh Kieu District, Can Tho City",
         phone: {
-          title: "电话: ",
+          title: "Phone: ",
           value: "+84.796 65 65 65",
         },
         email: {
-          title: "邮箱: ",
+          title: "Email: ",
           value: "info@theptaydo.com"
         }
       },
       {
-        brand: "胡志明市代表处",
+        brand: "Representative office in Ho Chi Minh city",
         address: "...",
         phone: {
-          title: "电话: ",
+          title: "Phone: ",
           value: "+84.796 65 65 65",
         },
         email: {
-          title: "邮箱: ",
+          title: "Email: ",
           value: "info@theptaydo.com"
         }
       },
@@ -98,6 +98,12 @@ export default {
     infor: {
       title: "关注我们",
       description: "通过社交媒体与我们联系，获取最新的钢铁市场信息。",
+    },
+    coppyright: {
+      brand: "Tay Do Steel",
+      title: "版权",
+      subTitle: "已注册版权",
+      developer: "设计者："
     }
   },
 
@@ -173,7 +179,7 @@ export default {
         },
         {
           name: "Anh Da Den",
-          role: "Op moe moe moe osha",
+          role: "Uvuvwevwevwe Onyetenyevwe Ugwemubwem Osas",
           images: "https://th.bing.com/th/id/OIP.ueglsKxAkWD-4Bb_nc46IgHaHa?rs=1&pid=ImgDetMain",
           titles: "先生 "
         },
@@ -242,7 +248,7 @@ export default {
         },
       ]
     }
-    
+
 
 
 

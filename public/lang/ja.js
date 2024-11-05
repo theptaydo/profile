@@ -42,50 +42,50 @@ export default {
   footer: {
     section: [
       {
-        brand: "テイ ド スチール",
-        address: "123 工業通り、ビン トゥイ地区、カントー市",
+        brand: "Tay Do Steel",
+        address: "123 Industrial Street, Binh Thuy District, Can Tho City",
         phone: {
-          title: "電話: ",
+          title: "Phone: ",
           value: "+84 292 123 4567",
         },
         email: {
-          title: "メール: ",
+          title: "Email: ",
           value: "info@theptaydo.com"
         }
       },
       {
-        brand: "材料ワークショップオフィス",
-        address: "27 レ ホン フォン、トラ アン区、ビン トゥイ地区、カントー市",
+        brand: "Scrap Processing Workshop",
+        address: "27 Le Hong Phong, Tra An Ward, Binh Thuy District, Can Tho City",
         phone: {
-          title: "電話: ",
+          title: "Phone: ",
           value: "+84.796 65 65 65",
         },
         email: {
-          title: "メール: ",
+          title: "Email: ",
           value: "info@theptaydo.com"
         }
       },
       {
-        brand: "カントー代表オフィス",
-        address: "44番地、CMT8、カイ ケー区、ニン キウ地区、カントー市",
+        brand: "Representative office in Can Tho",
+        address: "No. 44, CMT8, Cai Khe Ward, Ninh Kieu District, Can Tho City",
         phone: {
-          title: "電話: ",
+          title: "Phone: ",
           value: "+84.796 65 65 65",
         },
         email: {
-          title: "メール: ",
+          title: "Email: ",
           value: "info@theptaydo.com"
         }
       },
       {
-        brand: "ホーチミン市代表オフィス",
+        brand: "Representative office in Ho Chi Minh city",
         address: "...",
         phone: {
-          title: "電話: ",
+          title: "Phone: ",
           value: "+84.796 65 65 65",
         },
         email: {
-          title: "メール: ",
+          title: "Email: ",
           value: "info@theptaydo.com"
         }
       },
@@ -98,7 +98,13 @@ export default {
     infor: {
       title: "フォローしてください",
       description: "最新の鉄市場情報を得るために、ソーシャルメディアで私たちとつながりましょう。",
-    }
+    },
+    coppyright: {
+      brand: "Tay Do Steel",
+      title: "著作権",
+      subTitle: "著作権登録済み",
+      developer: "デザイン："
+    },
   },
 
   HomePage: {
@@ -173,7 +179,7 @@ export default {
         },
         {
           name: "Anh Da Den",
-          role: "オプ・モエ・モエ・モエ・オシャ",
+          role: "Uvuvwevwevwe Onyetenyevwe Ugwemubwem Osas",
           images: "https://th.bing.com/th/id/OIP.ueglsKxAkWD-4Bb_nc46IgHaHa?rs=1&pid=ImgDetMain",
           titles: "君 "
         },
@@ -242,7 +248,7 @@ export default {
         },
       ]
     }
-    
+
 
 
 

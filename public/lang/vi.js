@@ -42,52 +42,52 @@ export default {
     },
   },
   footer: {
-    section:[
+    section: [
       {
         brand: "Thép Tây Đô",
         address: "123 Đường Công Nghiệp Quận Bình Thủy, TP. Cần Thơ",
-        phone:{
+        phone: {
           title: "Điện thoại: ",
           value: "+84 292 123 4567",
         },
-        email:{
-          title:"Email: ",
+        email: {
+          title: "Email: ",
           value: "info@theptaydo.com"
         }
       },
       {
         brand: "Văn phòng xưởng liệu",
         address: "27 Lê Hồng Phong, P. Trà An, Quận Bình Thủy, TP. Cần Thơ",
-        phone:{
+        phone: {
           title: "Điện thoại: ",
           value: "+84.796 65 65 65",
         },
-        email:{
-          title:"Email: ",
+        email: {
+          title: "Email: ",
           value: "info@theptaydo.com"
         }
       },
       {
         brand: "Văn phòng đại diện tại Cần Thơ",
         address: "Số 44, CMT8, Phường Cái Khế, Quận Ninh Kiều, TP. Cần Thơ",
-        phone:{
+        phone: {
           title: "Điện thoại: ",
           value: "+84.796 65 65 65",
         },
-        email:{
-          title:"Email: ",
+        email: {
+          title: "Email: ",
           value: "info@theptaydo.com"
         }
       },
       {
         brand: "Văn phòng đại diện tại TP HCM",
         address: "...",
-        phone:{
+        phone: {
           title: "Điện thoại: ",
           value: "+84.796 65 65 65",
         },
-        email:{
-          title:"Email: ",
+        email: {
+          title: "Email: ",
           value: "info@theptaydo.com"
         }
       },
@@ -98,9 +98,15 @@ export default {
       grant: "Tổng Giám Đốc Huỳnh Trung Quang"
 
     },
-    infor:{
+    infor: {
       title: "Theo Dõi Chúng Tôi",
       description: "Hãy kết nối với chúng tôi trên các kênh truyền thông xã hội để cập nhật thông tin mới nhất về thị trường thép.",
+    },
+    coppyright: {
+      brand: "Thep Tay Do ",
+      title: "Bản quyền ",
+      subTitle: "Đã Đăng Ký Bản Quyền",
+      developer: "Thiết kế bởi "
     }
   },
   HomePage: {
@@ -174,8 +180,8 @@ export default {
           titles: "Ông "
         },
         {
-          name: "Da Den",
-          role: "Op moe moe moe oshat",
+          name: "Anh Da Den",
+          role: "Uvuvwevwevwe Onyetenyevwe Ugwemubwem Osas",
           images: "https://th.bing.com/th/id/OIP.ueglsKxAkWD-4Bb_nc46IgHaHa?rs=1&pid=ImgDetMain",
           titles: "Anh "
         },
