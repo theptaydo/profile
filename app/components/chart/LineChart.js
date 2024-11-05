@@ -3,20 +3,15 @@ import { useRef, useEffect } from "react";
 import { Chart } from "chart.js/auto";
 
 export default function LineChart() {
-  // Use the correct type for the ref, HTMLCanvasElement | null
-  const chartRef = useRef<HTMLCanvasElement | null>(null);
+  const chartRef = useRef(null);
 
   useEffect(() => {
     if (chartRef.current) {
-      // Use type assertion to inform TypeScript about custom properties
-      const canvasElement = chartRef.current as HTMLCanvasElement & { chart?: Chart };
-
-      if (canvasElement.chart) {
-        canvasElement.chart.destroy();
+      if (chartRef.current.chart) {
+        chartRef.current.chart.destroy();
       }
 
-      const context = canvasElement.getContext("2d");
-      if (!context) return; // Add null check for context
+      const context = chartRef.current.getContext("2d");
 
       const newChart = new Chart(context, {
         type: "line",
@@ -26,13 +21,14 @@ export default function LineChart() {
             {
               label: "Info",
               data: [34, 64, 23, 45, 67, 24, 64],
-              backgroundColor: "rgba(255, 99, 132, 0.2)",
-              borderColor: "rgb(255, 99, 132)",
+              backgroundColor: ["rgb(255, 99, 132, 0.2)"],
+              borderColor: ["rgb(255, 99, 132)"],
               borderWidth: 1,
             },
           ],
         },
         options: {
+          // responsive: true
           scales: {
             x: {
               type: "linear",
@@ -44,11 +40,9 @@ export default function LineChart() {
         },
       });
 
-      // Store the chart instance in the canvas element
-      canvasElement.chart = newChart;
+      chartRef.current.chart = newChart;
     }
   }, []);
-
   return (
     <div style={{ position: "relative", width: "90vw", height: "80vh" }}>
       <canvas ref={chartRef} />

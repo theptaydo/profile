@@ -1,21 +1,8 @@
 'use client';
 
-import Head from 'next/head';
-import Script from 'next/script';
-// import '@/admin/vendors/mdi/css/materialdesignicons.min.css';
-// import '@/admin/vendors/ti-icons/css/themify-icons.css';
-// import '@/admin/vendors/css/vendor.bundle.base.css';
-// import '@/admin/vendors/font-awesome/css/font-awesome.min.css';
-
 export default function Dashboard() {
   return (
     <>
-      <Head>
-        <link rel="stylesheet" href="@/admin/vendors/mdi/css/materialdesignicons.min.css" />
-        <link rel="stylesheet" href="@/admin/vendors/ti-icons/css/themify-icons.css" />
-        <link rel="stylesheet" href="@/admin/vendors/css/vendor.bundle.base.css" />
-        <link rel="stylesheet" href="@/admin/vendors/font-awesome/css/font-awesome.min.css" />
-      </Head>
 
       <div className="main-panel">
         <div className="content-wrapper">
@@ -356,7 +343,7 @@ export default function Dashboard() {
                       <li className="completed">
                         <div className="form-check">
                           <label className="form-check-label">
-                            <input className="checkbox" type="checkbox" checked /> Call John </label>
+                            <input className="checkbox" type="checkbox" /> Call John </label>
                         </div>
                         <i className="remove mdi mdi-close-circle-outline"></i>
                       </li>
@@ -396,14 +383,6 @@ export default function Dashboard() {
           </div>
         </div>
       </div>
-      {/* Import Scripts */}
-      < Script src="/admin/vendors/js/vendor.bundle.base.js" />
-      <Script src="/admin/js/off-canvas.js" />
-      <Script src="/admin/js/misc.js/" />
-      <Script src="/admin/js/settings.js" />
-      <Script src="/admin/js/todolist.js" />
-      <Script src="/admin/js/jquery.cookie.js" />
-
     </>
   );
 }

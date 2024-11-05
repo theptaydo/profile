@@ -1,67 +1,76 @@
 "use client";
-
-import { Bar } from "react-chartjs-2";
+import { useRef, useEffect, useState } from "react";
 import { Chart } from "chart.js/auto";
 
-// Fake data
-const ChartData = [
-  { name: "Apple", sales: 150 },
-  { name: "Banana", sales: 100 },
-  { name: "Orange", sales: 120 },
-  { name: "Grapes", sales: 180 },
-  { name: "Mango", sales: 200 },
-  { name: "Strawberry", sales: 80 },
-  { name: "Blueberry", sales: 130 },
-  { name: "Pineapple", sales: 170 },
-  { name: "Watermelon", sales: 90 },
-  { name: "Peach", sales: 110 },
-];
+// Định nghĩa dữ liệu mẫu
+interface User {
+  firstName: string;
+  weight: number;
+}
 
-const BarChart = () => {
-  const productsName = ChartData.map((item) => item.name);
-  const productsSales = ChartData.map((item) => item.sales);
+export default function BarChart() {
+  const chartRef = useRef<HTMLCanvasElement | null>(null);
+  const [chartData, setChartData] = useState<User[]>([
+    { firstName: "Alice", weight: 68 },
+    { firstName: "Bob", weight: 75 },
+    { firstName: "Charlie", weight: 82 },
+    { firstName: "David", weight: 90 },
+    { firstName: "Eve", weight: 60 },
+    { firstName: "Frank", weight: 85 },
+  ]);
 
-  const data = {
-    labels: productsName,
-    datasets: [
-      {
-        label: "Foods & Drinks",
-        data: productsSales,
-        backgroundColor: [
-          "#a83293",
-          "#6632a8",
-          "#3281a8",
-          "#3242a8",
-          "#a83277",
-          "#32a883",
-          "#3ea832",
-          "#a8a832",
-          "#a86932",
-          "#329ea8",
-        ],
-      },
-    ],
-  };
+  useEffect(() => {
+    if (chartRef.current) {
+      const context = chartRef.current.getContext("2d");
+      if (!context) return;
 
-  const options = {
-    plugins: {
-      legend: {
-        labels: {
-          color: "black",
-          boxWidth: 0,
+      // Hủy biểu đồ cũ nếu có
+      if ((chartRef.current as any).chart) {
+        (chartRef.current as any).chart.destroy();
+      }
+
+      // Tạo biểu đồ mới
+      const labels = chartData.map((user) => user.firstName);
+      const data = chartData.map((user) => user.weight);
+
+      const newChart = new Chart(context, {
+        type: "bar",
+        data: {
+          labels,
+          datasets: [
+            {
+              label: "Weight Info",
+              data,
+              backgroundColor: "rgba(75, 192, 192, 0.2)",
+              borderColor: "rgb(75, 192, 192)",
+              borderWidth: 1,
+            },
+          ],
         },
-      },
-    },
-    layout: {
-      padding: 20,
-    },
-  };
+        options: {
+          responsive: true,
+          plugins: {
+            title: {
+              display: true,
+              text: "Weight Name Info",
+            },
+          },
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+          },
+        },
+      });
+
+      // Lưu trữ instance biểu đồ
+      (chartRef.current as any).chart = newChart;
+    }
+  }, [chartData]);
 
   return (
-    <div className="w-full h-full">
-      <Bar data={data} options={options} />
+    <div style={{ width: "90vw", height: "80vh" }}>
+      <canvas ref={chartRef} />
     </div>
   );
-};
-
-export default BarChart;
+}

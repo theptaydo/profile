@@ -1,16 +1,8 @@
 'use client'
 
 import '@/assets/admin/css/style.css';
-//  plugins:css 
-// import '@/assets/vendors/mdi/css/materialdesignicons.min.css';
-// import '@/assets/vendors/ti-icons/css/themify-icons.css';
-// import '@/assets/vendors/css/vendor.bundle.base.css';
-// import '@/assets/vendors/font-awesome/css/font-awesome.min.css';
-
-import Script from 'next/script';
 
 export default function Login() {
-
   return (
     <>
       <div className="container-scroller">
@@ -22,7 +14,7 @@ export default function Login() {
                   <div className="brand-logo">
                     <img src="/img/LOGO-slogan-xich-ma.png" />
                   </div>
-                  <h4>Hello! let's get started</h4>
+                  <h4>Hello! let&apos;s get started</h4>
                   <h6 className="font-weight-light">Sign in to continue.</h6>
                   <form className="pt-3">
                     <div className="form-group">
@@ -45,7 +37,7 @@ export default function Login() {
                       <button type="button" className="btn btn-block btn-facebook auth-form-btn">
                         <i className="mdi mdi-facebook me-2"></i>Connect using facebook </button>
                     </div>
-                    <div className="text-center mt-4 font-weight-light"> Don't have an account? <a href="/" className="text-primary">Create</a>
+                    <div className="text-center mt-4 font-weight-light"> Don&apos;t have an account? <a href="/" className="text-primary">Create</a>
                     </div>
                   </form>
                 </div>
@@ -54,12 +46,6 @@ export default function Login() {
           </div>
         </div>
       </div>
-      <Script src="@/assets/vendors/js/vendor.bundle.base.js"></Script>
-      <Script src="@/assets/js/off-canvas.js"></Script>
-      <Script src="@/assets/js/misc.js"></Script>
-      <Script src="@/assets/js/settings.js"></Script>
-      <Script src="@/assets/js/todolist.js"></Script>
-      <Script src="@/assets/js/jquery.cookie.js"></Script>
     </>
   );
 }
