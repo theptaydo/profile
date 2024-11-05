@@ -9,7 +9,7 @@ import '@/styles/main.css';
 export default function Home() {
 
   return (
-    // <HomePage />
-    <BarChart />
+    <HomePage />
+    // <BarChart />
   );
 }

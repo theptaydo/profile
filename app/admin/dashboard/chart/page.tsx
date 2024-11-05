@@ -12,7 +12,7 @@ export default function Chart() {
     <>
       <div>
         <h3>Scatter Chart</h3>
-        <ScatterChart />
+        <BarChart />
       </div>
     </>
 
