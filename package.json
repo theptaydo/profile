@@ -1,5 +1,5 @@
 {
-  "name": "davitek",
+  "name": "taydosteel",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,11 +10,11 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
+    "axios": "^1.7.7",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
+    "chart.js": "^4.4.6",
     "next": "13.5.7",
-    "next-intl": "^3.23.5",
-    "oh-vue-icons": "^1.0.0-rc3",
     "react": "^18",
     "react-dom": "^18",
     "swiper": "^11.1.14"
