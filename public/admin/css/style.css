@@ -29713,6 +29713,7 @@ dl li {
 
 /* Sidebar */
 .sidebar {
+  position: fixed;
   min-height: calc(100vh - 70px);
   background: #ffffff;
   font-family: "ubuntu-regular", sans-serif;
@@ -30369,7 +30370,7 @@ dl li {
   }
 
   .sidebar-absolute:not(.sidebar-hidden) .sidebar {
-    position: absolute;
+    /* position: absolute; */
     height: 100%;
     -webkit-box-shadow: 0 0 3px 1px #a7a3a3;
     /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
@@ -30489,6 +30490,7 @@ dl li {
 }
 
 .content-wrapper {
+  margin-left: 260px;
   background: #f2edf3;
   padding: 2.75rem 2.25rem;
   width: 100%;

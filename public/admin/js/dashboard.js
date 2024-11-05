@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 (function ($) {
   'use strict';
   if ($("#visit-sale-chart").length) {

@@ -1,5 +1,7 @@
 'use client';
 
+import Script from 'next/script';
+
 export default function Dashboard() {
   return (
     <>
@@ -9,13 +11,13 @@ export default function Dashboard() {
           <div className="page-header">
             <h3 className="page-title">
               <span className="page-title-icon bg-gradient-primary text-white me-2">
-                <i className="mdi mdi-home"></i>
+                <i className="bi bi-house"></i>
               </span> Dashboard
             </h3>
             <nav aria-label="breadcrumb">
               <ul className="breadcrumb">
                 <li className="breadcrumb-item active" aria-current="page">
-                  <span></span>Overview <i className="mdi mdi-alert-circle-outline icon-sm text-primary align-middle"></i>
+                  <span></span>Overview <i className="bi bi-exclamation-circle"></i>
                 </li>
               </ul>
             </nav>
@@ -25,7 +27,7 @@ export default function Dashboard() {
               <div className="card bg-gradient-danger card-img-holder text-white">
                 <div className="card-body">
                   <img src="/admin/images/dashboard/circle.svg" className="card-img-absolute" alt="circle-image" />
-                  <h4 className="font-weight-normal mb-3">Weekly Sales <i className="mdi mdi-chart-line mdi-24px float-end"></i>
+                  <h4 className="font-weight-normal mb-3">Weekly Sales <i className="bi bi-graph-up"></i>
                   </h4>
                   <h2 className="mb-5">$ 15,0000</h2>
                   <h6 className="card-text">Increased by 60%</h6>
@@ -36,7 +38,7 @@ export default function Dashboard() {
               <div className="card bg-gradient-info card-img-holder text-white">
                 <div className="card-body">
                   <img src="/admin/images/dashboard/circle.svg" className="card-img-absolute" alt="circle-image" />
-                  <h4 className="font-weight-normal mb-3">Weekly Orders <i className="mdi mdi-bookmark-outline mdi-24px float-end"></i>
+                  <h4 className="font-weight-normal mb-3">Weekly Orders <i className="bi bi-bookmark"></i>
                   </h4>
                   <h2 className="mb-5">45,6334</h2>
                   <h6 className="card-text">Decreased by 10%</h6>
@@ -47,7 +49,7 @@ export default function Dashboard() {
               <div className="card bg-gradient-success card-img-holder text-white">
                 <div className="card-body">
                   <img src="/admin/images/dashboard/circle.svg" className="card-img-absolute" alt="circle-image" />
-                  <h4 className="font-weight-normal mb-3">Visitors Online <i className="mdi mdi-diamond mdi-24px float-end"></i>
+                  <h4 className="font-weight-normal mb-3">Visitors Online <i className="bi bi-gem"></i>
                   </h4>
                   <h2 className="mb-5">95,5741</h2>
                   <h6 className="card-text">Increased by 5%</h6>
@@ -161,11 +163,11 @@ export default function Dashboard() {
                   <h4 className="card-title">Recent Updates</h4>
                   <div className="d-flex">
                     <div className="d-flex align-items-center me-4 text-muted font-weight-light">
-                      <i className="mdi mdi-account-outline icon-sm me-2"></i>
+                      <i className="bi bi-person"></i>
                       <span>jack Menqu</span>
                     </div>
                     <div className="d-flex align-items-center text-muted font-weight-light">
-                      <i className="mdi mdi-clock icon-sm me-2"></i>
+                      <i className="bi bi-stopwatch"></i>
                       <span>October 3rd, 2018</span>
                     </div>
                   </div>
@@ -186,7 +188,7 @@ export default function Dashboard() {
                       <p className="mb-0 font-weight-light">It is a long established fact that a reader will be distracted by the readable content of a page.</p>
                     </div>
                     <div className="ms-auto">
-                      <i className="mdi mdi-heart-outline text-muted"></i>
+                      <i className="bi bi-heart"></i>
                     </div>
                   </div>
                 </div>
@@ -338,42 +340,42 @@ export default function Dashboard() {
                           <label className="form-check-label">
                             <input className="checkbox" type="checkbox" /> Meeting with Alisa </label>
                         </div>
-                        <i className="remove mdi mdi-close-circle-outline"></i>
+                        <i className="bi bi-x-circle"></i>
                       </li>
                       <li className="completed">
                         <div className="form-check">
                           <label className="form-check-label">
                             <input className="checkbox" type="checkbox" /> Call John </label>
                         </div>
-                        <i className="remove mdi mdi-close-circle-outline"></i>
+                        <i className="bi bi-x-circle"></i>
                       </li>
                       <li>
                         <div className="form-check">
                           <label className="form-check-label">
                             <input className="checkbox" type="checkbox" /> Create invoice </label>
                         </div>
-                        <i className="remove mdi mdi-close-circle-outline"></i>
+                        <i className="bi bi-x-circle"></i>
                       </li>
                       <li>
                         <div className="form-check">
                           <label className="form-check-label">
                             <input className="checkbox" type="checkbox" /> Print Statements </label>
                         </div>
-                        <i className="remove mdi mdi-close-circle-outline"></i>
+                        <i className="bi bi-x-circle"></i>
                       </li>
                       <li className="completed">
                         <div className="form-check">
                           <label className="form-check-label">
                             <input className="checkbox" type="checkbox" checked /> Prepare for presentation </label>
                         </div>
-                        <i className="remove mdi mdi-close-circle-outline"></i>
+                        <i className="bi bi-x-circle"></i>
                       </li>
                       <li>
                         <div className="form-check">
                           <label className="form-check-label">
                             <input className="checkbox" type="checkbox" /> Pick up kids from school </label>
                         </div>
-                        <i className="remove mdi mdi-close-circle-outline"></i>
+                        <i className="bi bi-x-circle"></i>
                       </li>
                     </ul>
                   </div>
@@ -383,6 +385,42 @@ export default function Dashboard() {
           </div>
         </div>
       </div>
+      {/* <Script
+        src="/admin/vendors/js/vendor.bundle.base.js"
+        strategy="afterInteractive"
+      />
+      <Script
+        src="/admin/vendors/chart.js/chart.umd.js"
+        strategy="afterInteractive"
+      />
+      <Script
+        src="/admin/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"
+        strategy="afterInteractive"
+      />
+      <Script
+        src="/admin/js/off-canvas.js"
+        strategy="afterInteractive"
+      />
+      <Script
+        src="/admin/js/misc.js"
+        strategy="afterInteractive"
+      />
+      <Script
+        src="/admin/js/settings.js"
+        strategy="afterInteractive"
+      />
+      <Script
+        src="/admin/js/todolist.js"
+        strategy="afterInteractive"
+      />
+      <Script
+        src="/admin/js/jquery.cookie.js"
+        strategy="afterInteractive"
+      />
+      <Script
+        src="/admin/js/dashboard.js"
+        strategy="afterInteractive"
+      /> */}
     </>
   );
 }

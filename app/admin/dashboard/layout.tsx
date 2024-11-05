@@ -1,7 +1,6 @@
 'use client'
 
 import Head from 'next/head';
-import Script from 'next/script';
 import Header from '@/app/components/admin/header';
 import Sidebar from '@/app/components/admin/sidebar';
 import '@/assets/admin/css/style.css';
