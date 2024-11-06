@@ -3,13 +3,20 @@
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 import 'bootstrap-icons/font/bootstrap-icons.css'; // Import Bootstrap Icons CSS
 import React, { useState, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
+
 export default function Header() {
   const [isActive, setIsActive] = useState(false);
-
+  const router = useRouter();
   // Hàm xử lý click
   const handleSidebarClick = () => {
     setIsActive(!isActive);
   };
+
+  const signout = () => {
+    localStorage.removeItem('token');
+    router.push('/admin');
+  }
 
   const [avatar, setAvatar] = useState<string | null>(null);
   const [name, setName] = useState<string | null>(null);
@@ -69,14 +76,14 @@ export default function Header() {
               </a>
               <div className="dropdown-menu navbar-dropdown" aria-labelledby="profileDropdown">
                 <a className="dropdown-item" href="#">
-                  <i className="bi bi-power"></i>
+                  <i className="bi bi-arrow-clockwise"></i>
                   Activity Log
                 </a>
                 <div className="dropdown-divider"></div>
-                <a className="dropdown-item" href="#">
-                  <i className="bi bi-power"></i>
+                {/* <a className="dropdown-item" href="#">
+                  <i className="bi bi-power text-primary"></i>
                   Signout
-                </a>
+                </a> */}
               </div>
             </li>
 
@@ -139,7 +146,7 @@ export default function Header() {
 
             {/* Logout and Settings */}
             <li className="nav-item nav-logout d-none d-lg-block">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="#" onClick={signout}>
                 <i className="bi bi-power"></i>
               </a>
             </li>

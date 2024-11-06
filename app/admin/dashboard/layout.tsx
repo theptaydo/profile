@@ -2,7 +2,6 @@
 
 import Head from 'next/head';
 import Header from '@/app/components/admin/header';
-import Sidebar from '@/app/components/admin/sidebar';
 import '@/public/admin/css/style.css';
 import '@/app/globals.css';
 import { useEffect } from 'react';

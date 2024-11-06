@@ -41,7 +41,7 @@ export default function BarChart() {
             {
               label: "Weight Info",
               data,
-              backgroundColor: "rgba(75, 192, 192, 0.2)",
+              backgroundColor: "rgb(111, 151, 212)",
               borderColor: "rgb(75, 192, 192)",
               borderWidth: 1,
             },
