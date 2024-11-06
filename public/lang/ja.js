@@ -40,6 +40,11 @@ export default {
     },
   },
   footer: {
+    content: "情報の登録",
+    message: "最新の製品とサービスに関するニュースを受け取るために登録してください！",
+    placeholder : "メールアドレスを入力してください",
+    loading: "処理中...",
+    sent: "登録リクエストが送信されました。ありがとうございます！",
     section: [
       {
         brand: "Tay Do Steel",
@@ -247,11 +252,86 @@ export default {
           value: "当社は国内市場だけでなく、他国にも輸出しており、最も厳しい国際基準を満たしています。"
         },
       ]
-    }
+    },
+     products:  {
+      badge: "製品",
+      title: "注目の製品",
+      subTitle: "タイドースチール",
+      generic: "種類: ",
+      characteristic: "特徴: ",
+      standard: "規格",
+      diameter: "直径: ",
+      weight: "1メートルあたりの重量: ",
+      contactLink: "お問い合わせ",
+      items: [
+        {
+          name: "滑らかな丸鋼コイル",
+          types: "CB240T、HPB300、SAE 1018",
+          features: "滑らかな表面、傷なし、欠陥なし、バリなし、ひび割れなし、...",
+          standards: "TCVN（ベトナム）、GB（中国）、ASTM（アメリカ）",
+          diameters: "6mm、6.5mm、8mm、10mm、12mm、14mm",
+          weightPerMeter: [
+            { diameter: "Ф6 = 0.222 kg" },
+            { diameter: "Ф6.5 = 0.260 kg" },
+            { diameter: "Ф8 = 0.395 kg" },
+            { diameter: "Ф10 = 0.617 kg" },
+            { diameter: "Ф12 = 0.888 kg" },
+            { diameter: "Ф14 = 1.21 kg" }
+          ],
+          
+        },
+        {
+          name: "パターン付きコイル鋼",
+          types: "CB240T、HPB300、SAE 1018",
+          features: "滑らかな表面、傷なし、欠陥なし、バリなし、ひび割れなし、...",
+          standards: "TCVN（ベトナム）、GB（中国）、ASTM（アメリカ）",
+          diameters: "6mm、6.5mm、8mm、10mm、12mm、14mm",
+          weightPerMeter: [
+            { diameter: "Ф6", weight: "0.222 kg" },
+            { diameter: "Ф6.5", weight: "0.260 kg" },
+            { diameter: "Ф8", weight: "0.395 kg" },
+            { diameter: "Ф10", weight: "0.617 kg" },
+            { diameter: "Ф12", weight: "0.888 kg" },
+            { diameter: "Ф14", weight: "1.21 kg" }
+          ],
+          
+        }
+      ]
+    },
+    contact : {
+      badge: "お問い合わせ",
+      title: "お問い合わせ",
+      subTitle: "へ",
+    
+      attributes: [
+        {
+          title: "住所",
+          value: "プロットNo.45、通りNo.2、Tra Noc 1工業団地、Tra Noc区、ビン・トゥイ区、カントー市、ホットライン: (+84)2923.841822"
+        },
+        {
+          title: "電話番号",
+          value: "+1 5589 55488 55"
+        },
+        {
+          title: "メール",
+          value: "info@example.com"
+        }
+      ],
+      
+      form: [
 
-
-
-
+       {
+        name: "お名前",
+        email: "メール",
+        subject: "件名",
+        message: "メッセージ",
+        loading: "読み込み中",
+        sent: "メッセージが送信されました。ありがとうございました！",
+        submit: "送信"
+       }
+      ]
+    },
+    
 
   }
 }

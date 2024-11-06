@@ -40,6 +40,11 @@ export default {
     },
   },
   footer: {
+    content: "ចុះឈ្មោះដើម្បីទទួលព័ត៌មាន",
+  message: "ចុះឈ្មោះដើម្បីទទួលព័ត៌មានថ្មីៗអំពីផលិតផល និងសេវាកម្មរបស់ដែកខេត្តតាយដូ!",
+  placeholder : "បញ្ចូលអ៊ីមែលរបស់អ្នក",
+  loading: "កំពុងដំណើរការ...",
+  sent: "សំណើរចុះឈ្មោះរបស់អ្នកត្រូវបានផ្ញើ។ សូមអរគុណ!",
     section: [
       {
         brand: "Tay Do Steel",
@@ -247,8 +252,85 @@ export default {
           value: "យើងមិនត្រឹមតែផ្គត់ផ្គង់ដែកសម្រាប់ទីផ្សារក្នុងប្រទេសទេ ពេលនោះយើងក៏នាំចេញទៅកាន់បណ្តាប្រទេសផ្សេងទៀតផងដែរ ដើម្បីធានាអោយបានតាមស្តង់ដារអន្តរជាតិដ៏តឹងរឹង។"
         },
       ]
+    },
+      products : {
+        badge: "ផលិតផល",
+        title: "ផលិតផលពិសេសរបស់",
+        subTitle: "ដែកតាយដូ",
+        generic: "ប្រភេទ: ",
+        characteristic: "លក្ខណៈពិសេស: ",
+        standard: "ស្តង់ដារ",
+        diameter: "អង្កត់ផ្ចិត: ",
+        weight: "ទម្ងន់ក្នុងមួយម៉ែត្រ: ",
+        contactLink: "ទាក់ទងមកយើង",
+      items: [
+        {
+          name: "ដែកក្រឡាក្រឡួនស្នូរជុំ",
+          types: "CB240T, HPB300, SAE 1018",
+          features: "ផ្ទៃរលោង គ្មានស្នាម គ្មានបញ្ហា គ្មានឆ្នូត គ្មានឆ្កូត ...",
+          standards: "TCVN (វៀតណាម), GB (ចិន), ASTM (អាមេរិក)",
+          diameters: "6mm, 6.5mm, 8mm, 10mm, 12mm, 14mm",
+          weightPerMeter: [
+            { diameter: "Ф6 = 0.222 kg" },
+            { diameter: "Ф6.5 = 0.260 kg" },
+            { diameter: "Ф8 = 0.395 kg" },
+            { diameter: "Ф10 = 0.617 kg" },
+            { diameter: "Ф12 = 0.888 kg" },
+            { diameter: "Ф14 = 1.21 kg" }
+          ],
+ 
+        },
+        {
+          name: "ដែកក្រឡាក្រឡូនមានរូបភាព",
+          types: "CB240T, HPB300, SAE 1018",
+          features: "ផ្ទៃរលោង គ្មានស្នាម គ្មានបញ្ហា គ្មានឆ្នូត គ្មានឆ្កូត ...",
+          standards: "TCVN (វៀតណាម), GB (ចិន), ASTM (អាមេរិក)",
+          diameters: "6mm, 6.5mm, 8mm, 10mm, 12mm, 14mm",
+          weightPerMeter: [
+            { diameter: "Ф6", weight: "0.222 kg" },
+            { diameter: "Ф6.5", weight: "0.260 kg" },
+            { diameter: "Ф8", weight: "0.395 kg" },
+            { diameter: "Ф10", weight: "0.617 kg" },
+            { diameter: "Ф12", weight: "0.888 kg" },
+            { diameter: "Ф14", weight: "1.21 kg" }
+          ],
+        
+        }
+      ]
+    },
+     contact : {
+      badge: "ទាក់ទង",
+      title: "ទាក់ទង",
+      subTitle: "មកពួកយើង",
+    
+      attributes: [
+        {
+          title: "អាសយដ្ឋាន",
+          value: "ប្លុកលេខ 45 ផ្លូវលេខ 2, សេដ្ឋកិច្ច Tra Noc 1, សង្កាត់ Tra Noc, ខណ្ឌ Binh Thuy, ក្រុង Can Tho, ទូរស័ព្ទទំនាក់ទំនង៖ (+84)2923.841822"
+        },
+        {
+          title: "ទូរស័ព្ទ",
+          value: "+1 5589 55488 55"
+        },
+        {
+          title: "អ៊ីមែល",
+          value: "info@example.com"
+        }
+      ],
+      
+      form: [
+       {
+        name: "ឈ្មោះរបស់អ្នក",
+        email: "អ៊ីមែល",
+        subject: "ប្រធានបទ",
+        message: "សារ",
+        loading: "កំពុងផ្ទុក",
+        sent: "សាររបស់អ្នកត្រូវបានផ្ញើ។ សូមអរគុណ!",
+        submit: "ផ្ញើសារ"
+       }
+      ]
     }
-
+    
 
 
 

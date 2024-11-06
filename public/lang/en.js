@@ -39,6 +39,11 @@ export default {
     },
   },
   footer: {
+    content: "Subscribe for Updates",
+  message: "Sign up to receive the latest news about Tay Do Steel's products and services!",
+  placeholder :"Enter your email",
+  loading: "Processing...",
+  sent: "Your subscription request has been sent. Thank you!",
     section: [
       {
         brand: "Tay Do Steel",
@@ -247,11 +252,85 @@ export default {
           value: "We supply steel not only for the domestic market but also export to other countries, meeting the strictest international standards."
         },
       ]
+    },
+     products : {
+      badge: "Products",
+      title: "Featured Products",
+      subTitle: "Tay Do Steel",
+      generic: "Type: ",
+      characteristic: "Features: ",
+      standard: "Standards",
+      diameter: "Diameter: ",
+      weight: "Weight per Meter: ",
+      contactLink: "Contact Us",
+      items: [
+        {
+          name: "Smooth Round Coil Steel",
+          types: "CB240T, HPB300, SAE 1018",
+          features: "Smooth surface, no scratches, no defects, no burrs, no cracks, ...",
+          standards: "TCVN (Vietnam), GB (China), ASTM (USA)",
+          diameters: "6mm, 6.5mm, 8mm, 10mm, 12mm, 14mm",
+          weightPerMeter: [
+            { diameter: "Ф6 = 0.222 kg" },
+            { diameter: "Ф6.5 = 0.260 kg" },
+            { diameter: "Ф8 = 0.395 kg" },
+            { diameter: "Ф10 = 0.617 kg" },
+            { diameter: "Ф12 = 0.888 kg" },
+            { diameter: "Ф14 = 1.21 kg" }
+          ],
+         
+        },
+        {
+          name: "Patterned Coil Steel",
+          types: "CB240T, HPB300, SAE 1018",
+          features: "Smooth surface, no scratches, no defects, no burrs, no cracks, ...",
+          standards: "TCVN (Vietnam), GB (China), ASTM (USA)",
+          diameters: "6mm, 6.5mm, 8mm, 10mm, 12mm, 14mm",
+          weightPerMeter: [
+            { diameter: "Ф6 = 0.222 kg" },
+            { diameter: "Ф6.5 = 0.260 kg" },
+            { diameter: "Ф8 = 0.395 kg" },
+            { diameter: "Ф10 = 0.617 kg" },
+            { diameter: "Ф12 = 0.888 kg" },
+            { diameter: "Ф14 = 1.21 kg" }
+          ],
+           
+        }
+      ]
+    },
+    
+   contact : {
+      badge: "Contact",
+      title: "Contact",
+      subTitle: "Us",
+    
+      attributes: [
+        {
+          title: "Address",
+          value: "Plot No. 45, Street No. 2, Tra Noc 1 Industrial Park, Tra Noc Ward, Binh Thuy District, Can Tho City, Hotline: (+84)2923.841822"
+        },
+        {
+          title: "Phone",
+          value: "+1 5589 55488 55"
+        },
+        {
+          title: "Email",
+          value: "info@example.com"
+          
+        }
+      ],
+      
+      form: [
+        {
+        name: "Your Name",
+        email: "Email",
+        subject: "Subject",
+        message: "Message",
+        loading: "Loading",
+        sent: "Your message has been sent. Thank you!",
+        submit: "Send Message"
+        }
+      ]
     }
-
-
-
-
-
   }
 }

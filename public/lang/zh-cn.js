@@ -40,6 +40,11 @@ export default {
     },
   },
   footer: {
+    content: "订阅信息",
+    message: "注册以接收有关西都钢铁产品和服务的最新消息！",
+    placeholder : "请输入您的邮箱",
+    loading: "处理中...",
+    sent: "您的订阅请求已发送。谢谢！",
     section: [
       {
         brand: "Tay Do Steel",
@@ -247,10 +252,86 @@ export default {
           value: "我们不仅为国内市场提供钢材，还出口到其他国家，符合最严格的国际标准。"
         },
       ]
-    }
-
-
-
+    },
+      products :{
+        badge: "产品",
+        title: "特色产品",
+        subTitle: "西都钢铁",
+        generic: "类型: ",
+        characteristic: "特点: ",
+        standard: "标准",
+        diameter: "直径: ",
+        weight: "每米重量: ",
+        contactLink: "联系我们",
+      items: [
+        {
+          name: "光滑圆钢卷",
+          types: "CB240T, HPB300, SAE 1018",
+          features: "光滑表面，无划痕，无缺陷，无毛刺，无裂纹，...",
+          standards: "TCVN（越南），GB（中国），ASTM（美国）",
+          diameters: "6mm，6.5mm，8mm，10mm，12mm，14mm",
+          weightPerMeter: [
+            { diameter: "Ф6 = 0.222 kg" },
+            { diameter: "Ф6.5 = 0.260 kg" },
+            { diameter: "Ф8 = 0.395 kg" },
+            { diameter: "Ф10 = 0.617 kg" },
+            { diameter: "Ф12 = 0.888 kg" },
+            { diameter: "Ф14 = 1.21 kg" }
+          ],
+      
+        },
+        {
+          name: "图案卷钢",
+          types: "CB240T, HPB300, SAE 1018",
+          features: "光滑表面，无划痕，无缺陷，无毛刺，无裂纹，...",
+          standards: "TCVN（越南），GB（中国），ASTM（美国）",
+          diameters: "6mm，6.5mm，8mm，10mm，12mm，14mm",
+          weightPerMeter: [
+            { diameter: "Ф6 = 0.222 kg" },
+            { diameter: "Ф6.5 = 0.260 kg" },
+            { diameter: "Ф8 = 0.395 kg" },
+            { diameter: "Ф10 = 0.617 kg" },
+            { diameter: "Ф12 = 0.888 kg" },
+            { diameter: "Ф14 = 1.21 kg" }
+          ],
+        
+          }
+          ]
+        
+      },
+       contact : {
+        badge: "联系我们",
+        title: "联系我们",
+        subTitle: "",
+      
+        attributes: [
+          {
+            title: "地址",
+            value: "地块编号45，街道编号2，Tra Noc 1工业园，Tra Noc区，Binh Thuy区，芹苴市，热线: (+84)2923.841822"
+          },
+          {
+            title: "电话",
+            value: "+1 5589 55488 55"
+          },
+          {
+            title: "电子邮件",
+            value: "info@example.com"
+          }
+        ],
+        
+        form: [
+         {
+          name: "您的姓名",
+          email: "电子邮件",
+          subject: "主题",
+          message: "信息",
+          loading: "加载中",
+          sent: "您的消息已发送。谢谢！",
+          submit: "发送信息"
+         }
+        ]
+      }
+      
 
 
   }
