@@ -69,8 +69,9 @@ export default function BarChart() {
   }, [chartData]);
 
   return (
-    <div style={{ width: "90vw", height: "80vh" }}>
-      <canvas ref={chartRef} />
-    </div>
+    <canvas ref={chartRef} />
+    // <div style={{ width: "90vw", height: "80vh" }}>
+    //   <canvas ref={chartRef} />
+    // </div>
   );
 }

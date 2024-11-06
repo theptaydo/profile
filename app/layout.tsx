@@ -9,7 +9,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import Head from 'next/head';
 import AppFooter from '@/app/components/app.footer';
 import AppHeader from '@/app/components/app.header';
-import '@/styles/main.css';
+// import '@/styles/main.css';
 // import { useLocale } from 'next-intl';
 // import useTrans from './pages/useTrans';
 
@@ -30,6 +30,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       setLang(storedLang);
     }
   }, []);
+
 
   if (pathname.startsWith('/admin')) {
     return (

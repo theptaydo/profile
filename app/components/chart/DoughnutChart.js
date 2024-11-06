@@ -52,8 +52,9 @@ export default function DoughnutChart() {
     }
   }, []);
   return (
-    <div style={{ position: "relative", width: "90vw", height: "80vh" }}>
-      <canvas ref={chartRef} />
-    </div>
+    <canvas ref={chartRef} />
+    // <div style={{ position: "relative", width: "90vw", height: "80vh" }}>
+    //   <canvas ref={chartRef} />
+    // </div>
   );
 }

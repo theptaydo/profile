@@ -2,11 +2,12 @@
 
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 import 'bootstrap-icons/font/bootstrap-icons.css'; // Import Bootstrap Icons CSS
+// import '@/assets/admin/css/style.css';
 
 export default function Sidebar() {
   return (
     <>
-      <nav className="sidebar sidebar-offcanvas" id="sidebar">
+      <nav className="sidebar sidebar-offcanvas" id="sidebar" style={{ position: "fixed" }}>
         <ul className="nav">
           <li className="nav-item nav-profile">
             <a href="#" className="nav-link">
