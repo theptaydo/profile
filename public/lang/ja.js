@@ -42,13 +42,13 @@ export default {
   footer: {
     content: "情報の登録",
     message: "最新の製品とサービスに関するニュースを受け取るために登録してください！",
-    placeholder : "メールアドレスを入力してください",
+    placeholder: "メールアドレスを入力してください",
     loading: "処理中...",
     sent: "登録リクエストが送信されました。ありがとうございます！",
     section: [
       {
         brand: "Tay Do Steel",
-        address: "123 Industrial Street, Binh Thuy District, Can Tho City",
+        address: "土地番号45、2番通り、Tra Noc 1工業団地、Tra Noc区、Binh Thuy郡、Can Tho市",
         phone: {
           title: "Phone: ",
           value: "+84 292 123 4567",
@@ -59,8 +59,8 @@ export default {
         }
       },
       {
-        brand: "Scrap Processing Workshop",
-        address: "27 Le Hong Phong, Tra An Ward, Binh Thuy District, Can Tho City",
+        brand: "資材オフィスと作業所",
+        address: "27 Le Hong Phong 通り, Tra An 区, Binh Thuy 郡, Can Tho 市",
         phone: {
           title: "Phone: ",
           value: "+84.796 65 65 65",
@@ -71,8 +71,8 @@ export default {
         }
       },
       {
-        brand: "Representative office in Can Tho",
-        address: "No. 44, CMT8, Cai Khe Ward, Ninh Kieu District, Can Tho City",
+        brand: "Can Tho 市の代表事務所",
+        address: "44 CMT8 通り, Cai Khe 区, Ninh Kieu 郡, Can Tho 市",
         phone: {
           title: "Phone: ",
           value: "+84.796 65 65 65",
@@ -83,7 +83,7 @@ export default {
         }
       },
       {
-        brand: "Representative office in Ho Chi Minh city",
+        brand: "Ho Chi Minh 市の代表事務所",
         address: "...",
         phone: {
           title: "Phone: ",
@@ -253,7 +253,7 @@ export default {
         },
       ]
     },
-     products:  {
+    products: {
       badge: "製品",
       title: "注目の製品",
       subTitle: "タイドースチール",
@@ -278,7 +278,7 @@ export default {
             { diameter: "Ф12 = 0.888 kg" },
             { diameter: "Ф14 = 1.21 kg" }
           ],
-          
+
         },
         {
           name: "パターン付きコイル鋼",
@@ -294,15 +294,15 @@ export default {
             { diameter: "Ф12", weight: "0.888 kg" },
             { diameter: "Ф14", weight: "1.21 kg" }
           ],
-          
+
         }
       ]
     },
-    contact : {
+    contact: {
       badge: "お問い合わせ",
       title: "お問い合わせ",
       subTitle: "へ",
-    
+
       attributes: [
         {
           title: "住所",
@@ -317,21 +317,21 @@ export default {
           value: "info@example.com"
         }
       ],
-      
+
       form: [
 
-       {
-        name: "お名前",
-        email: "メール",
-        subject: "件名",
-        message: "メッセージ",
-        loading: "読み込み中",
-        sent: "メッセージが送信されました。ありがとうございました！",
-        submit: "送信"
-       }
+        {
+          name: "お名前",
+          email: "メール",
+          subject: "件名",
+          message: "メッセージ",
+          loading: "読み込み中",
+          sent: "メッセージが送信されました。ありがとうございました！",
+          submit: "送信"
+        }
       ]
     },
-    
+
 
   }
 }
