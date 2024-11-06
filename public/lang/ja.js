@@ -40,6 +40,11 @@ export default {
     },
   },
   footer: {
+    content: "情報の登録",
+    message: "最新の製品とサービスに関するニュースを受け取るために登録してください！",
+    placeholder : "メールアドレスを入力してください",
+    loading: "処理中...",
+    sent: "登録リクエストが送信されました。ありがとうございます！",
     section: [
       {
         brand: "Tay Do Steel",
@@ -216,11 +221,117 @@ export default {
           images: "/img/portfolio/cau-can-tho-su-dung-thep-tay-do.png"
         },
       ]
-    }
+    },
+    faq: {
+      badge: "よくある質問",
+      title: "についてのよくある質問",
+      subTitle: "テイ ド スチール",
+      attributes: [
+        {
+          title: "テイ ド スチールの製品は国際品質基準を満たしていますか？",
+          value: "当社のすべての製品は ASTM、JIS、EN などの国際品質基準を満たし、すべての建設プロジェクトにおいて耐久性と安全性を保証します。"
+        },
+        {
+          title: "テイ ド スチールはカスタマイズされた鋼材加工サービスを提供していますか？",
+          value: "お客様の技術仕様に応じて、切断、曲げ、亜鉛メッキなどのカスタマイズされた鋼材加工サービスを提供しており、各プロジェクトの基準と要件を満たします。"
+        },
+        {
+          title: "テイ ド スチールの納期はどのくらいですか？",
+          value: "標準納期は3～5営業日で、場所や注文量によって異なります。お客様の要望に応じて速達配送サービスも提供しています。"
+        },
+        {
+          title: "テイ ド スチールは大規模プロジェクトのサポートを提供していますか？",
+          value: "当社には高度な専門知識を持つ技術チームがあり、国内のあらゆる規模の建設プロジェクトに最適な製品とソリューションを提案する準備ができています。"
+        },
+        {
+          title: "テイ ド スチールは鋼材のメンテナンスサービスを提供していますか？",
+          value: "定期的なメンテナンスと検査サービスを提供し、使用後の鋼材製品の品質と耐久性をお客様が確保できるようにしています。"
+        },
+        {
+          title: "テイ ド スチールは国際プロジェクト向けに鋼材を供給していますか？",
+          value: "当社は国内市場だけでなく、他国にも輸出しており、最も厳しい国際基準を満たしています。"
+        },
+      ]
+    },
+     products:  {
+      badge: "製品",
+      title: "注目の製品",
+      subTitle: "タイドースチール",
+      generic: "種類: ",
+      characteristic: "特徴: ",
+      standard: "規格",
+      diameter: "直径: ",
+      weight: "1メートルあたりの重量: ",
+      contactLink: "お問い合わせ",
+      items: [
+        {
+          name: "滑らかな丸鋼コイル",
+          types: "CB240T、HPB300、SAE 1018",
+          features: "滑らかな表面、傷なし、欠陥なし、バリなし、ひび割れなし、...",
+          standards: "TCVN（ベトナム）、GB（中国）、ASTM（アメリカ）",
+          diameters: "6mm、6.5mm、8mm、10mm、12mm、14mm",
+          weightPerMeter: [
+            { diameter: "Ф6 = 0.222 kg" },
+            { diameter: "Ф6.5 = 0.260 kg" },
+            { diameter: "Ф8 = 0.395 kg" },
+            { diameter: "Ф10 = 0.617 kg" },
+            { diameter: "Ф12 = 0.888 kg" },
+            { diameter: "Ф14 = 1.21 kg" }
+          ],
+          
+        },
+        {
+          name: "パターン付きコイル鋼",
+          types: "CB240T、HPB300、SAE 1018",
+          features: "滑らかな表面、傷なし、欠陥なし、バリなし、ひび割れなし、...",
+          standards: "TCVN（ベトナム）、GB（中国）、ASTM（アメリカ）",
+          diameters: "6mm、6.5mm、8mm、10mm、12mm、14mm",
+          weightPerMeter: [
+            { diameter: "Ф6", weight: "0.222 kg" },
+            { diameter: "Ф6.5", weight: "0.260 kg" },
+            { diameter: "Ф8", weight: "0.395 kg" },
+            { diameter: "Ф10", weight: "0.617 kg" },
+            { diameter: "Ф12", weight: "0.888 kg" },
+            { diameter: "Ф14", weight: "1.21 kg" }
+          ],
+          
+        }
+      ]
+    },
+    contact : {
+      badge: "お問い合わせ",
+      title: "お問い合わせ",
+      subTitle: "へ",
+    
+      attributes: [
+        {
+          title: "住所",
+          value: "プロットNo.45、通りNo.2、Tra Noc 1工業団地、Tra Noc区、ビン・トゥイ区、カントー市、ホットライン: (+84)2923.841822"
+        },
+        {
+          title: "電話番号",
+          value: "+1 5589 55488 55"
+        },
+        {
+          title: "メール",
+          value: "info@example.com"
+        }
+      ],
+      
+      form: [
 
-
-
-
+       {
+        name: "お名前",
+        email: "メール",
+        subject: "件名",
+        message: "メッセージ",
+        loading: "読み込み中",
+        sent: "メッセージが送信されました。ありがとうございました！",
+        submit: "送信"
+       }
+      ]
+    },
+    
 
   }
 }

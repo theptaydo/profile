@@ -20,16 +20,16 @@ export default function AppFooter() {
           <div className="container">
             <div className="row justify-content-center text-center">
               <div className="col-lg-6">
-                <h4>Đăng Ký Nhận Thông Tin</h4>
-                <p>Đăng ký để nhận được các tin tức mới nhất về sản phẩm và dịch vụ của Thép Tây Đô!</p>
+                <h4>{trans.footer.content}</h4>
+                <p>{trans.footer.message}</p>
                 <form action="forms/newsletter.php" method="post" className="php-email-form">
                   <div className="newsletter-form">
-                    <input type="email" name="email" placeholder="Nhập email của bạn" />
+                    <input type="email" name="email" placeholder={trans.footer.placeholder}/>
                     <input type="submit" value="Đăng Ký" />
                   </div>
-                  <div className="loading">Đang xử lý...</div>
+                  <div className="loading">{trans.footer.loading}</div>
                   <div className="error-message"></div>
-                  <div className="sent-message">Yêu cầu đăng ký của bạn đã được gửi. Cảm ơn!</div>
+                  <div className="sent-message">{trans.footer.sent}</div>
                 </form>
               </div>
             </div>

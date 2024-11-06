@@ -39,6 +39,11 @@ export default {
     },
   },
   footer: {
+    content: "Subscribe for Updates",
+  message: "Sign up to receive the latest news about Tay Do Steel's products and services!",
+  placeholder :"Enter your email",
+  loading: "Processing...",
+  sent: "Your subscription request has been sent. Thank you!",
     section: [
       {
         brand: "Tay Do Steel",
@@ -216,11 +221,116 @@ export default {
           images: "/img/portfolio/cau-can-tho-su-dung-thep-tay-do.png"
         },
       ]
+    },
+    faq: {
+      badge: "Frequently Asked Questions",
+      title: "Frequently Asked Questions About",
+      subTitle: "Tay Do Steel",
+      attributes: [
+        {
+          title: "Do Tay Do Steel products meet international quality standards?",
+          value: "All our steel products meet international quality standards such as ASTM, JIS, and EN, ensuring durability and safety for all construction projects."
+        },
+        {
+          title: "Does Tay Do Steel offer customized steel processing services?",
+          value: "We offer customized steel processing services according to customer specifications, including cutting, bending, and galvanizing, meeting all standards and requirements for each project."
+        },
+        {
+          title: "What is Tay Do Steel's delivery time?",
+          value: "The standard delivery time is 3-5 working days, depending on location and order volume. We also offer expedited shipping services upon customer request."
+        },
+        {
+          title: "Does Tay Do Steel provide support for large projects?",
+          value: "We have a highly skilled technical team ready to provide product advice and suitable solutions for construction projects of all sizes nationwide."
+        },
+        {
+          title: "Does Tay Do Steel offer steel maintenance services?",
+          value: "We provide regular maintenance and inspection services to help customers ensure the quality and longevity of their steel products after use."
+        },
+        {
+          title: "Does Tay Do Steel supply steel for international projects?",
+          value: "We supply steel not only for the domestic market but also export to other countries, meeting the strictest international standards."
+        },
+      ]
+    },
+     products : {
+      badge: "Products",
+      title: "Featured Products",
+      subTitle: "Tay Do Steel",
+      generic: "Type: ",
+      characteristic: "Features: ",
+      standard: "Standards",
+      diameter: "Diameter: ",
+      weight: "Weight per Meter: ",
+      contactLink: "Contact Us",
+      items: [
+        {
+          name: "Smooth Round Coil Steel",
+          types: "CB240T, HPB300, SAE 1018",
+          features: "Smooth surface, no scratches, no defects, no burrs, no cracks, ...",
+          standards: "TCVN (Vietnam), GB (China), ASTM (USA)",
+          diameters: "6mm, 6.5mm, 8mm, 10mm, 12mm, 14mm",
+          weightPerMeter: [
+            { diameter: "Ф6 = 0.222 kg" },
+            { diameter: "Ф6.5 = 0.260 kg" },
+            { diameter: "Ф8 = 0.395 kg" },
+            { diameter: "Ф10 = 0.617 kg" },
+            { diameter: "Ф12 = 0.888 kg" },
+            { diameter: "Ф14 = 1.21 kg" }
+          ],
+         
+        },
+        {
+          name: "Patterned Coil Steel",
+          types: "CB240T, HPB300, SAE 1018",
+          features: "Smooth surface, no scratches, no defects, no burrs, no cracks, ...",
+          standards: "TCVN (Vietnam), GB (China), ASTM (USA)",
+          diameters: "6mm, 6.5mm, 8mm, 10mm, 12mm, 14mm",
+          weightPerMeter: [
+            { diameter: "Ф6 = 0.222 kg" },
+            { diameter: "Ф6.5 = 0.260 kg" },
+            { diameter: "Ф8 = 0.395 kg" },
+            { diameter: "Ф10 = 0.617 kg" },
+            { diameter: "Ф12 = 0.888 kg" },
+            { diameter: "Ф14 = 1.21 kg" }
+          ],
+           
+        }
+      ]
+    },
+    
+   contact : {
+      badge: "Contact",
+      title: "Contact",
+      subTitle: "Us",
+    
+      attributes: [
+        {
+          title: "Address",
+          value: "Plot No. 45, Street No. 2, Tra Noc 1 Industrial Park, Tra Noc Ward, Binh Thuy District, Can Tho City, Hotline: (+84)2923.841822"
+        },
+        {
+          title: "Phone",
+          value: "+1 5589 55488 55"
+        },
+        {
+          title: "Email",
+          value: "info@example.com"
+          
+        }
+      ],
+      
+      form: [
+        {
+        name: "Your Name",
+        email: "Email",
+        subject: "Subject",
+        message: "Message",
+        loading: "Loading",
+        sent: "Your message has been sent. Thank you!",
+        submit: "Send Message"
+        }
+      ]
     }
-
-
-
-
-
   }
 }
