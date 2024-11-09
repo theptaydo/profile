@@ -1281,6 +1281,79 @@ section,
 }
 
 /*--------------------------------------------------------------
+# News Section
+--------------------------------------------------------------*/
+/* Đặt CSS cho toàn bộ card */
+.card {
+  width: 300px; /* Chiều rộng cố định cho card */
+  height: 400px; /* Chiều cao cố định cho card */
+  overflow: hidden; /* Ẩn phần nội dung vượt quá */
+  padding: 0;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng */
+  border-radius: 8px; /* Bo góc card */
+  background-color: #fff;
+}
+
+/* Đặt CSS cho ảnh trong card */
+.card img {
+  width: 100%; /* Ảnh vừa với chiều rộng của card */
+  height: 50%; /* Chiều cao cố định cho ảnh, chiếm 50% chiều cao card */
+  object-fit: cover; /* Cắt ảnh nếu kích thước không đúng */
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+/* CSS cho phần thân của card */
+.card-body {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50%; /* Chiếm 50% còn lại của card */
+  text-align: center;
+  overflow: hidden; /* Ẩn nội dung vượt quá chiều cao */
+}
+
+/* CSS cho tiêu đề */
+.card-title {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin: 0 0 8px; /* Khoảng cách giữa tiêu đề và văn bản */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; /* Giới hạn dòng nếu tiêu đề quá dài */
+}
+
+/* CSS cho đoạn văn bản trong card */
+.card-text {
+  font-size: 0.9em;
+  margin: 0 0 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box; 
+  -webkit-box-orient: vertical;
+  height: 3em; /* Đảm bảo chiều cao cố định */
+}
+
+/* CSS cho nút liên kết */
+.primary {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 4px;
+  
+}
+
+.primary:hover {
+  background-color: #d0ebff; /* Đổi màu khi hover */
+}
+
+
+/*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
 .services .service-item {

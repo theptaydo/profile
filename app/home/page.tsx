@@ -12,8 +12,10 @@ import Team from './team/page';
 import Products from './products/page';
 import Faq from './faq/page';
 import Contact from './contact/page';
+import News from './news/page';
 
 import "@/styles/main.css";
+import HomeNews from './news/page';
 
 export default function HomePage() {
   return (
@@ -21,6 +23,7 @@ export default function HomePage() {
     <div className='home-page'>
       <Hero />
       <Clients />
+      <News/>
       <FeaturedServices />
       <About />
       <Stats />
