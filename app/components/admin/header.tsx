@@ -2,17 +2,49 @@
 
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 import 'bootstrap-icons/font/bootstrap-icons.css'; // Import Bootstrap Icons CSS
+import React, { useState, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 
 export default function Header() {
+  const [isActive, setIsActive] = useState(false);
+  const router = useRouter();
+  // Hàm xử lý click
+  const handleSidebarClick = () => {
+    setIsActive(!isActive);
+  };
+
+  const signout = () => {
+    localStorage.removeItem('token');
+    router.push('/admin');
+  }
+
+  const [avatar, setAvatar] = useState<string | null>(null);
+  const [name, setName] = useState<string | null>(null);
+
+  useEffect(() => {
+    // Chỉ chạy trên client, lấy avatar từ localStorage
+    const storedAvatar = localStorage.getItem('avatar');
+    const storedName = localStorage.getItem("fullname");
+    setAvatar(storedAvatar);
+    setName(storedName);
+  }, []);
+
+  useEffect(() => {
+    // Chỉ chạy trên client, lấy avatar từ localStorage
+    const storedAvatar = localStorage.getItem('avatar');
+    setAvatar(storedAvatar);
+  }, []);
+
+
   return (
     <>
       <nav className="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
         <div className="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start">
-          <a className="navbar-brand brand-logo" href="index.html">
-            <img src="/admin/images/logo.svg" alt="logo" />
+          <a className="navbar-brand brand-logo" href="/">
+            <img src="/img/logo/LOGO-slogan-xich-ma.png" alt="logo" />
           </a>
-          <a className="navbar-brand brand-logo-mini" href="index.html">
-            <img src="/admin/images/logo-mini.svg" alt="logo" />
+          <a className="navbar-brand brand-logo-mini" href="/">
+            <img src="/img/logo/logo-xichma-mini.png" alt="logo" />
           </a>
         </div>
         <div className="navbar-menu-wrapper d-flex align-items-stretch">
@@ -34,24 +66,24 @@ export default function Header() {
             <li className="nav-item nav-profile dropdown">
               <a className="nav-link dropdown-toggle" id="profileDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
                 <div className="nav-profile-img">
-                  <img src="/admin/images/faces/face1.jpg" alt="image" />
+                  <img src={avatar || ""} alt="image" />
                   <span className="availability-status online"></span>
                 </div>
                 <div className="nav-profile-text">
-                  <p className="mb-1 text-black">David Greymaax</p>
+                  <p className="mb-1 text-black">{name}</p>
                 </div>
-                <i className="bi bi-chevron-down"></i>
+                {/* <i className="bi bi-chevron-down"></i> */}
               </a>
               <div className="dropdown-menu navbar-dropdown" aria-labelledby="profileDropdown">
                 <a className="dropdown-item" href="#">
-                  <i className="bi bi-power"></i>
+                  <i className="bi bi-arrow-clockwise"></i>
                   Activity Log
                 </a>
                 <div className="dropdown-divider"></div>
-                <a className="dropdown-item" href="#">
-                  <i className="bi bi-power"></i>
+                {/* <a className="dropdown-item" href="#">
+                  <i className="bi bi-power text-primary"></i>
                   Signout
-                </a>
+                </a> */}
               </div>
             </li>
 
@@ -114,7 +146,7 @@ export default function Header() {
 
             {/* Logout and Settings */}
             <li className="nav-item nav-logout d-none d-lg-block">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="#" onClick={signout}>
                 <i className="bi bi-power"></i>
               </a>
             </li>
@@ -124,10 +156,70 @@ export default function Header() {
               </a>
             </li>
           </ul>
-          <button className="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+          <button className="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas"
+            onClick={handleSidebarClick}
+          >
             <i className="bi bi-list"></i>
           </button>
         </div>
+      </nav>
+
+      <nav className={`sidebar sidebar-offcanvas ${isActive ? 'active' : ''}`} id="sidebar">
+        <ul className="nav">
+          <li className="nav-item nav-profile">
+            <a href="#" className="nav-link">
+              <div className="nav-profile-image">
+                <img src={avatar || ""} alt="profile" />
+                <span className="login-status online"></span>
+              </div>
+              <div className="nav-profile-text d-flex flex-column">
+                <span className="font-weight-bold mb-2">{name}</span>
+                <span className="text-secondary text-small">Project Manager</span>
+              </div>
+              <i className="bi bi-bookmark-check-fill menu-icon"></i>
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="index.html">
+              <span className="menu-title">Dashboard</span>
+              <i className="bi bi-house menu-icon"></i>
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+              <span className="menu-title">Basic UI Elements</span>
+              <i className="bi bi-chevron-down menu-icon"></i>
+              <i className="bi bi-bullseye menu-icon"></i>
+            </a>
+            <div className="collapse" id="ui-basic">
+              <ul className="nav flex-column sub-menu">
+                <li className="nav-item">
+                  <a className="nav-link" href="pages/ui-features/buttons.html"><i className="bi bi-arrow-right-short"></i> Buttons</a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="pages/ui-features/dropdowns.html"><i className="bi bi-arrow-right-short"></i>Dropdowns</a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="pages/ui-features/typography.html"><i className="bi bi-arrow-right-short"></i>Typography</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" data-bs-toggle="collapse" href="#icons" aria-expanded="false" aria-controls="icons">
+              <span className="menu-title">Icons</span>
+              <i className="bi bi-person-lines-fill menu-icon"></i>
+            </a>
+            <div className="collapse" id="icons">
+              <ul className="nav flex-column sub-menu">
+                <li className="nav-item">
+                  <a className="nav-link" href="pages/icons/font-awesome.html">Font Awesome</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+        </ul>
       </nav>
     </>
   );

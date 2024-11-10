@@ -7,26 +7,63 @@ import useTrans from '../../pages/useTrans';
 
 export default function Portfolio() {
   const trans = useTrans();
-  
-  // Sử dụng useEffect để thực hiện hiệu ứng khi trang được tải
-  useEffect(() => {
-    const entries = document.querySelectorAll('.portfolio .h-entry');
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target); // Dừng theo dõi sau khi hiệu ứng chạy
+  useEffect(() => {
+    // Select all elements you want to animate
+    const elements = document.querySelectorAll('.portfolio .h-entry');
+
+    // Check if the Intersection Observer API is available
+    if ('IntersectionObserver' in window) {
+      // Create a new Intersection Observer
+      const observer = new IntersectionObserver(
+        (entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              // Add the 'visible' class to trigger the animation
+              // entry.target.classList.add('visible');
+
+              // Determine the position of the element relative to the viewport
+              const rect = entry.target.getBoundingClientRect();
+              if (rect.left < window.innerWidth / 2) {
+                // If the element is on the left half of the viewport
+                entry.target.classList.add('left-slide');
+              } else {
+                // If the element is on the right half of the viewport
+                entry.target.classList.add('right-slide');
+              }
+
+              // Stop observing the element once it has been animated
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        {
+          root: null, // Use the viewport as the root
+          threshold: 0.2, // Trigger when 20% of the element is visible
+        }
+      );
+
+      // Observe each element
+      elements.forEach((element) => observer.observe(element));
+
+      // Cleanup the observer on component unmount
+      return () => observer.disconnect();
+    } else {
+      // Fallback for older browsers: make all elements visible
+      elements.forEach((element) => {
+        // element.classList.add('visible');
+
+        // Determine the position of the element relative to the viewport
+        const rect = element.getBoundingClientRect();
+        if (rect.left < window.innerWidth / 2) {
+          // If the element is on the left half of the viewport
+          element.classList.add('left-slide');
+        } else {
+          // If the element is on the right half of the viewport
+          element.classList.add('right-slide');
         }
       });
-    }, { threshold: 0.1 });
-
-    entries.forEach((entry) => observer.observe(entry));
-
-    return () => {
-      // Cleanup observer khi component unmount
-      observer.disconnect();
-    };
+    }
   }, []);
 
   return (
@@ -43,7 +80,7 @@ export default function Portfolio() {
         <div className="container">
           <div className="row align-items-stretch retro-layout">
             <div className="col-md-4">
-              <a href="" className="h-entry v-height gradient left-slide" style={{ marginBottom: '20px' }}>
+              <a href="" className="h-entry v-height gradient" style={{ marginBottom: '20px' }}>
                 <div
                   className="featured-img"
                   style={{
@@ -55,7 +92,7 @@ export default function Portfolio() {
                   <h2>{trans.HomePage.portfolio.attributes[0].name}</h2>
                 </div>
               </a>
-              <a href="single.html" className="h-entry v-height gradient left-slide">
+              <a href="single.html" className="h-entry v-height gradient">
                 <div
                   className="featured-img"
                   style={{
@@ -85,7 +122,7 @@ export default function Portfolio() {
             </div>
 
             <div className="col-md-4">
-              <a href="single.html" className="h-entry mb-30 v-height gradient right-slide" style={{ marginBottom: '20px' }}>
+              <a href="single.html" className="h-entry mb-30 v-height gradient" style={{ marginBottom: '20px' }}>
                 <div
                   className="featured-img"
                   style={{
@@ -97,7 +134,7 @@ export default function Portfolio() {
                   <h2>{trans.HomePage.portfolio.attributes[3].name}</h2>
                 </div>
               </a>
-              <a href="single.html" className="h-entry v-height gradient right-slide ">
+              <a href="single.html" className="h-entry v-height gradient">
                 <div
                   className="featured-img"
                   style={{
