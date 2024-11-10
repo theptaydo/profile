@@ -1,9 +1,44 @@
 'use client';
 
 import useTrans from '../../pages/useTrans';
-
+import { useEffect } from 'react';
 export default function Contact() {
   const trans = useTrans();
+  useEffect(() => {
+    // Chọn phần địa chỉ và form liên hệ
+    const addressSection = document.querySelector('.info-wrap');
+    const formSection = document.querySelector('.php-email-form');
+  
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              // Kiểm tra từng phần tử và áp dụng lớp trượt phù hợp
+              if (entry.target === addressSection) {
+                entry.target.classList.add('slide-left'); // Phần địa chỉ trượt từ trái sang phải
+              } else if (entry.target === formSection) {
+                entry.target.classList.add('slide-right'); // Phần form trượt từ phải sang trái
+              }
+              observer.unobserve(entry.target); // Ngừng giám sát sau khi hiệu ứng đã kích hoạt
+            }
+          });
+        },
+        {
+          root: null,
+          threshold: 0.2, // Kích hoạt khi 20% của phần tử đã vào viewport
+        }
+      );
+  
+      // Bắt đầu quan sát phần địa chỉ và form
+      if (addressSection) observer.observe(addressSection);
+      if (formSection) observer.observe(formSection);
+  
+      // Dọn dẹp khi component bị hủy
+      return () => observer.disconnect();
+    }
+  }, []);
+  
   return (
     <>
 
