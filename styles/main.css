@@ -2612,3 +2612,18 @@ ul {
   opacity: 1;
   transform: translateX(0); /* Trở về vị trí ban đầu */
 }
+
+
+
+
+@media (prefers-reduced-motion: reduce) {
+  .carousel-item {
+    position: relative;
+    display: none;
+    float: left;
+    width: 100%;
+    margin-right: -100%;
+    backface-visibility: hidden;
+    transition: transform .6s ease-in-out;
+  }
+}

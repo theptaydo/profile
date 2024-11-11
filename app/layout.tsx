@@ -73,7 +73,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link href="/css/main.css" rel="stylesheet" />
         <link href="/css/product.css" rel="stylesheet" />
 
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+        {/* <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" /> */}
       </Head>
       <body>
         <AppHeader />
