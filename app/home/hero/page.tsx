@@ -1,7 +1,8 @@
 'use client'; // Thêm dòng này nếu bạn sử dụng các hook hoặc sự kiện liên quan đến client
 
 import useTrans from '../../pages/useTrans';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 export default function Hero() {
   const trans = useTrans();
