@@ -1324,6 +1324,45 @@ section,
 .clients .swiper-slide img:hover {
   transform: scale(1.1);
 }
+.clients-section {
+  padding: 50px 0;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1200px;
+  overflow: hidden;
+  position: relative;
+}
+
+.clients-wrapper {
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.client-slide {
+  min-width: 200px;
+  margin: 0 10px;
+ 
+
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  transition: transform 0.3s ease;
+}
+
+.client-slide img {
+  max-width: 100%;
+  max-height: 80px;
+  object-fit: contain;
+}
+
 
 /*--------------------------------------------------------------
 # News Section
