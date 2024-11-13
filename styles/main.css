@@ -1416,11 +1416,32 @@ section,
  
   width: 100%;
 }
-
 .news-large-post-title {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: bold;
   color: #ffffff;
+  margin-bottom: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .news-large-post-title {
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* Giới hạn chỉ một dòng khi màn hình nhỏ */
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    font-size: 0.9rem; /* Giảm kích thước font một chút nếu cần */
+  }
+}
+
+@media (min-width: 769px) {
+  .news-large-post-title {
+    display: block;
+    -webkit-line-clamp: unset; /* Hiển thị đầy đủ khi màn hình lớn */
+    white-space: normal; /* Không giới hạn số dòng */
+  }
 }
 
 .news-large-post-meta {
@@ -1459,6 +1480,27 @@ section,
   font-weight: bold;
   color: #333;
   margin-bottom: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .news-grid-post-title {
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* Giới hạn chỉ một dòng khi màn hình nhỏ */
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    font-size: 0.9rem; /* Giảm kích thước font một chút nếu cần */
+  }
+}
+
+@media (min-width: 769px) {
+  .news-grid-post-title {
+    display: block;
+    -webkit-line-clamp: unset; /* Hiển thị đầy đủ khi màn hình lớn */
+    white-space: normal; /* Không giới hạn số dòng */
+  }
 }
 
 .news-grid-post-meta {
