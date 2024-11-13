@@ -1368,74 +1368,151 @@ section,
 # News Section
 --------------------------------------------------------------*/
 /* Đặt CSS cho toàn bộ card */
-.card {
-  width: 300px; /* Chiều rộng cố định cho card */
-  height: 400px; /* Chiều cao cố định cho card */
-  overflow: hidden; /* Ẩn phần nội dung vượt quá */
+* {
+  box-sizing: border-box;
+  margin: 0;
   padding: 0;
-  margin: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.home-news {
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.news-container {
+  display: flex;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.news-main-content {
+  flex: 3;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng */
-  border-radius: 8px; /* Bo góc card */
-  background-color: #fff;
+  gap: 20px;
 }
 
-/* Đặt CSS cho ảnh trong card */
-.card img {
-  width: 100%; /* Ảnh vừa với chiều rộng của card */
-  height: 50%; /* Chiều cao cố định cho ảnh, chiếm 50% chiều cao card */
-  object-fit: cover; /* Cắt ảnh nếu kích thước không đúng */
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+.news-large-post {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* CSS cho phần thân của card */
-.card-body {
+.news-large-post img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.news-large-post-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  color: #f1e4e4;
+ 
+  width: 100%;
+}
+
+.news-large-post-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.news-large-post-meta {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-top: 5px;
+}
+
+.news-grid-posts {
+  display: flex;
+  gap: 10px;
+}
+
+.news-grid-post {
+  flex: 1;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.news-grid-post img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.news-grid-post-content {
   padding: 15px;
+}
+
+.news-grid-post-title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.news-grid-post-meta {
+  font-size: 0.8rem;
+  color: #555;
+}
+
+.news-sidebar {
+  flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 50%; /* Chiếm 50% còn lại của card */
-  text-align: center;
-  overflow: hidden; /* Ẩn nội dung vượt quá chiều cao */
+  gap: 20px;
 }
 
-/* CSS cho tiêu đề */
-.card-title {
-  font-size: 1.1em;
+.news-small-post {
+  display: flex;
+  gap: 15px;
+  padding: 15px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  transition: transform 0.3s ease; /* Thêm hiệu ứng hover */
+}
+
+.news-small-post:hover {
+  transform: scale(1.05); /* Phóng to nhẹ khi hover */
+}
+
+.news-small-post img {
+  width: 80px; /* Tăng kích thước ảnh đại diện */
+  height: 80px;
+  border-radius: 8px; /* Có thể thay đổi thành 50% nếu muốn ảnh tròn */
+  object-fit: cover;
+}
+
+.news-small-post-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.news-small-post-title {
+  font-size: 1rem; /* Tăng kích thước font cho tiêu đề */
   font-weight: bold;
-  margin: 0 0 8px; /* Khoảng cách giữa tiêu đề và văn bản */
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap; /* Giới hạn dòng nếu tiêu đề quá dài */
+  color: #333;
+  line-height: 1.2;
 }
 
-/* CSS cho đoạn văn bản trong card */
-.card-text {
-  font-size: 0.9em;
-  margin: 0 0 8px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box; 
-  -webkit-box-orient: vertical;
-  height: 3em; /* Đảm bảo chiều cao cố định */
+.news-small-post-meta {
+  font-size: 0.85rem; /* Tăng kích thước font cho meta */
+  color: #555;
+  margin-top: 4px;
 }
-
-/* CSS cho nút liên kết */
-.primary {
-  display: inline-block;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 8px 12px;
-  border-radius: 4px;
-  
-}
-
-.primary:hover {
-  background-color: #d0ebff; /* Đổi màu khi hover */
-}
-
 
 /*--------------------------------------------------------------
 # Services Section

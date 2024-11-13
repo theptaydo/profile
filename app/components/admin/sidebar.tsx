@@ -61,7 +61,13 @@ export default function Sidebar() {
               </ul>
             </div>
           </li>
-
+          <li className="nav-item">
+            <a className="nav-link" data-bs-toggle="collapse" href="#icons" aria-expanded="false" aria-controls="icons">
+              <span className="menu-title">Blog</span>
+              <i className="bi bi-person-lines-fill"></i>
+            </a>
+           
+          </li>
         </ul>
       </nav>
     </>

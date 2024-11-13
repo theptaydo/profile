@@ -9,7 +9,7 @@ export default function Clients() {
   const [prevTranslate, setPrevTranslate] = useState(0);
   const sliderRef = useRef<HTMLDivElement | null>(null);
 
-  const slides = [
+  const originalSlides = [
     { src: '/img/clients/Chip_Mong_Group.png', alt: 'Chip Mong Group' },
     { src: '/img/clients/VGS.png', alt: 'VGS' },
     { src: '/img/clients/itouchu.png', alt: 'Itouchu' },
@@ -23,14 +23,21 @@ export default function Clients() {
     { src: '/img/clients/client-3.png', alt: 'Client 11' },
   ];
 
+  // Add duplicates for infinite scrolling effect
+  const slides = [...originalSlides, ...originalSlides, ...originalSlides];
+  const totalSlides = slides.length;
+
   useEffect(() => {
     const handleResize = () => {
-      setCurrentTranslate(0);
-      setPrevTranslate(0);
+      setCurrentTranslate(-(originalSlides.length * getSlideWidth())); // Center on original slides
+      setPrevTranslate(-(originalSlides.length * getSlideWidth()));
     };
     window.addEventListener('resize', handleResize);
+    handleResize(); // Initial centering
     return () => window.removeEventListener('resize', handleResize);
   }, []);
+
+  const getSlideWidth = () => sliderRef.current?.querySelector('.client-slide')?.clientWidth || 0;
 
   const startDrag = (event: React.MouseEvent | React.TouchEvent) => {
     event.preventDefault();
@@ -52,21 +59,27 @@ export default function Clients() {
     if (!isDragging) return;
     setIsDragging(false);
 
-    if (!sliderRef.current) return;
-
-    const slideWidth = sliderRef.current.querySelector('.client-slide')?.clientWidth || 0;
-    const totalSlides = slides.length;
+    const slideWidth = getSlideWidth();
     const maxTranslate = -(slideWidth * (totalSlides - 1));
 
-    const rawIndex = currentTranslate / slideWidth;
-    const nearestSlides = Math.round(rawIndex);
-    const targetSlides = nearestSlides % 3 === 0 ? nearestSlides : Math.round(nearestSlides / 3) * 3;
-    const nearestTranslate = targetSlides * slideWidth;
-
-    const finalTranslate = Math.max(Math.min(nearestTranslate, 0), maxTranslate);
+    const nearestSlide = Math.round(currentTranslate / slideWidth) * slideWidth;
+    const finalTranslate = Math.max(Math.min(nearestSlide, 0), maxTranslate);
 
     setCurrentTranslate(finalTranslate);
     setPrevTranslate(finalTranslate);
+
+    // Adjust position for infinite loop effect
+    if (finalTranslate === 0) {
+      setTimeout(() => {
+        setCurrentTranslate(-(originalSlides.length * slideWidth));
+        setPrevTranslate(-(originalSlides.length * slideWidth));
+      }, 300);
+    } else if (finalTranslate === maxTranslate) {
+      setTimeout(() => {
+        setCurrentTranslate(-(originalSlides.length - 1) * slideWidth);
+        setPrevTranslate(-(originalSlides.length - 1) * slideWidth);
+      }, 300);
+    }
   };
 
   return (
