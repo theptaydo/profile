@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 import 'bootstrap-icons/font/bootstrap-icons.css'; // Import Bootstrap Icons CSS
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 
 export default function Header() {
   const [isActive, setIsActive] = useState(false);
@@ -205,6 +206,7 @@ export default function Header() {
               </ul>
             </div>
           </li>
+
           <li className="nav-item">
             <a className="nav-link" data-bs-toggle="collapse" href="#icons" aria-expanded="false" aria-controls="icons">
               <span className="menu-title">Icons</span>
@@ -219,6 +221,16 @@ export default function Header() {
             </div>
           </li>
 
+
+          <li className="nav-item">
+          <Link href={"/admin/dashboard/account"} className="menu-title">
+            <p className="nav-link" aria-expanded="false" aria-controls="icons">
+              <span className="menu-title">Người dùng</span>
+              <i className="bi bi-person-lines-fill menu-icon"></i>
+            </p>
+          </Link>            
+          </li>
+          
         </ul>
       </nav>
     </>

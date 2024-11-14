@@ -7,7 +7,7 @@ export default function VisitSalesStatistics() {
       <div className="card">
         <div className="card-body">
           <div className="clearfix">
-            <h4 className="card-title float-start">Visit And Sales Statistics</h4>
+            <h4 className="card-title float-start">Visit And Sales Stdatistics</h4>
             <div id="visit-sale-chart-legend" className="rounded-legend legend-horizontal legend-top-right float-end"></div>
           </div>
           <BarChart />
