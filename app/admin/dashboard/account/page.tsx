@@ -50,7 +50,7 @@ export default function User() {
               <tbody>
                 <tr>
                   <td>
-                    <img src="/admin/images/faces/face1.jpg" className="me-2" alt="image" /> David Grey
+                     David Grey
                   </td>
                   <td> Fund is not recieved </td>
                   <td>
@@ -61,7 +61,7 @@ export default function User() {
                 </tr>
                 <tr>
                   <td>
-                    <img src="/admin/images/faces/face2.jpg" className="me-2" alt="image" /> Stella Johnson
+                   Stella Johnson
                   </td>
                   <td> High loading time </td>
                   <td>
@@ -72,7 +72,7 @@ export default function User() {
                 </tr>
                 <tr>
                   <td>
-                    <img src="/admin/images/faces/face3.jpg" className="me-2" alt="image" /> Marina Michel
+                   Marina Michel
                   </td>
                   <td> Website down for one week </td>
                   <td>
@@ -83,7 +83,7 @@ export default function User() {
                 </tr>
                 <tr>
                   <td>
-                    <img src="/admin/images/faces/face4.jpg" className="me-2" alt="image" /> John Doe
+                   John Doe
                   </td>
                   <td> Loosing control on server </td>
                   <td>
