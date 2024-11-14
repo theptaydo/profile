@@ -65,6 +65,21 @@ export default function News() {
                         <div className="news-small-post-meta">Katy Liu • Sep 29</div>
                     </div>
                 </div>
+                <div className="news-small-post">
+                    <img src="img/news/3.jpg" alt="Sidebar News Image" />
+                    <div className="news-small-post-content">
+                        <div className="news-small-post-title">How Did van Gogh’s Turbulent Mind</div>
+                        <div className="news-small-post-meta">Katy Liu • Sep 29</div>
+                    </div>
+                </div>
+                <div className="news-small-post">
+                    <img src="img/news/5.jpg" alt="Sidebar News Image" />
+                    <div className="news-small-post-content">
+                        <div className="news-small-post-title">How Did van Gogh’s Turbulent Mind</div>
+                        <div className="news-small-post-meta">Katy Liu • Sep 29</div>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </section>

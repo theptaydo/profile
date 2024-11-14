@@ -1388,6 +1388,7 @@ section,
 }
 
 .news-main-content {
+  width: 800px;
   flex: 3;
   display: flex;
   flex-direction: column;
@@ -1542,13 +1543,36 @@ section,
   flex-direction: column;
   justify-content: center;
 }
-
+ 
 .news-small-post-title {
-  font-size: 1rem; /* Tăng kích thước font cho tiêu đề */
+  font-size: 1rem;
   font-weight: bold;
   color: #333;
   line-height: 1.2;
+  margin-bottom: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
+
+@media (max-width: 768px) {
+  .news-small-post-title {
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* Giới hạn chỉ một dòng khi màn hình nhỏ */
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    font-size: 0.9rem; /* Giảm kích thước font một chút nếu cần */
+  }
+}
+
+@media (min-width: 769px) {
+  .news-small-post-title {
+    display: block;
+    -webkit-line-clamp: unset; /* Hiển thị đầy đủ khi màn hình lớn */
+    white-space: normal; /* Không giới hạn số dòng */
+  }
+}
+
 
 .news-small-post-meta {
   font-size: 0.85rem; /* Tăng kích thước font cho meta */
