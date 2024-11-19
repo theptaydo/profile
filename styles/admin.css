@@ -1,0 +1,59 @@
+/* user */
+/* Card Container */
+/* Container Card */
+ 
+.page-body-wrapper {
+    padding-left: 260px;
+  margin-top: 30px;
+  min-height: calc(100vh - 70px);
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  padding-right: 0;
+  
+}
+.card-body-account{
+    margin-top: 20px;
+    width: 100%;
+}
+.card-account{
+    width: 100%;
+}
+/* Search Box Container */
+ /* Search Box Container */
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: #f9fafb; /* Nền nhạt */
+    border: 1px solid #e0e0e0; /* Viền nhạt */
+    border-radius: 8px;
+    padding: 8px 12px; /* Tạo khoảng cách đều */
+    width: 100%; /* Độ rộng tối đa */
+    max-width: 300px; /* Giới hạn độ rộng */
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05); /* Bóng nhẹ */
+  }
+  
+  /* Search Icon */
+  .search-icon {
+    font-size: 16px;
+    color: #b0b0b0; /* Màu xám cho icon */
+    margin-right: 8px; /* Khoảng cách giữa icon và input */
+  }
+  
+  /* Input Field */
+  .search-box .form-control {
+    border: none;
+    outline: none;
+    background-color: transparent; /* Xóa màu nền của input */
+    font-size: 14px;
+    color: #333;
+    padding: 0; /* Loại bỏ padding mặc định */
+  }
+  
+  /* Placeholder Text */
+  .search-box .form-control::placeholder {
+    color: #b0b0b0; /* Màu xám nhạt cho placeholder */
+    font-size: 14px;
+  }
+  
