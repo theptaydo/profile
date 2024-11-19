@@ -42,11 +42,11 @@ export default {
     },
   },
   footer: {
-    content:"Đăng Ký Nhận Thông Tin",
-    message:"Đăng ký để nhận được các tin tức mới nhất về sản phẩm và dịch vụ của Thép Tây Đô!",
+    content: "Đăng Ký Nhận Thông Tin",
+    message: "Đăng ký để nhận được các tin tức mới nhất về sản phẩm và dịch vụ của Thép Tây Đô!",
     placeholder: "Nhập email của bạn",
-    loading:"Đang xử lý...",
-    sent:"Yêu cầu đăng ký của bạn đã được gửi. Cảm ơn!",
+    loading: "Đang xử lý...",
+    sent: "Yêu cầu đăng ký của bạn đã được gửi. Cảm ơn!",
     section: [
       {
         brand: "Thép Tây Đô",
@@ -275,7 +275,7 @@ export default {
         },
       ],
     },
-    products : {
+    products: {
       badge: "Sản phẩm",
       title: "Sản phẩm tiêu biểu",
       subTitle: "Thép Tây Đô",
@@ -300,7 +300,7 @@ export default {
             { diameter: "Ф12 = 0.888 kg" },
             { diameter: "Ф14 = 1.21 kg" }
           ],
-           
+
         },
         {
           name: "Thép cuộn có hoa văn",
@@ -316,11 +316,11 @@ export default {
             { diameter: "Ф12", weight: "0.888 kg" },
             { diameter: "Ф14", weight: "1.21 kg" }
           ],
-          
+
         }
       ]
     },
-    
+
     contact: {
       badge: "Liên Hệ",
       title: "Liên hệ với",
