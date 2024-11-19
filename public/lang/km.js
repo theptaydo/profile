@@ -41,14 +41,14 @@ export default {
   },
   footer: {
     content: "ចុះឈ្មោះដើម្បីទទួលព័ត៌មាន",
-  message: "ចុះឈ្មោះដើម្បីទទួលព័ត៌មានថ្មីៗអំពីផលិតផល និងសេវាកម្មរបស់ដែកខេត្តតាយដូ!",
-  placeholder : "បញ្ចូលអ៊ីមែលរបស់អ្នក",
-  loading: "កំពុងដំណើរការ...",
-  sent: "សំណើរចុះឈ្មោះរបស់អ្នកត្រូវបានផ្ញើ។ សូមអរគុណ!",
+    message: "ចុះឈ្មោះដើម្បីទទួលព័ត៌មានថ្មីៗអំពីផលិតផល និងសេវាកម្មរបស់ដែកខេត្តតាយដូ!",
+    placeholder: "បញ្ចូលអ៊ីមែលរបស់អ្នក",
+    loading: "កំពុងដំណើរការ...",
+    sent: "សំណើរចុះឈ្មោះរបស់អ្នកត្រូវបានផ្ញើ។ សូមអរគុណ!",
     section: [
       {
         brand: "Tay Do Steel",
-        address: "123 Industrial Street, Binh Thuy District, Can Tho City",
+        address: "លេខដី ៤៥, ផ្លូវលេខ ២, តំបន់ឧស្សាហកម្ម Tra Noc 1, សង្កាត់ Tra Noc, ខណ្ឌ Binh Thuy, ក្រុង Can Tho",
         phone: {
           title: "Phone: ",
           value: "+84 292 123 4567",
@@ -59,8 +59,8 @@ export default {
         }
       },
       {
-        brand: "Scrap Processing Workshop",
-        address: "27 Le Hong Phong, Tra An Ward, Binh Thuy District, Can Tho City",
+        brand: "ការិយាល័យឃ្លាំងសម្ភារៈ",
+        address: "27 ផ្លូវ Le Hong Phong, សង្កាត់ Tra An, ខណ្ឌ Binh Thuy, ក្រុង Can Tho",
         phone: {
           title: "Phone: ",
           value: "+84.796 65 65 65",
@@ -71,8 +71,8 @@ export default {
         }
       },
       {
-        brand: "Representative office in Can Tho",
-        address: "No. 44, CMT8, Cai Khe Ward, Ninh Kieu District, Can Tho City",
+        brand: "ការិយាល័យតំណាងនៅកណ្តាលថូ (Can Tho)",
+        address: "លេខ ៤៤, ផ្លូវ CMT8, សង្កាត់ Cai Khe, ខណ្ឌ Ninh Kieu, ក្រុង Can Tho",
         phone: {
           title: "Phone: ",
           value: "+84.796 65 65 65",
@@ -83,7 +83,7 @@ export default {
         }
       },
       {
-        brand: "Representative office in Ho Chi Minh city",
+        brand: "ការិយាល័យតំណាងនៅទីក្រុង Ho Chi Minh",
         address: "...",
         phone: {
           title: "Phone: ",
@@ -253,16 +253,16 @@ export default {
         },
       ]
     },
-      products : {
-        badge: "ផលិតផល",
-        title: "ផលិតផលពិសេសរបស់",
-        subTitle: "ដែកតាយដូ",
-        generic: "ប្រភេទ: ",
-        characteristic: "លក្ខណៈពិសេស: ",
-        standard: "ស្តង់ដារ",
-        diameter: "អង្កត់ផ្ចិត: ",
-        weight: "ទម្ងន់ក្នុងមួយម៉ែត្រ: ",
-        contactLink: "ទាក់ទងមកយើង",
+    products: {
+      badge: "ផលិតផល",
+      title: "ផលិតផលពិសេសរបស់",
+      subTitle: "ដែកតាយដូ",
+      generic: "ប្រភេទ: ",
+      characteristic: "លក្ខណៈពិសេស: ",
+      standard: "ស្តង់ដារ",
+      diameter: "អង្កត់ផ្ចិត: ",
+      weight: "ទម្ងន់ក្នុងមួយម៉ែត្រ: ",
+      contactLink: "ទាក់ទងមកយើង",
       items: [
         {
           name: "ដែកក្រឡាក្រឡួនស្នូរជុំ",
@@ -278,7 +278,7 @@ export default {
             { diameter: "Ф12 = 0.888 kg" },
             { diameter: "Ф14 = 1.21 kg" }
           ],
- 
+
         },
         {
           name: "ដែកក្រឡាក្រឡូនមានរូបភាព",
@@ -294,15 +294,15 @@ export default {
             { diameter: "Ф12", weight: "0.888 kg" },
             { diameter: "Ф14", weight: "1.21 kg" }
           ],
-        
+
         }
       ]
     },
-     contact : {
+    contact: {
       badge: "ទាក់ទង",
       title: "ទាក់ទង",
       subTitle: "មកពួកយើង",
-    
+
       attributes: [
         {
           title: "អាសយដ្ឋាន",
@@ -317,20 +317,20 @@ export default {
           value: "info@example.com"
         }
       ],
-      
+
       form: [
-       {
-        name: "ឈ្មោះរបស់អ្នក",
-        email: "អ៊ីមែល",
-        subject: "ប្រធានបទ",
-        message: "សារ",
-        loading: "កំពុងផ្ទុក",
-        sent: "សាររបស់អ្នកត្រូវបានផ្ញើ។ សូមអរគុណ!",
-        submit: "ផ្ញើសារ"
-       }
+        {
+          name: "ឈ្មោះរបស់អ្នក",
+          email: "អ៊ីមែល",
+          subject: "ប្រធានបទ",
+          message: "សារ",
+          loading: "កំពុងផ្ទុក",
+          sent: "សាររបស់អ្នកត្រូវបានផ្ញើ។ សូមអរគុណ!",
+          submit: "ផ្ញើសារ"
+        }
       ]
     }
-    
+
 
 
 

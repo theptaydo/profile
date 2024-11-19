@@ -3,49 +3,9 @@
 import Head from 'next/head';
 import '@/styles/home/products.css';
 import useTrans from '../../pages/useTrans';
-import { useEffect } from 'react';
 
 export default function Products() {
     const trans = useTrans();
-
-    useEffect(() => {
-      // Chọn tất cả các cặp carousel và product-details
-      const carousels = document.querySelectorAll('.carousel');
-      const details = document.querySelectorAll('.product-details');
-    
-      if ('IntersectionObserver' in window) {
-        const observer = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                if (entry.target.classList.contains('carousel')) {
-                  // Thêm lớp trượt từ trái cho carousel
-                  entry.target.classList.add('slide-left');
-                }
-                if (entry.target.classList.contains('product-details')) {
-                  // Thêm lớp trượt từ phải cho product-details
-                  entry.target.classList.add('slide-right');
-                }
-                observer.unobserve(entry.target); // Ngừng giám sát sau khi hiệu ứng đã kích hoạt
-              }
-            });
-          },
-          {
-            root: null,
-            threshold: 0.2, // Kích hoạt khi 20% của phần tử đã vào viewport
-          }
-        );
-    
-        // Quan sát từng carousel và product-details
-        carousels.forEach((carousel) => observer.observe(carousel));
-        details.forEach((detail) => observer.observe(detail));
-    
-        // Dọn dẹp khi component bị hủy
-        return () => observer.disconnect();
-      }
-    }, []);
-    
-
   return (
     <>
       <section id="products" className="products  section section pt-0">

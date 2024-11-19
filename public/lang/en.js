@@ -40,10 +40,10 @@ export default {
   },
   footer: {
     content: "Subscribe for Updates",
-  message: "Sign up to receive the latest news about Tay Do Steel's products and services!",
-  placeholder :"Enter your email",
-  loading: "Processing...",
-  sent: "Your subscription request has been sent. Thank you!",
+    message: "Sign up to receive the latest news about Tay Do Steel's products and services!",
+    placeholder: "Enter your email",
+    loading: "Processing...",
+    sent: "Your subscription request has been sent. Thank you!",
     section: [
       {
         brand: "Tay Do Steel",
@@ -58,7 +58,7 @@ export default {
         }
       },
       {
-        brand: "Scrap Processing Workshop",
+        brand: "Material Office and Workshop",
         address: "27 Le Hong Phong, Tra An Ward, Binh Thuy District, Can Tho City",
         phone: {
           title: "Phone: ",
@@ -253,7 +253,7 @@ export default {
         },
       ]
     },
-     products : {
+    products: {
       badge: "Products",
       title: "Featured Products",
       subTitle: "Tay Do Steel",
@@ -278,7 +278,7 @@ export default {
             { diameter: "Ф12 = 0.888 kg" },
             { diameter: "Ф14 = 1.21 kg" }
           ],
-         
+
         },
         {
           name: "Patterned Coil Steel",
@@ -294,20 +294,20 @@ export default {
             { diameter: "Ф12 = 0.888 kg" },
             { diameter: "Ф14 = 1.21 kg" }
           ],
-           
+
         }
       ]
     },
-    
-   contact : {
+
+    contact: {
       badge: "Contact",
       title: "Contact",
       subTitle: "Us",
-    
+
       attributes: [
         {
           title: "Address",
-          value: "Plot No. 45, Street No. 2, Tra Noc 1 Industrial Park, Tra Noc Ward, Binh Thuy District, Can Tho City, Hotline: (+84)2923.841822"
+          value: "Plot No. 45, Street No. 2, Tra Noc 1 Industrial Park, Tra Noc Ward, Binh Thuy District, Can Tho City"
         },
         {
           title: "Phone",
@@ -316,19 +316,19 @@ export default {
         {
           title: "Email",
           value: "info@example.com"
-          
+
         }
       ],
-      
+
       form: [
         {
-        name: "Your Name",
-        email: "Email",
-        subject: "Subject",
-        message: "Message",
-        loading: "Loading",
-        sent: "Your message has been sent. Thank you!",
-        submit: "Send Message"
+          name: "Your Name",
+          email: "Email",
+          subject: "Subject",
+          message: "Message",
+          loading: "Loading",
+          sent: "Your message has been sent. Thank you!",
+          submit: "Send Message"
         }
       ]
     }

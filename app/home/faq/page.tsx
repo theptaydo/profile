@@ -3,40 +3,9 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@/styles/home/faq.css';
 import useTrans from '../../pages/useTrans';
-import { useEffect } from 'react';
 
 export default function Faq() {
   const trans = useTrans();
-  
-  useEffect(() => {
-    // Chọn tất cả các phần tử accordion-item cần áp dụng hiệu ứng
-    const faqItems = document.querySelectorAll('.accordion-item');
-  
-    if ('IntersectionObserver' in window) {
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              // Thêm lớp 'slide-down' để kích hoạt hiệu ứng trượt từ trên xuống
-              entry.target.classList.add('slide-down');
-              observer.unobserve(entry.target); // Ngừng giám sát sau khi hiệu ứng đã kích hoạt
-            }
-          });
-        },
-        {
-          root: null,
-          threshold: 0.2, // Kích hoạt khi 20% của phần tử đã vào viewport
-        }
-      );
-  
-      // Quan sát từng accordion-item
-      faqItems.forEach((item) => observer.observe(item));
-  
-      // Dọn dẹp khi component bị hủy
-      return () => observer.disconnect();
-    }
-  }, []);
-  
   return (
     <section id="faq" className="faq section light-background">
       {/* Section Title */}

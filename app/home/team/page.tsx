@@ -1,39 +1,11 @@
 'use client';
 
 import useTrans from '@/app/pages/useTrans';
-import { useEffect } from 'react';
+
 export default function Team() {
 
   const trans = useTrans();
-  useEffect(() => {
-    // Chọn tất cả các phần tử cần áp dụng hiệu ứng
-    const teamMembers = document.querySelectorAll('.team .team-member');
-  
-    if ('IntersectionObserver' in window) {
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              // Thêm lớp 'slide-down' để kích hoạt hiệu ứng khi phần tử vào viewport
-              entry.target.classList.add('slide-down');
-              observer.unobserve(entry.target); // Ngừng giám sát sau khi hiệu ứng đã kích hoạt
-            }
-          });
-        },
-        {
-          root: null,
-          threshold: 0.2, // Kích hoạt khi 20% của phần tử đã vào viewport
-        }
-      );
-  
-      // Giám sát từng phần tử .team-member
-      teamMembers.forEach((member) => observer.observe(member));
-  
-      // Dọn dẹp khi component bị hủy
-      return () => observer.disconnect();
-    }
-  }, []);
-  
+
   return (
     <>
       <section id="team" className="team section light-background">

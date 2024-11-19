@@ -42,13 +42,13 @@ export default {
   footer: {
     content: "订阅信息",
     message: "注册以接收有关西都钢铁产品和服务的最新消息！",
-    placeholder : "请输入您的邮箱",
+    placeholder: "请输入您的邮箱",
     loading: "处理中...",
     sent: "您的订阅请求已发送。谢谢！",
     section: [
       {
         brand: "Tay Do Steel",
-        address: "123 Industrial Street, Binh Thuy District, Can Tho City",
+        address: "地块45号, 2号路, Tra Noc 1工业区, Tra Noc坊, Binh Thuy郡, Can Tho市",
         phone: {
           title: "Phone: ",
           value: "+84 292 123 4567",
@@ -59,8 +59,8 @@ export default {
         }
       },
       {
-        brand: "Scrap Processing Workshop",
-        address: "27 Le Hong Phong, Tra An Ward, Binh Thuy District, Can Tho City",
+        brand: "材料办公室和车间",
+        address: "27 Le Hong Phong 路, Tra An 坊, Binh Thuy 郡, Can Tho 市",
         phone: {
           title: "Phone: ",
           value: "+84.796 65 65 65",
@@ -71,8 +71,8 @@ export default {
         }
       },
       {
-        brand: "Representative office in Can Tho",
-        address: "No. 44, CMT8, Cai Khe Ward, Ninh Kieu District, Can Tho City",
+        brand: "Can Tho 代表办事处",
+        address: "CMT8 路 44 号, Cai Khe 坊, Ninh Kieu 郡, Can Tho 市",
         phone: {
           title: "Phone: ",
           value: "+84.796 65 65 65",
@@ -83,7 +83,7 @@ export default {
         }
       },
       {
-        brand: "Representative office in Ho Chi Minh city",
+        brand: " Ho Chi Minh 市代表办事处",
         address: "...",
         phone: {
           title: "Phone: ",
@@ -253,16 +253,16 @@ export default {
         },
       ]
     },
-      products :{
-        badge: "产品",
-        title: "特色产品",
-        subTitle: "西都钢铁",
-        generic: "类型: ",
-        characteristic: "特点: ",
-        standard: "标准",
-        diameter: "直径: ",
-        weight: "每米重量: ",
-        contactLink: "联系我们",
+    products: {
+      badge: "产品",
+      title: "特色产品",
+      subTitle: "西都钢铁",
+      generic: "类型: ",
+      characteristic: "特点: ",
+      standard: "标准",
+      diameter: "直径: ",
+      weight: "每米重量: ",
+      contactLink: "联系我们",
       items: [
         {
           name: "光滑圆钢卷",
@@ -278,7 +278,7 @@ export default {
             { diameter: "Ф12 = 0.888 kg" },
             { diameter: "Ф14 = 1.21 kg" }
           ],
-      
+
         },
         {
           name: "图案卷钢",
@@ -294,33 +294,33 @@ export default {
             { diameter: "Ф12 = 0.888 kg" },
             { diameter: "Ф14 = 1.21 kg" }
           ],
-        
-          }
-          ]
-        
-      },
-       contact : {
-        badge: "联系我们",
-        title: "联系我们",
-        subTitle: "",
-      
-        attributes: [
-          {
-            title: "地址",
-            value: "地块编号45，街道编号2，Tra Noc 1工业园，Tra Noc区，Binh Thuy区，芹苴市，热线: (+84)2923.841822"
-          },
-          {
-            title: "电话",
-            value: "+1 5589 55488 55"
-          },
-          {
-            title: "电子邮件",
-            value: "info@example.com"
-          }
-        ],
-        
-        form: [
-         {
+
+        }
+      ]
+
+    },
+    contact: {
+      badge: "联系我们",
+      title: "联系我们",
+      subTitle: "",
+
+      attributes: [
+        {
+          title: "地址",
+          value: "地块编号45，街道编号2，Tra Noc 1工业园，Tra Noc区，Binh Thuy区，芹苴市，热线: (+84)2923.841822"
+        },
+        {
+          title: "电话",
+          value: "+1 5589 55488 55"
+        },
+        {
+          title: "电子邮件",
+          value: "info@example.com"
+        }
+      ],
+
+      form: [
+        {
           name: "您的姓名",
           email: "电子邮件",
           subject: "主题",
@@ -328,10 +328,10 @@ export default {
           loading: "加载中",
           sent: "您的消息已发送。谢谢！",
           submit: "发送信息"
-         }
-        ]
-      }
-      
+        }
+      ]
+    }
+
 
 
   }

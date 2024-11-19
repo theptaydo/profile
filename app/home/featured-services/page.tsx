@@ -1,16 +1,16 @@
 'use client'; // Để báo rằng đây là một Client Component
- 
+
 import useTrans from '../../pages/useTrans';
 import { useEffect } from 'react';
 
 export default function FeaturedServices() {
 
   const trans = useTrans();
-  
+
   useEffect(() => {
     // Chọn tất cả các phần tử cần áp dụng hiệu ứng
     const elements = document.querySelectorAll('.featured-services .col-xl-3');
-  
+
     if ('IntersectionObserver' in window) {
       const observer = new IntersectionObserver(
         (entries, observer) => {
@@ -26,15 +26,15 @@ export default function FeaturedServices() {
           threshold: 0.2, // Kích hoạt khi 20% của phần tử đã vào viewport
         }
       );
-  
+
       elements.forEach((element) => observer.observe(element));
-  
+
       // Dọn dẹp Intersection Observer khi component bị hủy
       return () => observer.disconnect();
     }
   }, []);
-  
-  
+
+
   return (
     <section id="featured-services" className="featured-services section">
       <div className="container">

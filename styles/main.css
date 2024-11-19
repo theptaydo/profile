@@ -185,7 +185,13 @@ h6 {
   color: var(--contrast-color);
 }
 
- 
+@media (max-width: 575px) {
+
+  .header .topbar .contact-info i a,
+  .header .topbar .contact-info i span {
+    font-size: 13px;
+  }
+}
 
 .header .topbar .contact-info i a {
   line-height: 0;
@@ -239,8 +245,6 @@ h6 {
   visibility: hidden;
   overflow: hidden;
 }
-
-
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -634,18 +638,6 @@ h6 {
 .footer .credits {
   margin-top: 6px;
   font-size: 13px;
-}
-/* Trạng thái ban đầu của phần footer-newsletter */
-.footer-newsletter {
-  opacity: 0;
-  transform: translateY(-30px); /* Bắt đầu từ vị trí cao hơn */
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Hiệu ứng mượt */
-}
-
-/* Khi thêm lớp 'slide-down', phần footer-newsletter sẽ trượt từ trên xuống */
-.footer-newsletter.slide-down {
-  opacity: 1; /* Phần tử hiện rõ */
-  transform: translateY(0); /* Trở về vị trí ban đầu */
 }
 
 /*--------------------------------------------------------------
@@ -1132,19 +1124,6 @@ section,
   inset: 0;
   border-radius: 0px;
 }
- /* Trạng thái ban đầu của các phần tử trước khi có hiệu ứng */
-.featured-services .col-xl-3 {
-  opacity: 0; /* Ẩn phần tử */
-  transform: translateY(-50px); /* Đặt vị trí ban đầu cao hơn một chút */
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Hiệu ứng mượt */
-}
-
-/* Khi thêm lớp 'top-slide', phần tử sẽ trượt từ trên xuống */
-.featured-services .col-xl-3.top-slide {
-  opacity: 1; /* Phần tử hiện rõ dần */
-  transform: translateY(0); /* Trở về vị trí ban đầu */
-}
-
 
 /*--------------------------------------------------------------
 # About Section
@@ -1196,31 +1175,7 @@ section,
 .about .about-content p:last-child {
   margin-bottom: 0;
 }
-/* Trạng thái ban đầu của ảnh và văn bản */
-#about .col-lg-6 img {
-  opacity: 0;
-  transform: translateX(-50px); /* Bắt đầu từ bên trái */
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-#about .about-content {
-  opacity: 0;
-  transform: translateX(50px); /* Bắt đầu từ bên phải */
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-/* Hiệu ứng trượt từ trái qua phải */
-#about .col-lg-6 img.slide-left {
-  opacity: 1;
-  transform: translateX(0); /* Trở về vị trí ban đầu */
-}
-
-/* Hiệu ứng trượt từ phải qua trái */
-#about .about-content.slide-right {
-  opacity: 1;
-  transform: translateX(0); /* Trở về vị trí ban đầu */
-}
-
+ 
 
 /*--------------------------------------------------------------
 # Skills Section
@@ -1839,18 +1794,6 @@ section,
   object-fit: contain;
   /* Ensures the image is fully contained within the container */
 }
-/* Trạng thái ban đầu của các thành viên trong team */
-.team .team-member {
-  opacity: 0;
-  transform: translateY(-50px); /* Bắt đầu từ vị trí cao hơn */
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Hiệu ứng mượt */
-}
-
-/* Khi thêm lớp 'slide-down', phần tử sẽ trượt từ trên xuống */
-.team .team-member.slide-down {
-  opacity: 1; /* Phần tử hiện rõ dần */
-  transform: translateY(0); /* Trở về vị trí ban đầu */
-}
 
 
 /*--------------------------------------------------------------
@@ -2044,18 +1987,6 @@ section,
 .faq .faq-container .faq-active .faq-toggle {
   transform: rotate(90deg);
   color: var(--accent-color);
-}
-/* Trạng thái ban đầu của các câu hỏi */
-.accordion-item {
-  opacity: 0;
-  transform: translateY(-30px); /* Bắt đầu từ vị trí cao hơn */
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Hiệu ứng mượt */
-}
-
-/* Khi thêm lớp 'slide-down', các mục FAQ sẽ trượt từ trên xuống */
-.accordion-item.slide-down {
-  opacity: 1; /* Phần tử hiện rõ */
-  transform: translateY(0); /* Trở về vị trí ban đầu */
 }
 
 /*--------------------------------------------------------------
@@ -2585,30 +2516,4 @@ ul {
     flex: 1 1 100%;
     margin-bottom: 20px;
   }
-}
-/* products */
-/* Trạng thái ban đầu của carousel và product-details */
-.carousel, .product-details {
-  opacity: 0;
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.carousel {
-  transform: translateX(-50px); /* Bắt đầu từ bên trái */
-}
-
-.product-details {
-  transform: translateX(50px); /* Bắt đầu từ bên phải */
-}
-
-/* Khi thêm lớp 'slide-left', carousel sẽ trượt từ trái sang phải */
-.carousel.slide-left {
-  opacity: 1;
-  transform: translateX(0); /* Trở về vị trí ban đầu */
-}
-
-/* Khi thêm lớp 'slide-right', product-details sẽ trượt từ phải sang trái */
-.product-details.slide-right {
-  opacity: 1;
-  transform: translateX(0); /* Trở về vị trí ban đầu */
 }
