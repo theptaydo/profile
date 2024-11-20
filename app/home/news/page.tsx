@@ -1,7 +1,12 @@
 'use client'; // Thêm dòng này nếu bạn sử dụng các hook hoặc sự kiện liên quan đến client
-import "@/styles/main.css";
+import "@/styles/home/news.css";
+import "@/styles/animation.css";
+
+import useScrollEffect from "@/app/hook/useScrollEffect";
+import { useEffect } from 'react';
 export default function News() {
 
+ 
     return(
 <>
 <section className="home-news">
@@ -85,4 +90,8 @@ export default function News() {
     </section>
 </>
     );
+ 
+   
+   
+ 
 }

@@ -4,42 +4,14 @@ import '@/styles/main.css';
 import Head from 'next/head';
 import Script from 'next/script';
 import useTrans from '@/app/pages/useTrans';
-import { useEffect } from 'react';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function AppFooter() {
   const trans = useTrans();
-  useEffect(() => {
-    // Chọn phần tử footer-newsletter
-    const newsletterSection = document.querySelector('.footer-newsletter');
-  
-    if ('IntersectionObserver' in window) {
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              // Thêm lớp 'slide-down' để kích hoạt hiệu ứng trượt từ trên xuống
-              entry.target.classList.add('slide-down');
-              observer.unobserve(entry.target); // Ngừng giám sát sau khi hiệu ứng đã kích hoạt
-            }
-          });
-        },
-        {
-          root: null,
-          threshold: 0.2, // Kích hoạt khi 20% của phần tử đã vào viewport
-        }
-      );
-  
-      // Quan sát phần tử footer-newsletter
-      if (newsletterSection) observer.observe(newsletterSection);
-  
-      // Dọn dẹp khi component bị hủy
-      return () => observer.disconnect();
-    }
-  }, []);
-  
+
   return (
     <div>
 

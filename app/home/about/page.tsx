@@ -1,48 +1,11 @@
 'use client'; // Thêm dòng này nếu bạn sử dụng các hook hoặc sự kiện liên quan đến client
 
 import useTrans from '../../pages/useTrans';
-import { useEffect } from 'react';
 
 export default function About() {
 
   const trans = useTrans();
-  
-  useEffect(() => {
-    // Chọn ảnh và nội dung văn bản
-    const imageElement = document.querySelector('#about .col-lg-6 img');
-    const textElement = document.querySelector('#about .about-content');
-  
-    if ('IntersectionObserver' in window) {
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              // Thêm lớp 'slide-left' cho ảnh và 'slide-right' cho nội dung văn bản
-              if (entry.target === imageElement) {
-                entry.target.classList.add('slide-left');
-              } else if (entry.target === textElement) {
-                entry.target.classList.add('slide-right');
-              }
-              observer.unobserve(entry.target);
-            }
-          });
-        },
-        {
-          root: null,
-          threshold: 0.2, // Kích hoạt khi 20% phần tử đã vào khung nhìn
-        }
-      );
-  
-      // Kiểm tra xem các phần tử có tồn tại trước khi quan sát
-      if (imageElement) observer.observe(imageElement);
-      if (textElement) observer.observe(textElement);
-  
-      // Dọn dẹp khi component bị hủy
-      return () => observer.disconnect();
-    }
-  }, []);
-  
-  
+
   return (
 
     <section id="about" className="about section light-background">
