@@ -3,9 +3,11 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@/styles/home/faq.css';
 import useTrans from '../../pages/useTrans';
-
+import useScrollEffect from '@/app/hook/useScrollEffect';
+import '@/styles/animation.css';
 export default function Faq() {
   const trans = useTrans();
+  useScrollEffect();
   return (
     <section id="faq" className="faq section light-background">
       {/* Section Title */}
@@ -22,7 +24,7 @@ export default function Faq() {
           <div className="col-lg-10" data-aos="fade-up" data-aos-delay="100">
             <div className="accordion" id="faqAccordion">
               {/* Câu hỏi 1 */}
-              <div className="accordion-item">
+              <div className="animations left accordion-item">
                 <h2 className="accordion-header" id="headingOne">
                   <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                   {trans.HomePage.faq.attributes[0].title}
@@ -36,7 +38,7 @@ export default function Faq() {
               </div>
 
               {/* Câu hỏi 2 */}
-              <div className="accordion-item">
+              <div className="animations left accordion-item">
                 <h2 className="accordion-header" id="headingTwo">
                   <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                   {trans.HomePage.faq.attributes[1].title}
@@ -50,7 +52,7 @@ export default function Faq() {
               </div>
 
               {/* Câu hỏi 3 */}
-              <div className="accordion-item">
+              <div className="animations left accordion-item">
                 <h2 className="accordion-header" id="headingThree">
                   <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                   {trans.HomePage.faq.attributes[2].title}
@@ -64,7 +66,7 @@ export default function Faq() {
               </div>
 
               {/* Câu hỏi 4 */}
-              <div className="accordion-item">
+              <div className="animations right accordion-item">
                 <h2 className="accordion-header" id="headingFour">
                   <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                   {trans.HomePage.faq.attributes[3].title}
@@ -78,7 +80,7 @@ export default function Faq() {
               </div>
 
               {/* Câu hỏi 5 */}
-              <div className="accordion-item">
+              <div className="animations right accordion-item">
                 <h2 className="accordion-header" id="headingFive">
                   <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                   {trans.HomePage.faq.attributes[4].title}
@@ -92,7 +94,7 @@ export default function Faq() {
               </div>
 
               {/* Câu hỏi 6 */}
-              <div className="accordion-item">
+              <div className="animations right accordion-item">
                 <h2 className="accordion-header" id="headingSix">
                   <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                   {trans.HomePage.faq.attributes[5].title}

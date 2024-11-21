@@ -2,10 +2,9 @@
 
 import useTrans from '../../pages/useTrans';
 
-
 export default function Hero() {
   const trans = useTrans();
-
+ 
   return (
 
     // <section id="hero" className="hero section light-background">

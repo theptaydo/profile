@@ -1,11 +1,12 @@
 'use client';
-
+import '@/styles/animation.css';
 import Head from 'next/head';
 import '@/styles/home/products.css';
 import useTrans from '../../pages/useTrans';
-
+import useScrollEffect from '@/app/hook/useScrollEffect';
 export default function Products() {
     const trans = useTrans();
+    useScrollEffect();
   return (
     <>
       <section id="products" className="products  section section pt-0">
@@ -20,7 +21,7 @@ export default function Products() {
             <div className="product-2" >
               <div className="row align-items-center">
                 {/* Left Column: Image */}
-                <div className="col-md-6">
+                <div className="animations left col-md-6">
                   <div id="productCarousel0" className="carousel slide" data-bs-ride="carousel">
                     <div className="carousel-inner">
                       <div className="carousel-item active">
@@ -45,7 +46,7 @@ export default function Products() {
                 </div>
 
                 {/* Right Column: Details */}
-                <div className="col-md-6">
+                <div className="animations right col-md-6">
                   <div className="product-details">
                     <h2>{trans.HomePage.products.items[0].name}</h2>
 
@@ -71,7 +72,7 @@ export default function Products() {
 
               <div className="row align-items-center">
                 {/* Right Column: Details */}
-                <div className="col-md-6">
+                <div className="animations left col-md-6">
                   <div className="product-details">
                     <h2>{trans.HomePage.products.items[1].name}</h2>
 
@@ -96,7 +97,7 @@ export default function Products() {
 
                 {/* Left Column: Image */}
                 <div className="col-md-6">
-                  <div id="productCarousel1" className="carousel slide" data-bs-ride="carousel">
+                  <div id="productCarousel1" className="animations right carousel slide" data-bs-ride="carousel">
                     <div className="carousel-inner">
                       <div className="carousel-item active">
                         <img src="/img/products/thep-cuon-van-8.jpg" className="d-block w-100" alt="Steel Coil Image 1" />

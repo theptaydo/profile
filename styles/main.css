@@ -1286,11 +1286,7 @@ section,
   justify-content: center;
 }
 
-.container {
-  max-width: 1200px;
-  overflow: hidden;
-  position: relative;
-}
+ 
 
 .clients-wrapper {
   display: flex;
@@ -2406,90 +2402,8 @@ section,
   color: rgba(0, 0, 0, 0.3);
 }
 
-/* Keyframes for slide-in animations */
-@keyframes slideInLeft {
-  0% {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-@keyframes slideInRight {
-  0% {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-/* Performance optimization for animations */
-.portfolio .h-entry {
-  will-change: transform, opacity;
-  opacity: 0;
-  /* Start fully hidden */
-  transform: translateY(30px);
-  /* Downward translation */
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-  /* Smooth transition */
-}
-
-.portfolio .h-entry.visible {
-  opacity: 1;
-  /* Fully visible */
-  transform: translateY(0);
-  /* Reset translation */
-}
-
-/* Slide-in animations */
-.portfolio .h-entry.left-slide {
-  animation: slideInLeft 0.8s forwards;
-}
-
-.portfolio .h-entry.right-slide {
-  animation: slideInRight 0.8s forwards;
-}
-
-/* Delay animations for sequential effect */
-.portfolio .h-entry:nth-child(1) {
-  animation-delay: 0s;
-}
-
-.portfolio .h-entry:nth-child(2) {
-  animation-delay: 0.2s;
-}
-
-.portfolio .h-entry:nth-child(3) {
-  animation-delay: 0.4s;
-}
-
-.portfolio .h-entry:nth-child(4) {
-  animation-delay: 0.6s;
-}
-
-.portfolio .h-entry {
-  opacity: 0;
-  /* Start fully hidden */
-  transform: translateY(30px);
-  /* Downward translation */
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-  /* Smooth transition */
-}
-
-.portfolio .h-entry.visible {
-  opacity: 1;
-  /* Fully visible */
-  transform: translateY(0);
-  /* Reset translation */
-}
+ 
+ 
 
 
 
@@ -2701,31 +2615,7 @@ ul {
 }
 /* products */
 /* Trạng thái ban đầu của carousel và product-details */
-.carousel, .product-details {
-  opacity: 0;
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.carousel {
-  transform: translateX(-50px); /* Bắt đầu từ bên trái */
-}
-
-.product-details {
-  transform: translateX(50px); /* Bắt đầu từ bên phải */
-}
-
-/* Khi thêm lớp 'slide-left', carousel sẽ trượt từ trái sang phải */
-.carousel.slide-left {
-  opacity: 1;
-  transform: translateX(0); /* Trở về vị trí ban đầu */
-}
-
-/* Khi thêm lớp 'slide-right', product-details sẽ trượt từ phải sang trái */
-.product-details.slide-right {
-  opacity: 1;
-  transform: translateX(0); /* Trở về vị trí ban đầu */
-}
-
+ 
 
 
 

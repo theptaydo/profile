@@ -8,16 +8,17 @@ import useTrans from '@/app/pages/useTrans';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 // import 'bootstrap/dist/css/bootstrap.min.css';
-
+import useScrollEffect from '@/app/hook/useScrollEffect';
+import '@/styles/animation.css';
 export default function AppFooter() {
   const trans = useTrans();
-
+useScrollEffect();
   return (
     <div>
 
       <footer id="footer" className="footer">
         <div className="footer-newsletter">
-          <div className="container">
+          <div className="animations bottom container">
             <div className="row justify-content-center text-center">
               <div className="col-lg-6">
                 <h4>{trans.footer.content}</h4>

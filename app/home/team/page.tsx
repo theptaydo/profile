@@ -1,11 +1,12 @@
 'use client';
 
 import useTrans from '@/app/pages/useTrans';
-
+import useScrollEffect from '@/app/hook/useScrollEffect';
+import '@/styles/animation.css';
 export default function Team() {
 
   const trans = useTrans();
-
+useScrollEffect();
   return (
     <>
       <section id="team" className="team section light-background">
@@ -19,7 +20,7 @@ export default function Team() {
         {/* End Section Title */}
 
         <div className="container">
-          <div className="row gy-4">
+          <div className="animations bottom row gy-4">
             {/* Thành viên 1 */}
             <div className="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
               <div className="team-member">

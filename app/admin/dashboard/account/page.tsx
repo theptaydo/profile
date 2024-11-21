@@ -1,6 +1,6 @@
 'use client'; // Thêm dòng này để báo rằng đây là một Client Component
 import '@/styles/admin.css';
-
+import Link from 'next/link';
 import React, { useState } from 'react';
 export default function User() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -26,6 +26,12 @@ export default function User() {
               <i className="bi bi-house"></i>
             </span> Người dùng
           </h3>
+          <Link href="/admin/dashboard/account/user" legacyBehavior>
+        <a className="menu-title nav-link d-flex align-items-center">
+          <span className="menu-title">Thêm User</span>
+          <i className="bi bi-person-lines-fill menu-icon ms-2"></i>
+        </a>
+        </Link>
           <div className="search-box mb-3">
           <i className="bi bi-search search-icon"></i>
           <input
@@ -35,7 +41,12 @@ export default function User() {
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />
+       
         </div>
+    
+       
+        
+          
           <div className="table-responsive">
             <table className="table">
               <thead>

@@ -3,8 +3,10 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@/styles/home/testimonials.css';
-
+import useScrollEffect from '@/app/hook/useScrollEffect';
+import '@/styles/animation.css';
 export default function Testimonials() {
+  useScrollEffect();
   return (
 
     <>
@@ -16,7 +18,7 @@ export default function Testimonials() {
             <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
-          <div className="carousel-inner">
+          <div className="animations left carousel-inner">
             <div className="carousel-item active">
               <div className="d-flex flex-column align-items-center text-center p-4 bg-dark text-white">
                 <img

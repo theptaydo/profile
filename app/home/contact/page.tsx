@@ -1,9 +1,11 @@
 'use client';
 
 import useTrans from '../../pages/useTrans';
-
+import useScrollEffect from '@/app/hook/useScrollEffect';
+import '@/styles/animation.css';
 export default function Contact() {
   const trans = useTrans();
+  useScrollEffect();
   return (
     <>
 
@@ -20,7 +22,7 @@ export default function Contact() {
         <div className="container" data-aos="fade-up" data-aos-delay="100">
           <div className="row gy-4">
             <div className="col-lg-5">
-              <div className="info-wrap">
+              <div className="animations left info-wrap">
                 <div className="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
                   <i className="bi bi-geo-alt flex-shrink-0"></i>
                   <div>
@@ -56,7 +58,7 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="col-lg-7">
+            <div className="animations right col-lg-7">
               <form action="" method="post" className="php-email-form" data-aos="fade-up" data-aos-delay="200">
                 <div className="row gy-4">
                   <div className="col-md-6">

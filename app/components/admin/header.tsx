@@ -230,6 +230,14 @@ export default function Header() {
             </p>
           </Link>            
           </li>
+          <li className="nav-item">
+          <Link href={"/admin/dashboard/blog"} className="menu-title">
+            <p className="nav-link" aria-expanded="false" aria-controls="icons">
+              <span className="menu-title">Blog</span>
+              <i className="bi bi-person-lines-fill menu-icon"></i>
+            </p>
+          </Link>            
+          </li>
           
         </ul>
       </nav>
