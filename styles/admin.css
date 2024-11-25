@@ -22,38 +22,61 @@
 }
 /* Search Box Container */
  /* Search Box Container */
-.search-box {
-    display: flex;
-    align-items: center;
-    background-color: #f9fafb; /* Nền nhạt */
-    border: 1px solid #e0e0e0; /* Viền nhạt */
-    border-radius: 8px;
-    padding: 8px 12px; /* Tạo khoảng cách đều */
-    width: 100%; /* Độ rộng tối đa */
-    max-width: 300px; /* Giới hạn độ rộng */
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05); /* Bóng nhẹ */
-  }
-  
-  /* Search Icon */
-  .search-icon {
-    font-size: 16px;
-    color: #b0b0b0; /* Màu xám cho icon */
-    margin-right: 8px; /* Khoảng cách giữa icon và input */
-  }
-  
-  /* Input Field */
-  .search-box .form-control {
-    border: none;
-    outline: none;
-    background-color: transparent; /* Xóa màu nền của input */
-    font-size: 14px;
-    color: #333;
-    padding: 0; /* Loại bỏ padding mặc định */
-  }
-  
-  /* Placeholder Text */
-  .search-box .form-control::placeholder {
-    color: #b0b0b0; /* Màu xám nhạt cho placeholder */
-    font-size: 14px;
-  }
-  
+ .header-box {
+  display: flex; /* Sử dụng Flexbox để bố cục ngang */
+  align-items: center; /* Căn giữa các phần tử theo chiều dọc */
+  justify-content: space-between; /* Tách ô tìm kiếm và nút ra hai phía */
+  margin-bottom: 20px; /* Khoảng cách dưới */
+  gap: 10px; /* Khoảng cách giữa các phần tử con */
+}
+
+/* Ô tìm kiếm */
+.header-box .search-icon {
+  flex: 1; /* Chiếm toàn bộ không gian còn lại */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+  margin-right: 800px;
+}
+
+.header-box .search-icon:focus {
+  border-color: #007bff; /* Đổi màu viền khi focus */
+}
+
+/* Nút New Post */
+.header-box .new-user-button {
+  background-color: #007bff; /* Màu nền */
+  color: white; /* Màu chữ */
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.header-box .new-user-button:hover {
+  background-color: #0056b3; /* Màu nền khi hover */
+}
+/* Nút Thêm User */
+ 
+.new-user-button:hover {
+  background-color: #0056b3; /* Màu khi hover */
+}
+.new-user-button {
+  /* margin-left: 700px; Đẩy nút sang phải */
+  background-color: #05080b;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 100px;
+}

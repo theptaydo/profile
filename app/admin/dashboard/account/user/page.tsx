@@ -1,6 +1,9 @@
 'use client'; // Thêm dòng này để báo rằng đây là một Client Component
 import"@/styles/formuser.css";
 export default function UserFrom() {
+  const handleCancel = () => {
+    window.location.href = "/admin/dashboard/account"; // Đường dẫn bạn muốn chuyển đến
+  };
     return (
         <div className="form-container">
         {/* Bố cục ngang */}
@@ -74,7 +77,7 @@ export default function UserFrom() {
   
         {/* Nút hành động */}
         <div className="form-actions">
-          <button className="cancel-btn">Hủy</button>
+          <button className="cancel-btn" onClick={handleCancel} >Hủy</button>
           <button className="save-btn">Lưu</button>
         </div>
       </div>

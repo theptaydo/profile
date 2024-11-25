@@ -5,85 +5,74 @@ import dynamic from 'next/dynamic';
 import { CKEditor } from 'ckeditor4-react';
 
 export default function BlogNew() {
-     
-    const [title, setTitle] = useState<string>('');
-    const [description, setDescription] = useState<string>('');
-    const [detail, setDetail] = useState<string>('');
 
-    const saveContent = () => {
-        console.log('Title:', title);
-        console.log('Description:', description);
-        console.log('Detail:', detail);
-        alert('Bài viết đã được lưu!');
-    };
+  const handleCancel = () => {
+    window.location.href = "/admin/dashboard/blog/blognew"; // Đường dẫn bạn muốn chuyển đến
+  };
+   
 
     return (
-        <div className="container">
-            <div className="form-title">Nội Dung</div>
-
-            <div className="form-group">
-                <label htmlFor="inputTitle">
-                    Tiêu đề <span className="text-danger">*</span>{' '}
-                    <i className="fa fa-question-circle" title="Tiêu đề bản tin"></i>
-                </label>
-                <input
-                    type="text"
-                    id="inputTitle"
-                    name="news_title"
-                    value={title}
-                    onChange={(e) => setTitle(e.target.value)}
-                    required
-                />
-            </div>
-
-            <div className="form-group">
-                <label htmlFor="newsDesc">
-                    Mô tả ngắn <span className="text-danger">*</span>{' '}
-                    <i className="fa fa-question-circle" title="Nội dung mô tả ngắn của tin tức"></i>
-                </label>
-                <textarea
-                    id="newsDesc"
-                    name="news_desc"
-                    value={description}
-                    onChange={(e) => setDescription(e.target.value)}
-                    required
-                ></textarea>
-            </div>
-
-            <div className="form-group">
-                <label htmlFor="newsDetail">
-                    Nội dung chi tiết <span className="text-danger">*</span>{' '}
-                    <i className="fa fa-question-circle" title="Nội dung tin tức"></i>
-                </label>
-                <div className="editor-container">
-                    <CKEditor
-                        initData={detail}
-                        onChange={(event) => setDetail(event.editor.getData())}
-                        config={{
-                            toolbar: [
-                                { name: 'document', items: ['Source', '-', 'Preview'] },
-                                { name: 'clipboard', items: ['Cut', 'Copy', 'Paste', '-', 'Undo', 'Redo'] },
-                                { name: 'editing', items: ['Find', 'Replace'] },
-                                '/',
-                                { name: 'basicstyles', items: ['Bold', 'Italic', 'Strike', '-', 'RemoveFormat'] },
-                                { name: 'paragraph', items: ['BulletedList', 'NumberedList', '-', 'Outdent', 'Indent', '-', 'Blockquote'] },
-                                { name: 'links', items: ['Link', 'Unlink', 'Anchor'] },
-                                { name: 'insert', items: ['Image', 'Table', 'HorizontalRule', 'SpecialChar'] },
-                                '/',
-                                { name: 'styles', items: ['Styles', 'Format', 'FontSize'] },
-                                { name: 'colors', items: ['TextColor', 'BGColor'] },
-                                { name: 'tools', items: ['Maximize'] },
-                            ],
-                            height: 400,
-                        }}
-                    />
+      <div className="news-form-container">
+      <form>
+        <div className="row">
+          {/* Cột bên trái - Nội Dung */}
+          <div className="col-lg-8">
+            <section className="section">
+              <h3>Nội Dung</h3>
+              <div className="form-group">
+                <label>Tiêu đề *</label>
+                <input type="text" placeholder="Nhập tiêu đề" required />
+              </div>
+              <div className="form-group">
+                <label>Mô tả ngắn *</label>
+                <textarea placeholder="Nhập mô tả ngắn" required></textarea>
+              </div>
+              <div className="form-group full-width">
+                <label>Nội dung chi tiết *</label>
+                <textarea placeholder="Nhập nội dung chi tiết" required></textarea>
+              </div>
+            </section>
+          </div>
+    
+          {/* Cột bên phải - Hiển Thị */}
+          <div className="col-lg-4">
+            <section className="section">
+              <h3>Hiển Thị</h3>
+              <div className="form-group">
+                <label>URL</label>
+                <input type="text" placeholder="Nhập URL" />
+              </div>
+              <div className="form-group">
+                <label>Thời gian đăng</label>
+                <input type="datetime-local" />
+              </div>
+              
+              <div className="form-group">
+                <label>Danh mục tin *</label>
+                <input type="text" placeholder="Chọn danh mục" required />
+              </div>
+              <div className="form-group">
+                <label>Hình Ảnh</label>
+                <div className="image-upload">
+                  <div className="image-preview">140x140</div>
+                  <input type="file" accept="image/*" />
                 </div>
-            </div>
-
-            <button className="submit-btn" onClick={saveContent}>
-                Lưu Bài Viết
-            </button>
+              </div>
+            </section>
+     
+    
+            
+          </div>
         </div>
+    
+        {/* Nút */}
+        <div className="form-actions">
+          <button type="button" className="cancel-btn"onClick={handleCancel} >Hủy</button>
+          <button type="submit" className="save-btn">Lưu</button>
+        </div>
+      </form>
+    </div>
+    
     );
 }
 

@@ -25,7 +25,9 @@ export default function Blog() {
           avatar: "https://via.placeholder.com/50",
         },
       ];
-    
+      const handleButtonClick = () => {
+        window.location.href = "admin/dashboard/blog/blognew"; // Đường dẫn bạn muốn chuyển đến
+      };
       return (
         <div className="blog-container">
             <div className="blog-body">
@@ -42,7 +44,7 @@ export default function Blog() {
               placeholder="Search post..."
               className="search-input"
             />
-            <button className="new-post-button">+ New post</button>
+            <button className="new-post-button" onClick={handleButtonClick}>+ New post</button>
           </div>
         </header>
   

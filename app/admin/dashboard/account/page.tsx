@@ -18,35 +18,30 @@ export default function User() {
     user.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
     user.subject.toLowerCase().includes(searchTerm.toLowerCase())
   );
+  const handleButtonClick = () => {
+    window.location.href = "/admin/dashboard/account/user"; // Đường dẫn bạn muốn chuyển đến
+  };
     return (
-      <div className="card-account">
+      
+      <div className="card-account" style={{}}>
         <div className="card-body-account">
         <h3 className="page-title">
             <span className="page-title-icon bg-gradient-primary text-white me-2">
               <i className="bi bi-house"></i>
             </span> Người dùng
           </h3>
-          <Link href="/admin/dashboard/account/user" legacyBehavior>
-        <a className="menu-title nav-link d-flex align-items-center">
-          <span className="menu-title">Thêm User</span>
-          <i className="bi bi-person-lines-fill menu-icon ms-2"></i>
-        </a>
-        </Link>
-          <div className="search-box mb-3">
-          <i className="bi bi-search search-icon"></i>
+       <div></div>
+          <div className="header-box mb-3">
           <input
             type="text"
-            className="form-control"
+            className="bi bi-search search-icon"
             placeholder="Tìm kiếm người dùng..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-          />
-       
-        </div>
-    
-       
-        
-          
+          />     
+           <button className="new-user-button" onClick={handleButtonClick}>+ New post</button>
+        </div>     
+     
           <div className="table-responsive">
             <table className="table">
               <thead>

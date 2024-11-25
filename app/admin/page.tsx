@@ -3,13 +3,13 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import '@/assets/admin/css/style.css';
-
+import { CircularProgress } from '@mui/material';
 export default function Login() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const router = useRouter(); // Sử dụng useRouter để chuyển hướng
-
+  const [loading,setLoading] =useState(true);
   // Hàm xử lý đăng nhập
   const handleSignIn = async (e: React.FormEvent) => {
     e.preventDefault();
