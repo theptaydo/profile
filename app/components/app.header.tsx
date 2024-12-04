@@ -19,10 +19,10 @@ export default function AppHeader() {
           <div className="container d-flex justify-content-center justify-content-md-between">
             <div className="contact-info d-flex align-items-center">
               <i className="bi bi-envelope d-flex align-items-center">
-                <a href="mailto:contact@example.com">contact@theptaydo.com</a>
+                <a href="mailto:sales@theptaydo.com">sales@theptaydo.com</a>
               </i>
               <i className="bi bi-phone d-flex align-items-center ms-4">
-                <span>+1 5589 55488 55</span>
+                <span><a href="tel:02923841822">+84 2923 841 822</a></span>
               </i>
             </div>
             <div className="social-links d-none d-md-flex align-items-center">
@@ -40,7 +40,7 @@ export default function AppHeader() {
               {/* Uncomment the line below if you also wish to use an image logo */}
               {/* <img src="./assets/img/logo.png" alt="Logo" /> */}
               <h1 className="sitename">
-                <img src="/img/LOGO-slogan-xich-ma.png" alt="Slogan" />
+                <img src="/img/logo/logo.png" alt="Slogan" />
               </h1>
             </a>
 

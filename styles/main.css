@@ -25,19 +25,23 @@
   /* Default color used for the majority of the text content across the entire website */
   --heading-color: #222222;
   /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #106eea;
+  /* --accent-color: #014a36; */
+  --accent-color: #014a36;
   /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff;
   /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff;
   /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+
+  --main-logo-color: #014a36;
+  --main-logo-background-color: #ffffff;
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: #222222;
   /* The default color of the main navmenu links */
-  --nav-hover-color: #106eea;
+  --nav-hover-color: #014a36;
   /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff;
   /* Used as the background color for mobile navigation menu */
@@ -45,7 +49,7 @@
   /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #222222;
   /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #106eea;
+  --nav-dropdown-hover-color: #014a36;
   /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
@@ -795,11 +799,13 @@ h6 {
   padding-right: 10px;
   color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
+
 @keyframes slideDown {
   from {
     opacity: 0;
     transform: translateY(-50px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -810,7 +816,8 @@ h6 {
 .service-item {
   opacity: 0;
   animation: slideDown 0.6s ease-out forwards;
-  animation-delay: var(--animation-delay); /* Tạo độ trễ động */
+  animation-delay: var(--animation-delay);
+  /* Tạo độ trễ động */
 }
 
 /* Sử dụng độ trễ khác nhau cho từng mục để tạo hiệu ứng lần lượt */
@@ -829,6 +836,7 @@ h6 {
 .service-item:nth-child(4) {
   --animation-delay: 0.4s;
 }
+
 /*--------------------------------------------------------------
 # Global Sections
 --------------------------------------------------------------*/
@@ -1063,6 +1071,10 @@ section,
   }
 }
 
+#backgroundCarousel>div>div.carousel-item {
+  opacity: .6;
+}
+
 /*--------------------------------------------------------------
 # Featured Services Section
 --------------------------------------------------------------*/
@@ -1175,7 +1187,7 @@ section,
 .about .about-content p:last-child {
   margin-bottom: 0;
 }
- 
+
 
 /*--------------------------------------------------------------
 # Skills Section
@@ -1279,6 +1291,7 @@ section,
 .clients .swiper-slide img:hover {
   transform: scale(1.1);
 }
+
 .clients-section {
   padding: 50px 0;
   background-color: #ffffff;
@@ -1286,7 +1299,7 @@ section,
   justify-content: center;
 }
 
- 
+
 
 .clients-wrapper {
   display: flex;
@@ -1298,7 +1311,7 @@ section,
 .client-slide {
   min-width: 200px;
   margin: 0 10px;
- 
+
 
 
   display: flex;
@@ -1365,9 +1378,10 @@ section,
   left: 0;
   padding: 20px;
   color: #f1e4e4;
- 
+
   width: 100%;
 }
+
 .news-large-post-title {
   font-size: 1rem;
   font-weight: bold;
@@ -1381,18 +1395,22 @@ section,
 @media (max-width: 768px) {
   .news-large-post-title {
     display: -webkit-box;
-    -webkit-line-clamp: 1; /* Giới hạn chỉ một dòng khi màn hình nhỏ */
+    -webkit-line-clamp: 1;
+    /* Giới hạn chỉ một dòng khi màn hình nhỏ */
     -webkit-box-orient: vertical;
     white-space: normal;
-    font-size: 0.9rem; /* Giảm kích thước font một chút nếu cần */
+    font-size: 0.9rem;
+    /* Giảm kích thước font một chút nếu cần */
   }
 }
 
 @media (min-width: 769px) {
   .news-large-post-title {
     display: block;
-    -webkit-line-clamp: unset; /* Hiển thị đầy đủ khi màn hình lớn */
-    white-space: normal; /* Không giới hạn số dòng */
+    -webkit-line-clamp: unset;
+    /* Hiển thị đầy đủ khi màn hình lớn */
+    white-space: normal;
+    /* Không giới hạn số dòng */
   }
 }
 
@@ -1440,18 +1458,22 @@ section,
 @media (max-width: 768px) {
   .news-grid-post-title {
     display: -webkit-box;
-    -webkit-line-clamp: 1; /* Giới hạn chỉ một dòng khi màn hình nhỏ */
+    -webkit-line-clamp: 1;
+    /* Giới hạn chỉ một dòng khi màn hình nhỏ */
     -webkit-box-orient: vertical;
     white-space: normal;
-    font-size: 0.9rem; /* Giảm kích thước font một chút nếu cần */
+    font-size: 0.9rem;
+    /* Giảm kích thước font một chút nếu cần */
   }
 }
 
 @media (min-width: 769px) {
   .news-grid-post-title {
     display: block;
-    -webkit-line-clamp: unset; /* Hiển thị đầy đủ khi màn hình lớn */
-    white-space: normal; /* Không giới hạn số dòng */
+    -webkit-line-clamp: unset;
+    /* Hiển thị đầy đủ khi màn hình lớn */
+    white-space: normal;
+    /* Không giới hạn số dòng */
   }
 }
 
@@ -1475,17 +1497,21 @@ section,
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   align-items: center;
-  transition: transform 0.3s ease; /* Thêm hiệu ứng hover */
+  transition: transform 0.3s ease;
+  /* Thêm hiệu ứng hover */
 }
 
 .news-small-post:hover {
-  transform: scale(1.05); /* Phóng to nhẹ khi hover */
+  transform: scale(1.05);
+  /* Phóng to nhẹ khi hover */
 }
 
 .news-small-post img {
-  width: 80px; /* Tăng kích thước ảnh đại diện */
+  width: 80px;
+  /* Tăng kích thước ảnh đại diện */
   height: 80px;
-  border-radius: 8px; /* Có thể thay đổi thành 50% nếu muốn ảnh tròn */
+  border-radius: 8px;
+  /* Có thể thay đổi thành 50% nếu muốn ảnh tròn */
   object-fit: cover;
 }
 
@@ -1494,7 +1520,7 @@ section,
   flex-direction: column;
   justify-content: center;
 }
- 
+
 .news-small-post-title {
   font-size: 1rem;
   font-weight: bold;
@@ -1509,24 +1535,29 @@ section,
 @media (max-width: 768px) {
   .news-small-post-title {
     display: -webkit-box;
-    -webkit-line-clamp: 1; /* Giới hạn chỉ một dòng khi màn hình nhỏ */
+    -webkit-line-clamp: 1;
+    /* Giới hạn chỉ một dòng khi màn hình nhỏ */
     -webkit-box-orient: vertical;
     white-space: normal;
-    font-size: 0.9rem; /* Giảm kích thước font một chút nếu cần */
+    font-size: 0.9rem;
+    /* Giảm kích thước font một chút nếu cần */
   }
 }
 
 @media (min-width: 769px) {
   .news-small-post-title {
     display: block;
-    -webkit-line-clamp: unset; /* Hiển thị đầy đủ khi màn hình lớn */
-    white-space: normal; /* Không giới hạn số dòng */
+    -webkit-line-clamp: unset;
+    /* Hiển thị đầy đủ khi màn hình lớn */
+    white-space: normal;
+    /* Không giới hạn số dòng */
   }
 }
 
 
 .news-small-post-meta {
-  font-size: 0.85rem; /* Tăng kích thước font cho meta */
+  font-size: 0.85rem;
+  /* Tăng kích thước font cho meta */
   color: #555;
   margin-top: 4px;
 }
@@ -1812,6 +1843,7 @@ section,
     transform: translateX(-100%);
     opacity: 0;
   }
+
   100% {
     transform: translateX(0);
     opacity: 1;
@@ -1824,6 +1856,7 @@ section,
     transform: translateX(100%);
     opacity: 0;
   }
+
   100% {
     transform: translateX(0);
     opacity: 1;
@@ -1832,31 +1865,39 @@ section,
 
 /* Áp dụng hiệu ứng từ trái qua phải */
 .portfolio .h-entry.left-slide {
-  opacity: 0; /* Bắt đầu với opacity 0 */
-  animation: slideInLeft 0.8s forwards; /* Hiệu ứng kéo dài 0.8 giây */
+  opacity: 0;
+  /* Bắt đầu với opacity 0 */
+  animation: slideInLeft 0.8s forwards;
+  /* Hiệu ứng kéo dài 0.8 giây */
 }
 
 /* Áp dụng hiệu ứng từ phải qua trái */
 .portfolio .h-entry.right-slide {
-  opacity: 0; /* Bắt đầu với opacity 0 */
-  animation: slideInRight 0.8s forwards; /* Hiệu ứng kéo dài 0.8 giây */
+  opacity: 0;
+  /* Bắt đầu với opacity 0 */
+  animation: slideInRight 0.8s forwards;
+  /* Hiệu ứng kéo dài 0.8 giây */
 }
 
 /* Thêm các độ trễ khác nhau cho hiệu ứng */
 .portfolio .h-entry:nth-child(1) {
-  animation-delay: 0s; /* Không có độ trễ */
+  animation-delay: 0s;
+  /* Không có độ trễ */
 }
 
 .portfolio .h-entry:nth-child(2) {
-  animation-delay: 0.2s; /* Độ trễ 0.2 giây */
+  animation-delay: 0.2s;
+  /* Độ trễ 0.2 giây */
 }
 
 .portfolio .h-entry:nth-child(3) {
-  animation-delay: 0.4s; /* Độ trễ 0.4 giây */
+  animation-delay: 0.4s;
+  /* Độ trễ 0.4 giây */
 }
 
 .portfolio .h-entry:nth-child(4) {
-  animation-delay: 0.6s; /* Độ trễ 0.6 giây */
+  animation-delay: 0.6s;
+  /* Độ trễ 0.6 giây */
 }
 
 /* Thêm style cơ bản cho layout */
@@ -1868,7 +1909,8 @@ section,
 }
 
 .portfolio .h-entry:hover {
-  transform: scale(1.05); /* Phóng to nhẹ khi hover */
+  transform: scale(1.05);
+  /* Phóng to nhẹ khi hover */
 }
 
 
@@ -2402,8 +2444,8 @@ section,
   color: rgba(0, 0, 0, 0.3);
 }
 
- 
- 
+
+
 
 
 
@@ -2525,7 +2567,7 @@ ul {
 
 
 #portfolio .description-title {
-  color: #007bff;
+  color: #014a36;
   font-weight: bold;
 }
 
@@ -2611,11 +2653,12 @@ ul {
   #portfolio .col-md-4 {
     flex: 1 1 100%;
     margin-bottom: 20px;
-  } 
+  }
 }
+
 /* products */
 /* Trạng thái ban đầu của carousel và product-details */
- 
+
 
 
 
@@ -2629,5 +2672,5 @@ ul {
     backface-visibility: hidden;
     transition: transform .6s ease-in-out;
   }
- 
+
 }
