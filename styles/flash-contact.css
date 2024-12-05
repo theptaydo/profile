@@ -1,14 +1,134 @@
-#flash-contact .call .button {
+#flash-contact .call .callBtn {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border-radius: 100%;
   border: none;
   background-color: #30C04F;
+  margin-bottom: 10px;
 }
 
-#flash-contact .call .button:hover {
+#flash-contact .call .callBtn:hover {
   background-color: #2bac47;
 }
+
+#flash-contact {
+
+  position: fixed;
+  bottom: 70px;
+  right: 15px;
+  /* display: flex
+; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* top: 50%; */
+  /* bottom: auto; */
+  z-index: 99;
+}
+
+/* From Uiverse.io by vinodjangid07 */
+.chatBtn {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: none;
+  background-color: #3bff72;
+  background-image: linear-gradient(147deg, #3bff48, #0c552b, #014A36);
+  cursor: pointer;
+  padding-top: 3px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.164);
+  position: relative;
+  background-size: 300%;
+  background-position: left;
+  transition-duration: 1s;
+  margin-bottom: 10px;
+}
+
+.tooltip {
+  position: absolute;
+  /* top: -40px; */
+  left: -60px;
+  opacity: 0;
+  background-color: #0c552b;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: .5s;
+  pointer-events: none;
+  letter-spacing: 0.5px;
+}
+
+.chatBtn:hover .tooltip {
+  opacity: 1;
+  transition-duration: .5s;
+}
+
+.chatBtn:hover {
+  background-position: right;
+  transition-duration: 1s;
+}
+
+
+
+
+/* MOBILE */
+
+/* #flash-contact {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+#flash-contact .call,
+#flash-contact .chat {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+#flash-contact button,
+#flash-contact a {
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#flash-contact .tooltip {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  #flash-contact {
+    position: static;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  #flash-contact .tooltip {
+    display: inline-block;
+    margin-left: 10px;
+  }
+} */

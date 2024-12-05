@@ -78,7 +78,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </Head>
       <body>
         <AppHeader />
-        {/* <AppContact /> */}
+        <AppContact />
 
         <main className="main">
           {children}
