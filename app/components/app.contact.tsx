@@ -1,7 +1,6 @@
 'use client'; // Thêm dòng này để báo rằng đây là một Client Component
 import React, { useState } from "react";
 import '@/styles/flash-contact.css';
-import '@/styles/chatbox.css'
 export default function AppContact() {
   const [isChatOpen, setIsChatOpen] = useState(false);
   const [messages, setMessages] = useState<string[]>([]);
@@ -45,32 +44,35 @@ export default function AppContact() {
 
       {isChatOpen && (
         <div className="chatbox">
-          <div className="col-md-6" style={{ width: "70%" }}>
+          <div className="col-md-6">
             <div className="card card-bordered">
               <div className="card-header">
-                <h4 className="card-title">
-                  <strong>TheptayDo</strong>
+                <h4 className="card-title fw-semibold">
+                  <strong>TAYDOSTEEL BOT</strong>
                 </h4>
+
+                <span onClick={toggleChatbox}>
+                  X
+                </span>
 
               </div>
 
               <div
                 className="ps-container ps-theme-default ps-active-y"
                 id="chat-content"
-                style={{ overflowY: 'scroll', height: '400px' }}
               >
 
-                <div className="media media-chat">
+                <div className="media media-chat d-flex">
                   <img
                     className="avatar"
                     src="https://img.icons8.com/color/36/000000/administrator-male.png"
                     alt="avatar"
                   />
                   <div className="media-body">
-                    <p>Hi</p>
-                    <p>How are you ...???</p>
+                    <p>Xin chào</p>
+                    <p>Tôi là SteelBot, một chatbot tự động của Website <a href="https://theptaydo.com">theptaydo.com</a>. Được tạo ra bởi <a href="https://dangth.dev">Davis</a>.</p>
                     <p>
-                      What are you doing tomorrow?<br /> Can we come up a bar?
+                      Tôi có thể giúp gì cho bạn hôm nay?<br />
                     </p>
                     <p className="meta">
                       <time dateTime="2018">23:58</time>
@@ -78,7 +80,7 @@ export default function AppContact() {
                   </div>
                 </div>
 
-                <div className="media media-meta-day">Today</div>
+                <div className="media media-meta-day text-center">Today</div>
 
                 <div className="media media-chat media-chat-reverse">
                   <div className="media-body">
@@ -95,7 +97,7 @@ export default function AppContact() {
                 <input
                   className="publisher-input"
                   type="text"
-                  placeholder="Write something"
+                  placeholder="Nhập lời nhắn của bạn tại đây"
                 />
                 <span className="publisher-btn file-group">
                   <i className="fa fa-paperclip file-browser"></i>
