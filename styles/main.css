@@ -162,10 +162,8 @@ h6 {
 .header {
   color: var(--default-color);
   transition: all 0.5s;
-  z-index: 997;
+  z-index: 97;
   background-color: var(--background-color);
-
-
   width: 100%;
   position: fixed;
 }
