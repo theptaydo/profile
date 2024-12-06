@@ -1,8 +1,27 @@
 'use client'; // Thêm dòng này để báo rằng đây là một Client Component
-
+import React, { useState } from "react";
 import '@/styles/flash-contact.css';
+import'@/styles/chatbox.css'
 export default function AppContact() {
+  const [isChatOpen, setIsChatOpen] = useState(false);
+  const [messages, setMessages] = useState<string[]>([]);
+  const [input, setInput] = useState<string>('');
 
+  // Toggle mở/đóng chatbox
+  const toggleChatbox = () => {
+     console.log("Toggling chatbox. Current state:", isChatOpen);
+    setIsChatOpen(!isChatOpen);
+  };
+
+  // Gửi tin nhắn
+  const handleSendMessage = () => {
+    if (input.trim() === '') return;
+
+    setMessages((prevMessages) => [...prevMessages, input]);
+    setInput('');
+  };
+
+    
   return (
     <div id="flash-contact">
       <div className="call">
@@ -15,16 +34,86 @@ export default function AppContact() {
 
       </div>
 
-      <div className="chat">
-        <button className="chatBtn" aria-label="Chat">
+      <div className="chat"  >
+        <button className="chatBtn" aria-label="Chat" onClick={toggleChatbox} >
           <svg height="1.6em" fill="white" xmlSpace="preserve" viewBox="0 0 1000 1000" y="0px" x="0px" version="1.1">
             <path d="M881.1,720.5H434.7L173.3,941V720.5h-54.4C58.8,720.5,10,671.1,10,610.2v-441C10,108.4,58.8,59,118.9,59h762.2C941.2,59,990,108.4,990,169.3v441C990,671.1,941.2,720.5,881.1,720.5L881.1,720.5z M935.6,169.3c0-30.4-24.4-55.2-54.5-55.2H118.9c-30.1,0-54.5,24.7-54.5,55.2v441c0,30.4,24.4,55.1,54.5,55.1h54.4h54.4v110.3l163.3-110.2H500h381.1c30.1,0,54.5-24.7,54.5-55.1V169.3L935.6,169.3z M717.8,444.8c-30.1,0-54.4-24.7-54.4-55.1c0-30.4,24.3-55.2,54.4-55.2c30.1,0,54.5,24.7,54.5,55.2C772.2,420.2,747.8,444.8,717.8,444.8L717.8,444.8z M500,444.8c-30.1,0-54.4-24.7-54.4-55.1c0-30.4,24.3-55.2,54.4-55.2c30.1,0,54.4,24.7,54.4,55.2C554.4,420.2,530.1,444.8,500,444.8L500,444.8z M282.2,444.8c-30.1,0-54.5-24.7-54.5-55.1c0-30.4,24.4-55.2,54.5-55.2c30.1,0,54.4,24.7,54.4,55.2C336.7,420.2,312.3,444.8,282.2,444.8L282.2,444.8z"></path>
           </svg>
           <span className="tooltip">Chat</span>
         </button>
       </div>
-
-
-    </div>
+      
+      {isChatOpen && (
+           <div className="chatbox">
+             <div className="col-md-6"style={{ width:"70%" }}>
+               <div className="card card-bordered">
+                 <div className="card-header">
+                   <h4 className="card-title">
+                     <strong>TheptayDo</strong>
+                   </h4>
+                  
+                 </div>
+   
+                 <div
+                   className="ps-container ps-theme-default ps-active-y"
+                   id="chat-content"
+                   style={{ overflowY: 'scroll', height: '400px' }}
+                 >
+                   
+                   <div className="media media-chat">
+                     <img
+                       className="avatar"
+                       src="https://img.icons8.com/color/36/000000/administrator-male.png"
+                       alt="avatar"
+                     />
+                     <div className="media-body">
+                       <p>Hi</p>
+                       <p>How are you ...???</p>
+                       <p>
+                         What are you doing tomorrow?<br /> Can we come up a bar?
+                       </p>
+                       <p className="meta">
+                         <time dateTime="2018">23:58</time>
+                       </p>
+                     </div>
+                   </div>
+   
+                   <div className="media media-meta-day">Today</div>
+   
+                   <div className="media media-chat media-chat-reverse">
+                     <div className="media-body">
+                       <p>Hiii, I'm good.</p>
+                       <p>How are you doing?</p>
+                       <p>Long time no see! Tomorrow office. will be free on Sunday.</p>
+                       <p className="meta">
+                         <time dateTime="2018">00:06</time>
+                       </p>
+                     </div>
+                   </div>
+                 </div>
+                 <div className="publisher bt-1 border-light">  
+                   <input
+                     className="publisher-input"
+                     type="text"
+                     placeholder="Write something"
+                   />
+                   <span className="publisher-btn file-group">
+                     <i className="fa fa-paperclip file-browser"></i>
+                     <input type="file" />
+                   </span>
+                   <a className="publisher-btn text-info" href="#" data-abc="true">
+                   <i className="bi bi-emoji-smile"></i>
+                   </a>
+                   <a className="publisher-btn text-info" href="#" data-abc="true">
+                   <i className="bi bi-send"></i>
+                   </a>
+                 </div>
+               </div>
+             </div>
+           </div>
+        
+      )}
+      </div>
+     
   );
 }
