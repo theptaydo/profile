@@ -8,6 +8,7 @@ import VisitSalesStatistics from '@/app/admin/dashboard/main/card/visitSalesStat
 import TrafficSources from '@/app/admin/dashboard/main/card/trafficSourcesCard';
 import RecentTickets from '@/app/admin/dashboard/main/card/RecentTickets';
 
+import Image from "next/image";
 export default function Main() {
   return (
     <div className="main-panel" style={{ marginLeft: "0px" }}>
@@ -67,16 +68,16 @@ export default function Main() {
                 </div>
                 <div className="row mt-3">
                   <div className="col-6 pe-1">
-                    <img src="/admin/images/dashboard/img_1.jpg" className="mb-2 mw-100 w-100 rounded" alt="image" />
-                    <img src="/admin/images/dashboard/img_4.jpg" className="mw-100 w-100 rounded" alt="image" />
+                    <Image src="/admin/images/dashboard/img_1.jpg" className="mb-2 mw-100 w-100 rounded" alt="image" />
+                    <Image src="/admin/images/dashboard/img_4.jpg" className="mw-100 w-100 rounded" alt="image" />
                   </div>
                   <div className="col-6 ps-1">
-                    <img src="/admin/images/dashboard/img_2.jpg" className="mb-2 mw-100 w-100 rounded" alt="image" />
-                    <img src="/admin/images/dashboard/img_3.jpg" className="mw-100 w-100 rounded" alt="image" />
+                    <Image src="/admin/images/dashboard/img_2.jpg" className="mb-2 mw-100 w-100 rounded" alt="image" />
+                    <Image src="/admin/images/dashboard/img_3.jpg" className="mw-100 w-100 rounded" alt="image" />
                   </div>
                 </div>
                 <div className="d-flex mt-5 align-items-top">
-                  <img src="/admin/images/faces/face3.jpg" className="img-sm rounded-circle me-3" alt="image" />
+                  <Image src="/admin/images/faces/face3.jpg" className="img-sm rounded-circle me-3" alt="image" />
                   <div className="mb-0 flex-grow">
                     <h5 className="me-2 mb-2">School Website - Authentication Module.</h5>
                     <p className="mb-0 font-weight-light">It is a long established fact that a reader will be distracted by the readable content of a page.</p>

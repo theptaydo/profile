@@ -1,7 +1,7 @@
 'use client'; // Thêm dòng này để báo rằng đây là một Client Component
 import React, { useState } from "react";
 import '@/styles/flash-contact.css';
-import'@/styles/chatbox.css'
+import '@/styles/chatbox.css'
 export default function AppContact() {
   const [isChatOpen, setIsChatOpen] = useState(false);
   const [messages, setMessages] = useState<string[]>([]);
@@ -9,7 +9,7 @@ export default function AppContact() {
 
   // Toggle mở/đóng chatbox
   const toggleChatbox = () => {
-     console.log("Toggling chatbox. Current state:", isChatOpen);
+    console.log("Toggling chatbox. Current state:", isChatOpen);
     setIsChatOpen(!isChatOpen);
   };
 
@@ -21,7 +21,7 @@ export default function AppContact() {
     setInput('');
   };
 
-    
+
   return (
     <div id="flash-contact">
       <div className="call">
@@ -42,78 +42,78 @@ export default function AppContact() {
           <span className="tooltip">Chat</span>
         </button>
       </div>
-      
+
       {isChatOpen && (
-           <div className="chatbox">
-             <div className="col-md-6"style={{ width:"70%" }}>
-               <div className="card card-bordered">
-                 <div className="card-header">
-                   <h4 className="card-title">
-                     <strong>TheptayDo</strong>
-                   </h4>
-                  
-                 </div>
-   
-                 <div
-                   className="ps-container ps-theme-default ps-active-y"
-                   id="chat-content"
-                   style={{ overflowY: 'scroll', height: '400px' }}
-                 >
-                   
-                   <div className="media media-chat">
-                     <img
-                       className="avatar"
-                       src="https://img.icons8.com/color/36/000000/administrator-male.png"
-                       alt="avatar"
-                     />
-                     <div className="media-body">
-                       <p>Hi</p>
-                       <p>How are you ...???</p>
-                       <p>
-                         What are you doing tomorrow?<br /> Can we come up a bar?
-                       </p>
-                       <p className="meta">
-                         <time dateTime="2018">23:58</time>
-                       </p>
-                     </div>
-                   </div>
-   
-                   <div className="media media-meta-day">Today</div>
-   
-                   <div className="media media-chat media-chat-reverse">
-                     <div className="media-body">
-                       <p>Hiii, I'm good.</p>
-                       <p>How are you doing?</p>
-                       <p>Long time no see! Tomorrow office. will be free on Sunday.</p>
-                       <p className="meta">
-                         <time dateTime="2018">00:06</time>
-                       </p>
-                     </div>
-                   </div>
-                 </div>
-                 <div className="publisher bt-1 border-light">  
-                   <input
-                     className="publisher-input"
-                     type="text"
-                     placeholder="Write something"
-                   />
-                   <span className="publisher-btn file-group">
-                     <i className="fa fa-paperclip file-browser"></i>
-                     <input type="file" />
-                   </span>
-                   <a className="publisher-btn text-info" href="#" data-abc="true">
-                   <i className="bi bi-emoji-smile"></i>
-                   </a>
-                   <a className="publisher-btn text-info" href="#" data-abc="true">
-                   <i className="bi bi-send"></i>
-                   </a>
-                 </div>
-               </div>
-             </div>
-           </div>
-        
+        <div className="chatbox">
+          <div className="col-md-6" style={{ width: "70%" }}>
+            <div className="card card-bordered">
+              <div className="card-header">
+                <h4 className="card-title">
+                  <strong>TheptayDo</strong>
+                </h4>
+
+              </div>
+
+              <div
+                className="ps-container ps-theme-default ps-active-y"
+                id="chat-content"
+                style={{ overflowY: 'scroll', height: '400px' }}
+              >
+
+                <div className="media media-chat">
+                  <img
+                    className="avatar"
+                    src="https://img.icons8.com/color/36/000000/administrator-male.png"
+                    alt="avatar"
+                  />
+                  <div className="media-body">
+                    <p>Hi</p>
+                    <p>How are you ...???</p>
+                    <p>
+                      What are you doing tomorrow?<br /> Can we come up a bar?
+                    </p>
+                    <p className="meta">
+                      <time dateTime="2018">23:58</time>
+                    </p>
+                  </div>
+                </div>
+
+                <div className="media media-meta-day">Today</div>
+
+                <div className="media media-chat media-chat-reverse">
+                  <div className="media-body">
+                    <p>Hiii, I&apos;m good.</p>
+                    <p>How are you doing?</p>
+                    <p>Long time no see! Tomorrow office. will be free on Sunday.</p>
+                    <p className="meta">
+                      <time dateTime="2018">00:06</time>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="publisher bt-1 border-light">
+                <input
+                  className="publisher-input"
+                  type="text"
+                  placeholder="Write something"
+                />
+                <span className="publisher-btn file-group">
+                  <i className="fa fa-paperclip file-browser"></i>
+                  <input type="file" />
+                </span>
+                <a className="publisher-btn text-info" href="#" data-abc="true">
+                  <i className="bi bi-emoji-smile"></i>
+                </a>
+                <a className="publisher-btn text-info" href="#" data-abc="true">
+                  <i className="bi bi-send"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
       )}
-      </div>
-     
+    </div>
+
   );
 }
