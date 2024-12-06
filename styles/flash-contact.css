@@ -15,10 +15,10 @@
 }
 
 #flash-contact {
-
+  width: 400px;
   position: fixed;
   bottom: 70px;
-  right: 15px;
+  right: 75px;
   /* display: flex
 ; */
   /* justify-content: center; */
@@ -487,16 +487,28 @@ textarea {
   color: #48b0f7 !important;
 }
 
-#flash-contact>div.chatbox>div {
-  width: 70%;
-}
 
-.ps-container {
-  overflow-y: scroll;
-  height: 590px;
+
+
+.chatbox>div {
+  flex: 0 0 auto;
+  width: 100%;
 }
 
 @media (max-width: 768px) {
+  #flash-contact {
+    width: 100%;
+  }
+
+  #flash-contact>div.chatbox>div {
+    width: 70%;
+  }
+
+  .ps-container {
+    overflow-y: scroll;
+    height: 590px;
+  }
+
   #flash-contact>div.chatbox>div {
     width: 100%;
     margin-bottom: -70px;
