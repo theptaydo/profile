@@ -40,7 +40,7 @@ export default function AppHeader() {
               {/* Uncomment the line below if you also wish to use an image logo */}
               {/* <img src="./assets/img/logo.png" alt="Logo" /> */}
               <h1 className="sitename">
-                <img src="/img/logo/logo.png" alt="Slogan" />
+                <img src="/img/logo/logo-slogan.png" alt="Slogan" />
               </h1>
             </a>
 
