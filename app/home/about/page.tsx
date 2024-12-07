@@ -1,11 +1,12 @@
 'use client'; // Thêm dòng này nếu bạn sử dụng các hook hoặc sự kiện liên quan đến client
 
 import useTrans from '../../pages/useTrans';
-
+import useScrollEffect from '@/app/hook/useScrollEffect';
+import '@/styles/animation.css';
 export default function About() {
 
   const trans = useTrans();
-
+useScrollEffect();
   return (
 
     <section id="about" className="about section light-background">
@@ -20,13 +21,13 @@ export default function About() {
         <div className="row gy-3">
 
           {/* Image Section */}
-          <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <div className="animations left col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <img src="https://theptaydo.com/files/images/gioi-thieu/z3925337497423_16cdc0821ed354add3239797beeec766.jpg"
               alt="" className="img-fluid" />
           </div>
 
           {/* Text Content */}
-          <div className="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+          <div className="animations right col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
             <div className="about-content ps-0 ps-lg-3">
               <h3>{trans.HomePage.about.hightlight}</h3>
               <p className="fst-italic">

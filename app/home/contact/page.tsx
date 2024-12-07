@@ -1,16 +1,20 @@
 'use client';
 
-
+import useTrans from '../../pages/useTrans';
+import useScrollEffect from '@/app/hook/useScrollEffect';
+import '@/styles/animation.css';
 export default function Contact() {
+  const trans = useTrans();
+  useScrollEffect();
   return (
     <>
 
       <section id="contact" className="contact section">
         {/* Section Title */}
         <div className="container section-title" data-aos="fade-up">
-          <h2>Liên hệ</h2>
+          <h2>{trans.HomePage.contact.badge}</h2>
           <p>
-            <span>Liên hệ với</span> <span className="description-title">Chúng tôi</span>
+            <span>{trans.HomePage.contact.title}</span> <span className="description-title">{trans.HomePage.contact.subTitle}</span>
           </p>
         </div>
         {/* End Section Title */}
@@ -18,14 +22,13 @@ export default function Contact() {
         <div className="container" data-aos="fade-up" data-aos-delay="100">
           <div className="row gy-4">
             <div className="col-lg-5">
-              <div className="info-wrap">
+              <div className="animations left info-wrap">
                 <div className="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
                   <i className="bi bi-geo-alt flex-shrink-0"></i>
                   <div>
-                    <h3>Địa chỉ</h3>
+                    <h3>{trans.HomePage.contact.attributes[0].title}</h3>
                     <p>
-                      Lô đất số 45, đường số 2, KCN Trà Nóc 1, P. Trà Nóc, Q. Bình Thủy, TP Cần Thơ Hotline: (+84)
-                      2923.841822
+                    {trans.HomePage.contact.attributes[0].value}
                     </p>
                   </div>
                 </div>
@@ -33,16 +36,16 @@ export default function Contact() {
                 <div className="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
                   <i className="bi bi-telephone flex-shrink-0"></i>
                   <div>
-                    <h3>Điện thoại</h3>
-                    <p>+1 5589 55488 55</p>
+                    <h3>{trans.HomePage.contact.attributes[1].title}</h3>
+                    <p>{trans.HomePage.contact.attributes[1].value}</p>
                   </div>
                 </div>
 
                 <div className="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
                   <i className="bi bi-envelope flex-shrink-0"></i>
                   <div>
-                    <h3>Email</h3>
-                    <p>info@example.com</p>
+                    <h3>{trans.HomePage.contact.attributes[2].title}</h3>
+                    <p>{trans.HomePage.contact.attributes[2].value}</p>
                   </div>
                 </div>
 
@@ -55,43 +58,43 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="col-lg-7">
+            <div className="animations right col-lg-7">
               <form action="" method="post" className="php-email-form" data-aos="fade-up" data-aos-delay="200">
                 <div className="row gy-4">
                   <div className="col-md-6">
                     <label htmlFor="name-field" className="pb-2">
-                      Tên của bạn
+                    {trans.HomePage.contact.form[0].name}
                     </label>
                     <input type="text" name="name" id="name-field" className="form-control" required />
                   </div>
 
                   <div className="col-md-6">
                     <label htmlFor="email-field" className="pb-2">
-                      Email
+                    {trans.HomePage.contact.form[0].email}
                     </label>
                     <input type="email" className="form-control" name="email" id="email-field" required />
                   </div>
 
                   <div className="col-md-12">
                     <label htmlFor="subject-field" className="pb-2">
-                      Tiêu đề
+                    {trans.HomePage.contact.form[0].subject}
                     </label>
                     <input type="text" className="form-control" name="subject" id="subject-field" required />
                   </div>
 
                   <div className="col-md-12">
                     <label htmlFor="message-field" className="pb-2">
-                      Tin nhắn
+                    {trans.HomePage.contact.form[0].message}
                     </label>
                     <textarea className="form-control" name="message" rows={10} id="message-field" required></textarea>
                   </div>
 
                   <div className="col-md-12 text-center">
-                    <div className="loading">Đang tải</div>
+                    <div className="loading">  {trans.HomePage.contact.form[0].loading}</div>
                     <div className="error-message"></div>
-                    <div className="sent-message">Đã gửi tin nhắn của bạn. Thank you!</div>
+                    <div className="sent-message">  {trans.HomePage.contact.form[0].sent}</div>
 
-                    <button type="submit">Gửi tin nhắn</button>
+                    <button type="submit">  {trans.HomePage.contact.form[0].submit}</button>
                   </div>
                 </div>
               </form>

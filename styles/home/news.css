@@ -1,0 +1,232 @@
+.home-news {
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.news-container {
+  display: flex;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.news-main-content {
+  width: 800px;
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.news-large-post {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.news-large-post img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.news-large-post-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  color: #f1e4e4;
+
+  width: 100%;
+}
+
+.news-large-post-title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .news-large-post-title {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    /* Giới hạn chỉ một dòng khi màn hình nhỏ */
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    font-size: 0.9rem;
+    /* Giảm kích thước font một chút nếu cần */
+  }
+}
+
+@media (min-width: 769px) {
+  .news-large-post-title {
+    display: block;
+    -webkit-line-clamp: unset;
+    /* Hiển thị đầy đủ khi màn hình lớn */
+    white-space: normal;
+    /* Không giới hạn số dòng */
+  }
+}
+
+.news-large-post-meta {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-top: 5px;
+}
+
+.news-grid-posts {
+  display: flex;
+  gap: 10px;
+}
+
+.news-grid-post {
+  flex: 1;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.news-grid-post img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.news-grid-post-content {
+  padding: 15px;
+}
+
+.news-grid-post-title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .news-grid-post-title {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    /* Giới hạn chỉ một dòng khi màn hình nhỏ */
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    font-size: 0.9rem;
+    /* Giảm kích thước font một chút nếu cần */
+  }
+}
+
+@media (min-width: 769px) {
+  .news-grid-post-title {
+    display: block;
+    -webkit-line-clamp: unset;
+    /* Hiển thị đầy đủ khi màn hình lớn */
+    white-space: normal;
+    /* Không giới hạn số dòng */
+  }
+}
+
+.news-grid-post-meta {
+  font-size: 0.8rem;
+  color: #555;
+}
+
+.news-sidebar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.news-small-post {
+  display: flex;
+  gap: 15px;
+  padding: 15px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  transition: transform 0.3s ease;
+  /* Thêm hiệu ứng hover */
+}
+
+.news-small-post:hover {
+  transform: scale(1.05);
+  /* Phóng to nhẹ khi hover */
+}
+
+.news-small-post img {
+  width: 80px;
+  /* Tăng kích thước ảnh đại diện */
+  height: 80px;
+  border-radius: 8px;
+  /* Có thể thay đổi thành 50% nếu muốn ảnh tròn */
+  object-fit: cover;
+}
+
+.news-small-post-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.news-small-post-title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  line-height: 1.2;
+  margin-bottom: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .news-small-post-title {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    /* Giới hạn chỉ một dòng khi màn hình nhỏ */
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    font-size: 0.9rem;
+    /* Giảm kích thước font một chút nếu cần */
+  }
+}
+
+@media (min-width: 769px) {
+  .news-small-post-title {
+    display: block;
+    -webkit-line-clamp: unset;
+    /* Hiển thị đầy đủ khi màn hình lớn */
+    white-space: normal;
+    /* Không giới hạn số dòng */
+  }
+}
+
+
+.news-small-post-meta {
+  font-size: 0.85rem;
+  /* Tăng kích thước font cho meta */
+  color: #555;
+  margin-top: 4px;
+}
+@media (max-width: 1199px) {
+  .home-news .news-container .news-main-content {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  .home-news .news-container {
+    display: block;
+  }
+}

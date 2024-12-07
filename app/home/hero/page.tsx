@@ -2,7 +2,6 @@
 
 import useTrans from '../../pages/useTrans';
 
-
 export default function Hero() {
   const trans = useTrans();
 
@@ -51,16 +50,25 @@ export default function Hero() {
         <div className="carousel-inner" style={{ height: '100vh' }}>
 
           {/* Carousel Image 1 */}
-          <div className="carousel-item active" style={{ backgroundImage: 'url(https://th.bing.com/th/id/R.cfecc143b914f4d5232b983009703edc?rik=SnyTYJN83wVmkQ&pid=ImgRaw&r=0)', backgroundSize: 'cover', backgroundPosition: 'center', height: '100vh' }}>
-          </div>
+          {/* <div className="carousel-item active" style={{ backgroundImage: 'url(/img/banner/banner-bothep.png)', backgroundSize: 'cover', backgroundPosition: 'center', height: '100vh' }}>
+          </div> */}
 
           {/* Carousel Image 2 */}
-          <div className="carousel-item" style={{ backgroundImage: 'url(https://theptaydo.com/files/images/slider/thep_1.png)', backgroundSize: 'cover', backgroundPosition: 'center', height: '100vh' }}>
+          <div className="carousel-item active" style={{ backgroundImage: 'url(/img/banner/banner-cauthep.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', height: '100vh' }}>
           </div>
 
           {/* Carousel Image 3 */}
-          <div className="carousel-item" style={{ backgroundImage: 'url(https://dreamnotion.com/wp-content/uploads/2016/04/bg-image-1.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', height: '100vh' }}>
+          <div className="carousel-item" style={{ backgroundImage: 'url(/img/banner/banner-ducthep.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', height: '100vh' }}>
           </div>
+
+          <div className="carousel-item" style={{ backgroundImage: 'url(/img/banner/banner-luyenthep.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', height: '100vh' }}>
+          </div>
+
+          <div className="carousel-item" style={{ backgroundImage: 'url(/img/banner/banner-sat.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', height: '100vh' }}>
+          </div>
+
+          {/* <div className="carousel-item" style={{ backgroundImage: 'url(/img/banner/tsc-vr.png)', backgroundSize: 'cover', backgroundPosition: 'center', height: '100vh' }}>
+          </div> */}
 
         </div>
 

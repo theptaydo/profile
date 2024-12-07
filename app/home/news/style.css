@@ -1,0 +1,10 @@
+@media (max-width: 1199px) {
+  .home-news .news-container .news-main-content {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  .home-news .news-container {
+    display: block;
+  }
+}

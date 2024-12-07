@@ -1,0 +1,120 @@
+/* Nội dung bài viết */
+.home-article{
+    display: flex; /* Sử dụng Flexbox để bố cục ngang */
+    justify-content: space-between; /* Khoảng cách giữa các phần tử */
+    max-width: 1200px; /* Chiều rộng tối đa */
+    margin: 140px auto 0 auto; /* Căn giữa ngang và thêm khoảng cách trên (margin-top: 140px) */
+    padding: 20px; /* Khoảng cách bên trong */
+}
+.article-content {
+    flex: 3; /* Chiếm 3/4 không gian */
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+  }
+  
+  .article-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .author-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .article-header h4 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .article-header p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #767070;
+  }
+  
+  .article-body p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+  
+  .article-image {
+    width: 100%;
+    margin: 15px 0;
+    border-radius: 8px;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    flex: 1; /* Chiếm 1/4 không gian */
+    margin-left: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar h3 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .story {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .story.large-story {
+    display: block; /* Feature story sẽ hiển thị như một bài riêng biệt */
+    text-align: center;
+  }
+  
+  .story-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .story.large-story .story-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 0 0 10px 0;
+  }
+  
+  .story p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .story small {
+    font-size: 0.8rem;
+    color: #888;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    div[style] {
+      flex-direction: column;
+    }
+  
+    .article-content {
+      margin-bottom: 20px;
+    }
+  
+    .sidebar {
+      margin-left: 0;
+    }
+  }
+  

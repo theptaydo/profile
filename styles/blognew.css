@@ -1,0 +1,148 @@
+ /* Container tổng */
+.news-form-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+.page-body-wrapper{
+  padding-left: 260px;
+  padding-top: 60px;
+}
+/* Hàng tổng (gồm 2 cột) */
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Cột bên trái */
+.col-lg-8 {
+  flex: 2; /* Chiếm 2 phần không gian */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Cột bên phải */
+.col-lg-4 {
+  flex: 1; /* Chiếm 1 phần không gian */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Section */
+.section {
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  padding: 15px;
+  background-color: #ffffff;
+}
+
+.section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+/* Form Group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-group label {
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: #555;
+}
+
+input,
+textarea,
+select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  width: 100%;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 10px;
+}
+
+/* Ảnh Upload */
+.image-upload {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.image-preview {
+  width: 140px;
+  height: 140px;
+  border: 1px dashed #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+/* Nút hành động */
+.form-actions {
+  margin-top: 20px;
+  text-align: right;
+}
+
+button {
+  padding: 8px 15px;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+}
+
+.cancel-btn {
+  background-color: #6c757d;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.save-btn {
+  background-color: #007bff;
+  color: #fff;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .col-lg-8,
+  .col-lg-4 {
+    flex: 1;
+  }
+
+  .form-actions {
+    text-align: center;
+  }
+}
