@@ -4,7 +4,7 @@ import useTrans from '../../pages/useTrans';
 
 export default function Hero() {
   const trans = useTrans();
- 
+
   return (
 
     // <section id="hero" className="hero section light-background">
@@ -66,6 +66,9 @@ export default function Hero() {
 
           <div className="carousel-item" style={{ backgroundImage: 'url(/img/banner/banner-sat.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', height: '100vh' }}>
           </div>
+
+          {/* <div className="carousel-item" style={{ backgroundImage: 'url(/img/banner/tsc-vr.png)', backgroundSize: 'cover', backgroundPosition: 'center', height: '100vh' }}>
+          </div> */}
 
         </div>
 
