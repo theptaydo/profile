@@ -52,7 +52,7 @@ export default function AppContact() {
                 </h4>
 
                 <span onClick={toggleChatbox}>
-                  X
+                  <i className="fa-regular fa-circle-xmark"></i>
                 </span>
 
               </div>

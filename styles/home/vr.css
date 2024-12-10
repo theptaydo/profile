@@ -144,4 +144,8 @@
   .row .left {
     display: block;
   }
+
+  #vr-tour .row .right {
+    margin-left: 0px;
+  }
 }
