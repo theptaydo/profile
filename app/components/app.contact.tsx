@@ -1,6 +1,8 @@
 'use client'; // Thêm dòng này để báo rằng đây là một Client Component
 import React, { useState } from "react";
 import '@/styles/flash-contact.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 export default function AppContact() {
   const [isChatOpen, setIsChatOpen] = useState(false);
   const [messages, setMessages] = useState<string[]>([]);
@@ -52,7 +54,7 @@ export default function AppContact() {
                 </h4>
 
                 <span onClick={toggleChatbox}>
-                  <i className="fa-regular fa-circle-xmark"></i>
+                  <i className="bi bi-x-circle"></i>
                 </span>
 
               </div>
