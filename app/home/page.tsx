@@ -12,23 +12,29 @@ import Team from './team/page';
 import Products from './products/page';
 import Faq from './faq/page';
 import Contact from './contact/page';
-
+import News from './news/page';
+import VrTour from './vr-tour/page';
+import useScrollEffect from '../hook/useScrollEffect';
 import "@/styles/main.css";
+import HomeNews from './news/page';
 
 export default function HomePage() {
+  useScrollEffect();
   return (
 
     <div className='home-page'>
       <Hero />
+      <Clients />
+      <News />
+      <VrTour />
       <FeaturedServices />
       <About />
       <Stats />
-      <Clients />
-      <Services />
-      <Testimonials />
-      <Portfolio />
       <Team />
       <Products />
+      {/* <Services /> */}
+      <Portfolio />
+      <Testimonials />
       <Faq />
       <Contact />
     </div>

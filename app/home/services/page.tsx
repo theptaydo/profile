@@ -1,8 +1,6 @@
 'use client';
 
 import Head from 'next/head';
-import 'swiper/swiper-bundle.css';
-import { Swiper, SwiperSlide } from 'swiper/react';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 export default function Services() {

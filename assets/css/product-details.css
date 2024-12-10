@@ -21,8 +21,10 @@
 }
 
 .t-tabs .item.active {
-  color: #007bff; /* Active tab color */
-  border-bottom: 2px solid #007bff; /* Bottom border for active tab */
+  color: #014a36;
+  /* Active tab color */
+  border-bottom: 2px solid #014a36;
+  /* Bottom border for active tab */
 }
 
 /* Content area styling */
@@ -65,7 +67,8 @@
 }
 
 .item-categories .img img {
-  width: 48%; /* Adjust to fit two images in a row */
+  width: 48%;
+  /* Adjust to fit two images in a row */
   height: auto;
   border-radius: 5px;
   object-fit: cover;
@@ -78,7 +81,8 @@
 }
 
 .product-seemore .img-toggle {
-  display: none; /* Initially hidden */
+  display: none;
+  /* Initially hidden */
 }
 
 .product-seemore .seemore-button {
@@ -88,7 +92,7 @@
   padding: 10px;
   cursor: pointer;
   font-size: 14px;
-  color: #007bff;
+  color: #014a36;
 }
 
 .product-seemore .seemore-button i {
@@ -121,7 +125,7 @@
   display: flex;
   align-items: center;
   font-size: 16px;
-  color: #007bff;
+  color: #014a36;
   cursor: pointer;
 }
 
@@ -146,6 +150,7 @@
     width: 100%;
   }
 }
+
 .chemical-composition-table {
   width: 100%;
   border-collapse: collapse;
@@ -203,6 +208,7 @@
 .chemical-composition-table tbody tr:hover {
   background-color: #e0f7ff;
 }
+
 .specifications-table {
   width: 100%;
   border-collapse: collapse;
@@ -239,11 +245,13 @@
 
 .specifications-table tbody td:first-child {
   font-weight: bold;
-  width: 20%; /* Adjusts the width of the first column */
+  width: 20%;
+  /* Adjusts the width of the first column */
 }
 
 .specifications-table tbody td:last-child {
-  width: 80%; /* Adjusts the width of the second column */
+  width: 80%;
+  /* Adjusts the width of the second column */
 }
 
 .specifications-table tbody tr td {
@@ -253,4 +261,3 @@
 .specifications-table tbody tr td:last-child {
   line-height: 1.6;
 }
-

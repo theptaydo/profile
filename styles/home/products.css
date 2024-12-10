@@ -19,7 +19,7 @@
 }
 
 .btn-contact {
-  background-color: #4C46C4;
+  background-color: #014a36;
   color: white;
   font-weight: bold;
   padding: 10px 20px;
@@ -28,7 +28,7 @@
 }
 
 .btn-contact:hover {
-  background-color: #3b3596;
+  background-color: #006349;
   color: white;
 }
 
@@ -54,5 +54,3 @@
 .product-details p span {
   font-weight: 400;
 }
- 
- 

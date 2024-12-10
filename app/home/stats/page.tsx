@@ -1,8 +1,10 @@
 "use client"
 
 import { useEffect } from 'react';
-
+import useScrollEffect from '@/app/hook/useScrollEffect';
+import '@/styles/animation.css';
 export default function Stats() {
+  useScrollEffect();
   useEffect(() => {
     const counters = document.querySelectorAll('.purecounter');
 
