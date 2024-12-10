@@ -13,6 +13,7 @@ import Products from './products/page';
 import Faq from './faq/page';
 import Contact from './contact/page';
 import News from './news/page';
+import VrTour from './vr-tour/page';
 import useScrollEffect from '../hook/useScrollEffect';
 import "@/styles/main.css";
 import HomeNews from './news/page';
@@ -24,7 +25,8 @@ export default function HomePage() {
     <div className='home-page'>
       <Hero />
       <Clients />
-      <News/>
+      <News />
+      <VrTour />
       <FeaturedServices />
       <About />
       <Stats />

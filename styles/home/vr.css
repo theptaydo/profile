@@ -1,0 +1,147 @@
+#vr-tour .promo-img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+
+#vr-tour .promo-title {
+  font-size: xx-large;
+  font-weight: 700;
+  margin-bottom: 30px
+}
+
+#vr-tour .row .left {
+  display: flex;
+}
+
+
+#vr-tour .row .right {
+  margin-left: 30px;
+}
+
+/* From Uiverse.io by mobinkakei */
+
+#vr-tour .cta {
+  display: flex;
+  /* padding: 11px 33px; */
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  background: #6225e6;
+  transition: 1s;
+  box-shadow: 6px 6px 0 black;
+  transform: skewX(-15deg);
+  border: none;
+  cursor: pointer;
+  margin-top: 30px;
+  padding: 5px 50px;
+}
+
+
+#vr-tour .cta:focus {
+  outline: none;
+}
+
+
+#vr-tour .cta:hover {
+  transition: 0.5s;
+  box-shadow: 10px 10px 0 #fbc638;
+}
+
+
+#vr-tour .cta .second {
+  transition: 0.5s;
+  margin-right: 0px;
+}
+
+
+#vr-tour .cta:hover .second {
+  transition: 0.5s;
+  margin-right: 45px;
+}
+
+
+#vr-tour .span {
+  transform: skewX(15deg);
+}
+
+
+#vr-tour .second {
+  width: 20px;
+  margin-left: 30px;
+  position: relative;
+  top: 12%;
+}
+
+
+#vr-tour .one {
+  transition: 0.4s;
+  transform: translateX(-60%);
+}
+
+
+#vr-tour .two {
+  transition: 0.5s;
+  transform: translateX(-30%);
+}
+
+
+#vr-tour .cta:hover .three {
+  animation: color_anim 1s infinite 0.2s;
+}
+
+
+#vr-tour .cta:hover .one {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.6s;
+}
+
+
+#vr-tour .cta:hover .two {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.4s;
+}
+
+@keyframes color_anim {
+  0% {
+    fill: white;
+  }
+
+  50% {
+    fill: #fbc638;
+  }
+
+  100% {
+    fill: white;
+  }
+}
+
+.promo-section>div {
+
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 40px;
+  align-items: center !important;
+}
+
+
+@media screen and (max-width: 768px) {
+  .promo-img {
+    width: 100%;
+  }
+
+  .promo-section {
+
+    padding: 0px 30px;
+  }
+
+  .row .right {
+    margin-top: 30px;
+    margin-left: 0px;
+  }
+
+  .row .left {
+    display: block;
+  }
+}
